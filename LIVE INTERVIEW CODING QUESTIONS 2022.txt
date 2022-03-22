@@ -1,0 +1,10 @@
+*** LIVE INTERVIEW CODING QUESTIONS 2022****
+
+
+1. right sublink binary tree —> Microsoft
+2. Decode string characters with aabbccc —-> a2b2c3 ( Apple, Goldman sachs)
+3. Max sum sub array zero —-> Apple
+4. Remove duplicate from sorted array 2 —-> PayPal
+5. Longest substring without repeating characters——> Goldman sachs
+6. Permutations numbers bitwise operations—-> Amazon
+7. Trapping rain—-> Goldman sachs

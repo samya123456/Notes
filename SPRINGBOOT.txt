@@ -1,0 +1,35 @@
+****SPRINGBOOT ****
+@SpringbootApplication
+1) EnableAutoConfiguration
+2) ComponentScan
+3) SpringbootConfiguration
+
+Springboot-auto -configure jar
+1) spring.factories
+
+
+Auto configuration logic
+1) @ConditionalOnClass
+2) @ConditionalOnMissingBean
+
+Multiple data sources:
+1) In application.properties create two part
+spring.datasources1 and
+spring.datasources2
+2) create a configuration class and create two DataSource objects using spring.datasources1 and
+spring.datasources2
+3) create JdbcTemplate for DataSource1 and DataSource2
+4) In the Repository class use the JdbcTemplate you want to use to insert data in the desired database
+
+
+
+
+AnnotationConfigApplicationContext
+
+@component —> create bean
+@configuration —> beans.xml
+@ComponentScan —> scan for beans inside configuration class
+@Bean - create bean using method , method name is the bean id
+@Value —>inject the value
+@PropertySource
+@Required

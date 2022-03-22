@@ -1,0 +1,165 @@
+****KUBERNATES ****
+
+Kubernates logging check
+Kubernates dashboard
+Taints and tolerant ****
+Init container
+Node affinity and pod anti affinity ***
+Readiness prob****
+Likeness prob***
+Request and limit
+K8s deployment strategy
+Node log: kubectl describe node
+Pod logs: kubectl logs, previous log — kubectl logs —previous
+Event: kubectl get events
+Kubectl top
+Elastic search and kibana with fluentd storage == LOG *****
+Control plane
+Scheduler
+Etcd
+Raft
+
+Statefullset
+
+
+
+Kubernates service
+
+1. External name service for external service registers
+2. External DNS pod will register DNS NAME of the application to aws route 53
+
+
+
+SERVICE FLOW
+—————————
+Cluster ip(kube -proxy)<—— Node port <—— Load balancer
+
+
+
+
+PORT FLOW
+——————-
+
+Node port port——> cluster ip por(target port)——> application port
+
+
+Load balancer:
+————————
+Target group
+
+Load balancer service are the cloud provider service which is external to the cluster. So when you create load balancer service, you also get node-port and clusterIP service in your service configuration.
+
+The load balancer service sends the traffic to the cluster by accessing the node port service on the node’s real IPs....... that node-port service sends the traffic to the cluster-ip service which will send the traffic to the pods.
+
+Kubernates Ingress:
+1. Name based virtual host : examples com.example.blue && com.example.red
+2. Path based routing : example are com.example\blue && com.example\red ....... I.e : hostname are same.
+
+Taint and tolerance:
+1. Taint: Node is tainted with with label key value pair . Ex-label: Node = DB
+2. Tolerance: Pod is given tolerance with the same label.... Only pods given Tolerance will be allowed to that particular node. *****But pod can be scheduled on any other node.
+Taint effects : NoSchedule, PreferNoSchedule , NoExecute
+
+Node affinity and pod anti affinity:
+1. Node Affinity: we define Node affinity in pod , it ensures that this pod will be deployed on that Node only which has that label. It’s basically same with Node selector with some extra features.
+2. Pod anti affinity: suppose pod1 has label :Type= application. Pod2 has label:Type=DB .So if you want the Nodes where Pod1 is scheduled I’ll not schedule pod2. So in pod1 you can define podAntiAffinity .
+
+
+Readiness probe and liveness probe:
+1. Readiness probe: this is used to let the service know when to send traffic to particular newly deployed pod.
+2. Liveness probe: suppose there is any deadlock or outofmemory error occurring inside your pod...liveness probe will ensure that the Master node delete that pod and create a new one.
+
+
+
+Deployment strategy:
+1. Recreate : all the pods will be destroyed and new pods will be created
+2. Rolling update ( default): when you want to deploy your new version of images without having any down time. A new pod will be created and deployed and once the new pod is ready to be served the old one will be destroyed.
+In the deployment yaml under specs———
+Strategy
+3. Canary
+4. Blue green
+
+
+Requests and Limits:
+1. Request: If a pod requests certain hardware requirements such as 100 MB memory and 0.5 cpu, Then scheduler will only deploy the pods to that Node who can give it the required specifications
+2. Limits: Means a container can go upto that limit of memory and cpu
+
+Ingress vs load balancer:
+
+Ingress
+Ingress works at layer 7 (application layer) that has path based routing and name based virtual host.
+
+
+AWSLoad balancer——> ingress controller—->service
+
+
+
+Control plane
+———————-
+
+Master Node:
+
+1. API Server
+2. Scheduler : on which node the task will be performed
+3. Controller manager
+4. etcd (key value pair database)- maintain the entire state of the cluster. When we create cluster first we create the cluster of etcd with minimum of 3 nodes for HA. These nodes talk to each other to make the data in sync is called RAFT.
+5. Addons: CNI , coreDNS
+
+Controller Manager:
+
+Workloads Controller
+——————. —————-
+Stateless HA. ————> Deployment
+Agents2 ——————>. Daemonset
+Stateful——————>. Statefulset
+Jobs ——————>. Jobs
+Cron Jobs. —————->. Cronjob
+
+
+Daemonset:
+———————
+The property of Daemonset is that it’ll be deployed as one pod per worker node.
+Example: Fluentd : Container logs,cluster log
+CloudWatch Agent: matrix insight of application,pods , serives,cpu, memory usage
+
+• Although kubernates has different controller for different workloads but all these gets compiled into a single binary which is called Controller manager in Master node
+
+
+
+
+Child Nodes:
+——————-
+1. kubelets : calls the api server on master node to get the job done
+2. Runtime: docker Run time
+3. Kube-proxy
+
+
+Master. Child
+———— ————-
+Scheduler
+
+
+kubectl apply—-> API server—->kubelet—> Docker runtime
+
+Kube-proxy:
+———————
+
+If we create a service where 3 pods are attached to it, Endpoints use to maintain the IP addresses of those pods.and iptable is maintained against it and traffic is been routed as per this iptable to the pods.
+
+Kube- proxy keep track of each services and the pods attached to the service and if any any changes are there then it informs the endpoint to update the iptable accordingly
+
+
+*init container +app container + side car container
+
+Init container- managing the certificates and mounting back to the actual container
+
+By default there will be 4 namespace .
+Resoure quota in namespace
+
+PV vs PVC
+
+Connect to aws eks cluster:
+aws eks —region us-east-1 —name clustername— query cluster.status
+
+Update kubeconfig to run kubectl commands:
+aws eks— region us-east-1 update- kubeconfig — name awseks

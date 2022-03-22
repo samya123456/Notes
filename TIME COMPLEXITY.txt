@@ -1,0 +1,47 @@
+****TIME COMPLEXITY ****
+
+
+Sorting
+—————
+Collections.sort —- n log n.
+Arrays.sort —- n log n
+Quick sort —— n log n **** best
+Merge sort —— n log n
+Heap sort —- n log n
+Selection sort ——- n^2
+Heapify - n
+
+Searching
+——————
+Linear search——- n
+Binary search—— log n
+
+Binary tree
+——————-
+Searching - O(n)
+Insert - O(n)
+Delete- O(n)
+
+Binary search tree
+—————————-
+
+Searching - O(n)
+Insert - O(n)
+Delete- O(n)
+
+Height Balanced tree
+———————————
+
+Searching - O(log2n)
+Insert - O(log2n)
+Delete- O(log2n)
+
+
+
+HashMap /LinkedHashMap
+————-
+Insert / lookup - O(1)
+
+TreeMap
+————-
+Insert/lookup - log n

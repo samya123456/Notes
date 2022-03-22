@@ -1,0 +1,78 @@
+
+samya nandy
+12:50 AM (7 hours ago)
+to me
+
+***DOCKER QUESTION***
+0. Docker networking
+0. Difference between run , execute and cmd
+0. Change something inside base image : Do a docker pull ,do docker run /bin/bash to enter into the image, make changes and do docker commit.
+0. How to retain state of the image :
+0. How different containers resides in same docker machine
+
+
+RUN:
+RUN command always executes in a new layer and creates a new image layer.RUN is used to install software like MySQL .
+
+CMD vs ENTRYPOINT
+the parameters we pass in CMD can be overridden but the parameters we pass in ENTRYPOINT cannot be changed.
+
+Example:
+
+ENTRYPOINT [“/bin/echo”, “Hello”]
+CMD[“World”]
+
+Now if we do : docker run -it imagename
+O/P : Hello World
+
+But if we run : docker run -it imagename Samya
+O/P : Hello Samya
+
+
+
+Docker network driver:
+
+0. Bridge :(Docker 0 Ethernet)Default driver. This is the ip or host machine where docker is installed. Multiple containers can run as one private ip will be assigned to each container. Via bridge each containers can talk to each other.
+0. Host : it’s a public network. Multiple containers can’t be run on the same host. As NO private address will be assigned to each container
+0. None : total isolation.
+0. Overlay
+0. Macvlan : instead of IP address traffic will be routed via MAC address
+
+
+0. docker build: to build the image
+0. docker pull : pull the image from repo
+0. docker run -it imageid : run the container
+0. docker info : gives the number of containers running stopped or paused
+0. docker run -it imageid /bin/bash: to enter into the container
+0. docker tag : to tag the container
+0. docker push: to push to private repo
+0. docker commit: commit the charges and create one new image from the existing one
+0. docker rmi imageid: remove the image
+0. docker stop: stop the container
+0. docker save: save the image to .tar file
+0. docker load: load .tar file to image
+0. docker ps: all the containers running on docker
+0. docker run vs start: run —>create a new container with the image and start the container. Start—-> start the existing container which is stopped
+0. docker system prune**** : remove all the stopped images , network caches
+
+
+*States of the container:
+—Created ,Running,Paused, Restarted,Exited,Dead
+
+*Can container restart by itself:No
+—By default the flag restart is false.
+
+*Can you remove a paused container:No
+—You have to stop the container.
+
+*Will docker compose wait for the current container to be ready to move to the running of the next service??
+—Docker compose always runs in the dependency order.
+*ContainerD ,RunC
+
+Flow inside Docker Engine:(Linux)
+Client via API call—-> Docker daemon calls containerD via GRPC socket—->containerD calls runc to create the container —->runc creates the container , separated namespace,cgroup
+
+• if we change the first commands inside Dockerfile the we are breaking the build cache to reuse… then it’ll take same time to run what it took for the first time
+• Docker compose : yaml file to run multiple containers
+• Docker swarm : Orchectrator
+• Docker stat and docker events are used to monitor containers in production
