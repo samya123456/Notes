@@ -45,11 +45,12 @@ Docker network driver:
 0. docker info : gives the number of containers running stopped or paused
 0. docker run -it imageid /bin/bash: to enter into the container
 0. docker tag : to tag the container
-0. docker exec <container_id> /bin/bash
+0. docker exec <container_id> /bin/bash : enter into the container
 0. docker push: to push to private repo
 0. docker commit: commit the charges and create one new image from the existing one
 0. docker rmi imageid: remove the image
 0. docker stop: stop the container
+0. docker kill : kill the container
 0. docker save: save the image to .tar file
 0. docker load: load .tar file to image
 0. docker ps: all the containers running on docker
