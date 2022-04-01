@@ -25,10 +25,10 @@ Video file via cdn( content delivery network) aws cloudfront in multiple regions
 S3 + cdn(cloud front)
 
 *Vertical scaling:
-Load balancers: Nodes
+Adding more memory to Node/Pods
 
 *Horizontal scaling:
-Pods
+Load balancers: Nodes/Pods
 
 *High availability:
 Cloud front
