@@ -127,4 +127,4 @@ Non functional requirement:
 5. Low letency ==> S3 + cdn(cloud front)
 6. disaster recovery: 
 7. Single point of failure: Masters/ slave architecture
-8. Fault tolerance
+8. Fault tolerance : Read replicas in S3 +CDN
