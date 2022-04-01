@@ -112,7 +112,7 @@ RDBMS:
 6. Docker
 7. Kubernates
 8. Load balancer
-9. CDN/ cloud front
+9. CDN/ cloud front ==>Famous CDN Provider AKAMAI
 10. Read replica
 11. Log in Session
 12. Push message/web sockets
