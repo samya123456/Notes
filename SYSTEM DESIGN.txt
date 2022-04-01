@@ -85,7 +85,7 @@ Zookeepers
 
 
 *Video streaming from s3 to mobile- https
-
+===================================================================
 Nosql database list:
 1. dynamoDB
 2. Cassandra
@@ -99,7 +99,7 @@ RDBMS:
 3. MySQL
 4. Oracle
 
-
+=====================================================================
 
 ****MUST SAY
 1. micro service
@@ -115,10 +115,14 @@ RDBMS:
 11. Log in Session
 12. Push message/web sockets
 
-A
+====================================================================
 
 Non functional requirement:
-1. scalability
-2. Availability
+1. scalability ==> Vertical scaling: Adding more memory to Node/Pods  + Horizontal scaling: Load balancers: Nodes/Pods
+2. High Availability ===> Cloud front /CDN
 3. Consistency
-4. Security
+4. Security ====> WAF - web application firewall + Cloud front to block entire region +  NETWORK ACL
+5. Low letency ==> S3 + cdn(cloud front)
+6. disaster recovery: 
+7. Single point of failure: Masters/ slave architecture
+8. Fault tolerance
