@@ -10,7 +10,7 @@ WhatsApp
 
 
 
-—————————————
+===============================================================================================
 *Entry point to any app or website:
 
 API GATEWAY ->Session —-> authentication / authorisation micro service
@@ -20,6 +20,8 @@ Xmpp protocol/ TCP
 Extensible messaging presence protocol
 Push to update/ get messages
 
+
+=================================================================================================
 *Low latency:
 Video file via cdn( content delivery network) aws cloudfront in multiple regions .
 S3 + cdn(cloud front)
@@ -55,18 +57,17 @@ Log stash —-> search (elastic search)—->visualisation (kibana)
 Spring boot sleuth
 
 
-
+====================================================================
 
 *Monitoring AWS EKS
 EFK Stack( Elastic search ——> fluentD——> kibana
 
 fluentD-retrieve the log matrix and pushes to elastic search.
 Kibana-Monitoring
-
+======================================================================
 
 *SECURITY WEB APPLICATION
 (Acloudguru security part in Udemy)
-
 1. NETWORK ACL
 2. WAF - web application firewall
 3. Cloud front to block entire region
@@ -78,10 +79,11 @@ Kibana-Monitoring
 
 Automated disaster recovery
 Cloudendure
-
-
 Zookeepers
+===================================================================
 
+
+===================================================================
 
 
 *Video streaming from s3 to mobile- https
