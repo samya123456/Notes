@@ -1,0 +1,124 @@
+SYSTEM DESIGN TOPICS
+
+Tinder
+Stock price exchange
+Logging system
+WhatsApp
+
+
+
+
+
+
+—————————————
+*Entry point to any app or website:
+
+API GATEWAY ->Session —-> authentication / authorisation micro service
+
+*Direct messaging:
+Xmpp protocol/ TCP
+Extensible messaging presence protocol
+Push to update/ get messages
+
+*Low latency:
+Video file via cdn( content delivery network) aws cloudfront in multiple regions .
+S3 + cdn(cloud front)
+
+*Vertical scaling:
+Load balancers: Nodes
+
+*Horizontal scaling:
+Pods
+
+*High availability:
+Cloud front
+
+*Fault tolerance:
+Read replica formula 2*n+1
+
+*Single point of failure
+Masters/ slave architecture
+
+*Store the data based on location
+Shading /Horizontal partitions
+
+*Queue:
+SQS
+KAFKA
+
+*Log visualisation from database
+Grafana
+*Centralized log cluster
+Log stash —-> search (elastic search)—->visualisation (kibana)
+
+*Auto generation of co relation id for logging
+Spring boot sleuth
+
+
+
+
+*Monitoring AWS EKS
+EFK Stack( Elastic search ——> fluentD——> kibana
+
+fluentD-retrieve the log matrix and pushes to elastic search.
+Kibana-Monitoring
+
+
+*SECURITY WEB APPLICATION
+(Acloudguru security part in Udemy)
+
+1. NETWORK ACL
+2. WAF - web application firewall
+3. Cloud front to block entire region
+
+*ENCRYPTION
+1. KMS
+2. CloudHSM
+3. Parameter store
+
+Automated disaster recovery
+Cloudendure
+
+
+Zookeepers
+
+
+
+*Video streaming from s3 to mobile- https
+
+Nosql database list:
+1. dynamoDB
+2. Cassandra
+
+Cache:
+1. radis cache
+
+RDBMS:
+1. Postgres
+2. Aurora
+3. MySQL
+4. Oracle
+
+
+
+****MUST SAY
+1. micro service
+2. Queue
+3. No sql
+4. Cache
+5. RDBMS
+6. Docker
+7. Kubernates
+8. Load balancer
+9. CDN/ cloud front
+10. Read replica
+11. Log in Session
+12. Push message/web sockets
+
+A
+
+Non functional requirement:
+1. scalability
+2. Availability
+3. Consistency
+4. Security
