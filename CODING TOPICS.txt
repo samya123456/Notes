@@ -76,6 +76,7 @@
 74. Robbing houses - (pegasystems)
 75. Decode string characters with aabbccc —-> a2b2c3 ( Apple, Goldman sachs)
 76. Sort 2D array based on row / columns
+77. Subarray Sum Equals K  leetcode 560
 
 
 
