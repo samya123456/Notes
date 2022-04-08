@@ -1,0 +1,138 @@
+*JAVA TOPICS*
+String —— Javatpoint
+Overloading —Javatpoint
+Overriding —Javatpoint
+Static — Javatpoint
+This —- Javatpoint
+Super — Javatpoint
+Final — Javatpoint
+Call by value — Javatpoint
+Serialisations — Javatpoint
+Comparable comparator — Javatpoint
+Exception — Javatpoint
+Thread - producer consumer/ Executor —Pluralsight
+Theard pool Executor service — Pluralsight
+Collection — Javatpoint
+How HashMap works internally— Geeksforgeeks
+Java 8 —YouTube
+Abstract class — Javatpoint
+Interface —Javatpoint
+Singleton class — geeksforgeeks
+Immutable class — geeksforgeeks
+Memory management —-YouTube
+Fail first iterator —- YouTube
+Time complexity
+Space complexity
+Class loader —YouTube
+Concurrent hashmap — YouTube
+Transient and intern
+Java memory leak — pluralsight
+Jvm memory model — YouTube
+Disadvantages of Java
+Metaspacesize and PermGen memory**
+Reflection — YouTube
+Steam API — Code
+Overriding inside overloading — Code
+Interface default method and overriding — Geeksforgeeks
+Happens before —
+Concurrent hashmap internal work
+IsInstance vs instanceof
+Happens before
+Yield vs join
+Survivor space
+Difference between Optional orElse and orElseGet
+Collections.unmodifiableList to prevent —YouTube
+adding extra elements in immutable list — YouTube
+ControllerAdvice
+Rest controller vs controller
+Spring boot filter , @Order annotations
+Create custom annotations
+Deep copy,swallow copy , defensive copy
+Garbage collection - javatpoint
+How to delete a middle node from a tree efficiently without re arranging the entire tree ——-> Trie approach
+Prototype bean inside singletone
+Producer consumer with buffering semaphore
+
+
+Game theory
+Priority Queue
+Operating system
+OSI Model
+Deadlock in operating system
+Scheduling algorithms
+Virtual memory
+Segmentation vs paging - YouTube
+
+Theory
+—————-
+
+Spring —YouTube
+Hibernated
+Spring boot - design pattern
+Rest —-YouTube
+Database
+Kafka —YouTube
+
+**Spring transactions model — propagation and isolation .
+
+Spring security
+Kubernates
+Node selector
+Node affinity and pod anti affinity
+Taint and tolerance
+Ingress vs egress in kubernates
+Vpc in aws
+
+
+
+Spring boot :
+1. Auto configuration - in28minute
+2. Sprin boot actuators - in28minute
+3. Spring boot annotations - in28minute
+4. Auto wired - @qualifier , by name , by type, @Primary , difference between constuctor autowiring and set auto wiring in spring boot. in28minute
+5. Spring.factories file inside spring - boot- autowire jar
+6. Difference between application context and bean factory
+7. how to connect different databases in the same application in springboot
+8. @Component @Services @Configuration
+
+
+Kafka:
+1. current offset
+2. Committed offset —-
+1) Auto commit
+i) enable auto commit
+ii) commit interval ms
+2) manual commit
+i) commit sync
+ii) commit async
+Aws:
+1. VPC
+2. VPC Peering
+3. AWS serverless :- EBS, Lambda,
+4. SQS - FIFO Queue
+
+
+
+
+
+Data structure:
+1. array
+2. Arraylist
+3. Stack
+4. Queue
+5. String
+6. Node
+7. Linked list
+8. Tree
+
+Coding
+——————-
+1. Longest increasing subsequence
+2. Inorder, preorder post order
+3. Reverse a linkedlist
+4. Parentheses checker
+5. Remove node from a middle of a linked list .
+6. Palindrome
+7. Arraylist, Linked list, Tree, implementation
+8. Remove node by key from a linked list
+9. Fibonacci series
