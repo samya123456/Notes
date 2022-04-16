@@ -20,6 +20,13 @@ Xmpp protocol/ TCP
 Extensible messaging presence protocol
 Push to update/ get messages
 
+whatsApp:
+--------
+Language == Alang
+10 million connections per server
+OS == FreeBSD
+DB == Amnesia (key value pair DB)
+Webserver == YAWS
 
 =================================================================================================
 *Low latency:
