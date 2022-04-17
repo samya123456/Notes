@@ -28,6 +28,10 @@ OS == FreeBSD
 DB == Amnesia (key value pair DB)
 Webserver == YAWS
 
+
+OLA/UBER:
+---------
+Google S2 library created 1km/1km small blocks and provides a unique id to that in google map.
 =================================================================================================
 *Low latency:
 Video file via cdn( content delivery network) aws cloudfront in multiple regions .
