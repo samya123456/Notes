@@ -92,7 +92,8 @@ Automated disaster recovery
 Cloudendure
 Zookeepers
 ===================================================================
-
+Hotstart Auto scaling happens not based on CPU and memory but with 
+Request per second and request concurrency.
 
 ===================================================================
 
