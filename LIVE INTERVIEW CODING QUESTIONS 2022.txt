@@ -8,3 +8,4 @@
 5. Longest substring without repeating characters——> Goldman sachs
 6. Permutations numbers bitwise operations—-> Amazon
 7. Trapping rain—-> Goldman sachs
+8. https://leetcode.com/discuss/interview-question/1471821/Google-screening-round-Job-scheduling/1088608 --> Google 19/04/22 (Similar to Leetcode 1094)
