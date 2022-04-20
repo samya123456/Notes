@@ -82,6 +82,7 @@
 80. Unique Paths leetcode 62
 81. Unique Paths II leetcode 63
 82. Binary Tree Zigzag Level Order Traversal leetCode 103
+83. https://leetcode.com/discuss/interview-question/1471821/Google-screening-round-Job-scheduling/1088608 --> Google 19/04/22 (Similar to Leetcode 1094)
 
 
 Quick sort
