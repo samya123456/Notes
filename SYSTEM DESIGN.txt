@@ -59,6 +59,9 @@ Shading /Horizontal partitions
 SQS
 KAFKA
 
+*trend Analysis:
+Spark/Strom
+
 *Log visualisation from database
 Grafana
 *Centralized log cluster
