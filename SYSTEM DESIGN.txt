@@ -144,3 +144,4 @@ Non functional requirement:
 6. disaster recovery: 
 7. Single point of failure: Masters/ slave architecture
 8. Fault tolerance : Read replicas in S3 +CDN
+9. Reliability : Backup Your data
