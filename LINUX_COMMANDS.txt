@@ -1,1 +1,11 @@
 
+1) ls
+2) cp
+3) pwd
+4) chmod
+5) mv
+6) sudo
+7) sudo su
+8) vim
+9) top
+10) 
