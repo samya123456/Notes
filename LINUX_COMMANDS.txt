@@ -1,18 +1,18 @@
 
-1) ls
-2) cp
-3) pwd
+1) ls ---> list all the files
+2) cp 1.txt /home/usr ---> copy file to the directory
+3) pwd  ---> present working directory
 4) chmod --> user-group-other
-5) mv
-6) sudo
-7) sudo su
-8) vim
+5) mv 1.txt /home/usr ---> move file to the directory
+6) sudo apt install apache ---> change the user to root mode if it has root permissions and execute the commands
+7) sudo su ---> change the user to root mode if it has root permissions.
+8) vim 1.txt ----> edit the file 
 9) top --> list all highest resource consuming process
-10) adduser
-11) which ls
-12) touch
-13) sudo apt update
-14) sudo apt upgrade
-15) ls -l
-16) ls -a
+10) adduser ---> add user
+11) which ls ---> which ls file is running /usr/bin/ls or /bin/ls
+12) touch 1.txt ---> create file
+13) sudo apt update ---> update all the softwares installed .
+14) sudo apt upgrade ---> update and install all the softwares installed .
+15) ls -l ---> list all the files with permissions
+16) ls -a ------> list all the files including the hidden files
 17) ps -ef ---> list all the process 
