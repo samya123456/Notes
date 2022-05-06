@@ -7,7 +7,7 @@
 6) sudo
 7) sudo su
 8) vim
-9) top
+9) top --> list all highest resource consuming process
 10) adduser
 11) which ls
 12) touch
@@ -15,3 +15,4 @@
 14) sudo apt upgrade
 15) ls -l
 16) ls -a
+17) ps -ef ---> list all the process 
