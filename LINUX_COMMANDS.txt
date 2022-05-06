@@ -16,3 +16,4 @@
 15) ls -l ---> list all the files with permissions
 16) ls -a ------> list all the files including the hidden files
 17) ps -ef ---> list all the process 
+18) rm 1.txt ---> remove the 1.txt file
