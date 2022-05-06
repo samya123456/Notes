@@ -2,10 +2,16 @@
 1) ls
 2) cp
 3) pwd
-4) chmod
+4) chmod --> user-group-other
 5) mv
 6) sudo
 7) sudo su
 8) vim
 9) top
-10) 
+10) adduser
+11) which ls
+12) touch
+13) sudo apt update
+14) sudo apt upgrade
+15) ls -l
+16) ls -a
