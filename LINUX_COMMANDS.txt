@@ -27,6 +27,7 @@
 26) ss ---> session details
 27) who ---> who else is logged into the system
 28) env ---> environment variables
+29) man <command> ---> details of the command what it'll do
 
 
 
