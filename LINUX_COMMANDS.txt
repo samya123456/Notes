@@ -28,6 +28,7 @@
 27) who ---> who else is logged into the system
 28) env ---> environment variables
 29) man <command>  / <command> --help ---> details of the command what it'll do
+30) apropos <text to search> ---> list all the suggestion commands
 
 
 
