@@ -18,6 +18,7 @@
 17) ps -ef ---> list all the process 
 18) rm 1.txt ---> remove the 1.txt file
 19) whoami ----> current logged in user
+20) $ ---> normal user . # --> root
 
 
 
