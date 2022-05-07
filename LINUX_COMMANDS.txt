@@ -17,3 +17,14 @@
 16) ls -a ------> list all the files including the hidden files
 17) ps -ef ---> list all the process 
 18) rm 1.txt ---> remove the 1.txt file
+19) whoami ----> current logged in user
+
+
+
+
+
+
+
+
+
+* All the configuration files will be there in etc folder.
