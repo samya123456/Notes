@@ -88,7 +88,8 @@
 86. Best time to buy and sell stock iii || Leetcode - 123
 87. Relative Sort Array || leetcode 1122
 89. 1155. Number of Dice Rolls With Target Sum || leetcode 1155
-90 1428. Leftmost Column with at Least a One
+90  Leftmost Column with at Least a One 1428.
+91 Majority Element II Leetcode 229
 
 
 Quick sort
