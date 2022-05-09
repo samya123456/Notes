@@ -87,10 +87,11 @@
 85. Best time to Buy and Sell Stock ii || Leetcode - 122
 86. Best time to buy and sell stock iii || Leetcode - 123
 87. Relative Sort Array || leetcode 1122
-89. 1155. Number of Dice Rolls With Target Sum || leetcode 1155
-90  Leftmost Column with at Least a One 1428.
-91 Majority Element II Leetcode 229
-92  Minimum Time Visiting All Points 1266.
+89. Number of Dice Rolls With Target Sum || leetcode 1155
+90. Leftmost Column with at Least a One 1428.
+91. Majority Element II Leetcode 229
+92. Minimum Time Visiting All Points 1266.
+93. network delay time** LeetCode 743 (Dijkstra algorithm)
 
 
 Quick sort
