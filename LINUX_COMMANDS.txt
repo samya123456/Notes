@@ -32,6 +32,7 @@
 31) usermod -->user modification
 32) su <username> ---> switch user
 32) su - ---> switch user root
+33) usermod -G root <username> --> to include user as root
 
 
 
