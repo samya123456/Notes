@@ -31,6 +31,7 @@
 30) apropos <text to search> ---> list all the suggestion commands
 31) usermod -->user modification
 32) su <username> ---> switch user
+32) su - ---> switch user root
 
 
 
