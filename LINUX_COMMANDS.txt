@@ -34,8 +34,10 @@
 32) su - ---> switch user root
 33) usermod -G root <username> --> to include user as root
 34) userdel ----> delete user
-35) apt --fix-broken install <softwere name> --> install inter dependent packages
-
+35) apt --fix-broken install <software name> --> install inter dependent packages
+36) apt list --installed | grep ^nmap ---> list all the packages installed.
+37) apt remove <software name> ---> remove installed software but keeps the user data.
+38) purge <software name> --> remove installed software WITHOUT keeping the user data.
 
 
 
