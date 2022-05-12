@@ -25,7 +25,7 @@
 23. Sum of pair in array *
 24. Rotten oranges *
 25. Coin change *
-26. Snake and ladders
+26. Snake and ladders !!
 27. Arrange 0 1 2 in array *
 28. Celebrity problem
 29. Doubly Linkedlist
