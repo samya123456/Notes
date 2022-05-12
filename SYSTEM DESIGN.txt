@@ -14,6 +14,9 @@ WhatsApp
 *Entry point to any app or website:
 
 API GATEWAY ->Session —-> authentication / authorisation micro service
+**API GATEWAY have timeout time for 29 sec.
+
+
 
 *Direct messaging:
 Xmpp protocol/ TCP
