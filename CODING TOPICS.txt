@@ -26,7 +26,7 @@
 23. Sum of pair in array *
 24. Rotten oranges *
 25. Coin change *
-26. Snake and ladders !!
+26. Snake and ladders 
 27. Arrange 0 1 2 in array *
 28. Celebrity problem
 29. Doubly Linkedlist
@@ -43,7 +43,7 @@
 40. Minimum number of swap to sort an array *
 41. Number of Island 
 42. Laregest sub array Sum Equals 0* 
-42. Laregest Sub array Sum Equals K  leetcode 560
+42. Laregest Sub array Sum Equals K  leetcode 560 !!
 43. Inversion of an array - geeksforgeeks
 44. Maximum path sum 2D array - geeksforgeeks
 45. Boundary traversal of b tree
