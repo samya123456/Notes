@@ -43,7 +43,7 @@
 40. Minimum number of swap to sort an array *
 41. Number of Island 
 42. Laregest sub array Sum Equals 0* 
-42. Laregest Sub array Sum Equals K  leetcode 560 !!
+42. Laregest Sub array Sum Equals K  leetcode 560 
 43. Inversion of an array - geeksforgeeks
 44. Maximum path sum 2D array - geeksforgeeks
 45. Boundary traversal of b tree
@@ -52,7 +52,7 @@
 48. Repeated DNA Sequences
 49. Kth smallest element BST —> in order travarsal in BST will give us smallest elements index wise
 50. Bit wise operation: get all permutations of 1,2,3
-51. Heap implementation: insert, delete, heap property, heapify , min heap and max heap implementation *****
+51. Heap implementation: insert, delete, heap property, heapify , min heap and max heap implementation ***** !!
 52. Random pointer in linked list
 53. Delete node from linked list without head
 54. Merge sort linked list
