@@ -1,0 +1,5 @@
+Microsoft:
+----------
+1) Design Elevator
+2) Design infinite tic tac toe
+3) Design auto-complete feature
