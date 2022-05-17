@@ -56,7 +56,7 @@
 52. Random pointer in linked list
 53. Delete node from linked list without head
 54. Merge sort linked list
-55. Minimum window substring !!
+55. Minimum window substring 
 56. Plus one ~~
 57. Remove duplicate from sorted array 2 ~~
 58. Climbing stairs ~~
@@ -72,7 +72,7 @@
 68. Find peak elements
 69. Majority element
 70. Rotate array*** #
-71. Tree with right sublink — leetcode 116( Microsoft)
+71. Tree with right sublink — leetcode 116( Microsoft) !!
 72. Right view of Binary tree — leetcode 199
 73. Search a 2D matrix II - leetcode 240#
 74. Robbing houses - (pegasystems)
