@@ -96,6 +96,7 @@
 93. network delay time** LeetCode 743 (Dijkstra algorithm)
 94. Maximize Distance to Closest Person Leetcode 849.
 95. Reorder Routes to Make All Paths Lead to the City Zero Leetcode 1466
+96. Word Break Leetcode 139
 
 
 Quick sort
