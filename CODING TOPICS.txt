@@ -76,7 +76,7 @@
 72. Right view of Binary tree — leetcode 199
 73. Search a 2D matrix II - leetcode 240#
 74. Robbing houses - (pegasystems)
-75. Decode string characters with aabbccc —-> a2b2c3 ( Apple, Goldman sachs) https://practice.geeksforgeeks.org/problems/run-length-encoding !!
+75. Decode string characters with aabbccc —-> a2b2c3 ( Apple, Goldman sachs) https://practice.geeksforgeeks.org/problems/run-length-encoding 
 76. Sort 2D array based on row / columns
 77. Subarray Sum Equals K  leetcode 560
 78. 3Sum
@@ -84,7 +84,7 @@
 80. Unique Paths leetcode 62
 81. Unique Paths II leetcode 63
 82. Binary Tree Zigzag Level Order Traversal leetCode 103
-83. https://leetcode.com/discuss/interview-question/1471821/Google-screening-round-Job-scheduling/1088608 --> Google 19/04/22 (Similar to Leetcode 1094)
+83. https://leetcode.com/discuss/interview-question/1471821/Google-screening-round-Job-scheduling/1088608 --> Google 19/04/22 (Similar to Leetcode 1094) !!
 84. leetcode 1386 Cinema Seat Allocation
 85. Best time to Buy and Sell Stock ii || Leetcode - 122
 86. Best time to buy and sell stock iii || Leetcode - 123
