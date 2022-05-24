@@ -8,4 +8,4 @@ Factory
 Abstruct factory
 Builder 
 Decorator - attach a flexible additional responsibilities to an object dynamically
-strtegy
+Strategy - defines a family of functionality, encapsulate each one, and make them interchangeable.
