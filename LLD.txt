@@ -7,5 +7,5 @@ Microsoft:
 Factory
 Abstruct factory
 Builder 
-Decorator
+Decorator - attach a flexible additional responsibilities to an object dynamically
 strtegy
