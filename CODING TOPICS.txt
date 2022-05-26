@@ -14,12 +14,12 @@
 12. parenthesis checker
 12. Longest Valid Parentheses leetcode 32 @
 13. Generate parenthesis 
-14. Container with most water
+14. Container with most water @
 15. Trapping rain 
-16. Longest substring without repeating characters 
+16. Longest substring without repeating characters  @
 17. Zigzag conversation 
-18. Cutting rod 
-19. Decode ways
+18. Cutting rod @
+19. Decode ways @
 20. Jump game
 21. rotate image
 22. anagram sentence 
