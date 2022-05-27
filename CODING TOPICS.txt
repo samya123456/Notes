@@ -10,7 +10,7 @@
 8. Permutations string 
 9. Permutation number 
 10. Fibonacci series
-11. Spyral rotation of array 2D
+11. Spyral rotation of array 2D @
 12. parenthesis checker
 12. Longest Valid Parentheses leetcode 32 @
 13. Generate parenthesis 
