@@ -34,19 +34,19 @@
 31. Maximum path sum 2D array 
 32. Get minimum value in stack in O(1) time and space complexity @
 33. Write a data structure to insert delete and search in O(1) time complexity 
-34. Lowest common Ancestor of B tree
+34. Lowest common Ancestor of B tree @
 35. Distance between two Nodes of a B tree @
 36. Kth largest element in an array with O(n) time complexity @
 37. Find the element appear once and other elements appear three times
 38. Insert update and delete in O(1) time complexity 
 39. Print even odd in two different Threads
-40. Minimum number of swap to sort an array 
+40. Minimum number of swap to sort an array  @
 41. Number of Island  @
 42. Laregest sub array Sum Equals 0 @
 42. Laregest Sub array Sum Equals K  leetcode 560 @
 43. Inversion of an array - geeksforgeeks @
 44. Maximum path sum 2D array - geeksforgeeks
-45. Boundary traversal of b tree
+45. Boundary traversal of b tree @
 46. Find elements in array such that a+b=c+d @
 47. Coin max game theory
 48. Repeated DNA Sequences
@@ -54,7 +54,7 @@
 50. Bit wise operation: get all permutations of 1,2,3
 51. Heap implementation: insert, delete, heap property, heapify , min heap and max heap implementation 
 52. Random pointer in linked list @
-53. Delete node from linked list without head
+53. Delete node from linked list without head @
 54. Merge sort linked list
 55. Minimum window substring @
 56. Plus one @
@@ -72,11 +72,11 @@
 68. Find peak elements @
 69. Majority element
 70. Rotate array***  @
-71. Tree with right sublink — leetcode 116( Microsoft) 
+71. Tree with right sublink — leetcode 116( Microsoft)  @
 72. Right view of Binary tree — leetcode 199
-73. Search a 2D matrix II - leetcode 240
-74. Robbing houses - (pegasystems)
-75. Decode string characters with aabbccc —-> a2b2c3 ( Apple, Goldman sachs) https://practice.geeksforgeeks.org/problems/run-length-encoding 
+73. Search a 2D matrix II - leetcode 240 @
+74. Robbing houses - (pegasystems) @
+75. Decode string characters with aabbccc —-> a2b2c3 ( Apple, Goldman sachs) https://practice.geeksforgeeks.org/problems/run-length-encoding @
 76. Sort 2D array based on row / columns
 77. Subarray Sum Equals K  leetcode 560 @
 78. 3Sum
