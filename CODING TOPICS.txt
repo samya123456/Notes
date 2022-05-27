@@ -28,48 +28,48 @@
 25. Coin change @
 26. Snake and ladders 
 27. Arrange 0 1 2 in array @
-28. Celebrity problem
+28. Celebrity problem @
 29. Doubly Linkedlist
 30. Spiral rotation of tree
 31. Maximum path sum 2D array 
-32. Get minimum value in stack in O(1) time and space complexity 
+32. Get minimum value in stack in O(1) time and space complexity @
 33. Write a data structure to insert delete and search in O(1) time complexity 
 34. Lowest common Ancestor of B tree
-35. Distance between two Nodes of a B tree
-36. Kth largest element in an array with O(n) time complexity 
+35. Distance between two Nodes of a B tree @
+36. Kth largest element in an array with O(n) time complexity @
 37. Find the element appear once and other elements appear three times
 38. Insert update and delete in O(1) time complexity 
 39. Print even odd in two different Threads
 40. Minimum number of swap to sort an array 
-41. Number of Island 
-42. Laregest sub array Sum Equals 0
-42. Laregest Sub array Sum Equals K  leetcode 560 
-43. Inversion of an array - geeksforgeeks
+41. Number of Island  @
+42. Laregest sub array Sum Equals 0 @
+42. Laregest Sub array Sum Equals K  leetcode 560 @
+43. Inversion of an array - geeksforgeeks @
 44. Maximum path sum 2D array - geeksforgeeks
 45. Boundary traversal of b tree
-46. Find elements in array such that a+b=c+d
+46. Find elements in array such that a+b=c+d @
 47. Coin max game theory
 48. Repeated DNA Sequences
 49. Kth smallest element BST —> in order travarsal in BST will give us smallest elements index wise
 50. Bit wise operation: get all permutations of 1,2,3
 51. Heap implementation: insert, delete, heap property, heapify , min heap and max heap implementation 
-52. Random pointer in linked list
+52. Random pointer in linked list @
 53. Delete node from linked list without head
 54. Merge sort linked list
-55. Minimum window substring 
-56. Plus one 
-57. Remove duplicate from sorted array 2 
-58. Climbing stairs 
-59. Square root 
-60. Pow (x,n) 
-61. Longest common prefix
-62. KMP algorithm
+55. Minimum window substring @
+56. Plus one @
+57. Remove duplicate from sorted array 2 @
+58. Climbing stairs @
+59. Square root @
+60. Pow (x,n) @
+61. Longest common prefix @
+62. KMP algorithm @
 63. Search insert 
-64. Jump game 2
+64. Jump game 2 @
 65. Add binary
 66. Grey code
 67. Isomorphic String
-68. Find peak elements
+68. Find peak elements @
 69. Majority element
 70. Rotate array***  @
 71. Tree with right sublink — leetcode 116( Microsoft) 
@@ -78,7 +78,7 @@
 74. Robbing houses - (pegasystems)
 75. Decode string characters with aabbccc —-> a2b2c3 ( Apple, Goldman sachs) https://practice.geeksforgeeks.org/problems/run-length-encoding 
 76. Sort 2D array based on row / columns
-77. Subarray Sum Equals K  leetcode 560
+77. Subarray Sum Equals K  leetcode 560 @
 78. 3Sum
 79. Regular Expression Matching leetcode 10
 80. Unique Paths leetcode 62
