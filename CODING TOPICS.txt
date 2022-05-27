@@ -21,13 +21,13 @@
 18. Cutting rod @
 19. Decode ways @
 20. Jump game
-21. rotate image
-22. anagram sentence 
+21. rotate image @
+22. anagram sentence @
 23. Sum of pair in array 
 24. Rotten oranges 
-25. Coin change 
+25. Coin change @
 26. Snake and ladders 
-27. Arrange 0 1 2 in array 
+27. Arrange 0 1 2 in array @
 28. Celebrity problem
 29. Doubly Linkedlist
 30. Spiral rotation of tree
@@ -71,7 +71,7 @@
 67. Isomorphic String
 68. Find peak elements
 69. Majority element
-70. Rotate array*** 
+70. Rotate array***  @
 71. Tree with right sublink — leetcode 116( Microsoft) 
 72. Right view of Binary tree — leetcode 199
 73. Search a 2D matrix II - leetcode 240
