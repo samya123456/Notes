@@ -4,6 +4,9 @@ Tinder
 Stock price exchange
 Logging system
 WhatsApp
+tiktok
+amazon
+
 
 
 
