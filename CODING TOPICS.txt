@@ -98,6 +98,7 @@
 95. Reorder Routes to Make All Paths Lead to the City Zero Leetcode 1466
 96. Word Break Leetcode 139
 97. Delete Node in a Linked List Leetcode 237 (Microsoft)
+98. Kth Smallest Element in a Sorted Matrix
 
 
 Quick sort
