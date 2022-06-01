@@ -6,6 +6,8 @@ Logging system
 WhatsApp
 tiktok
 amazon
+twitter
+instagram
 
 
 
