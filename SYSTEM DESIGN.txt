@@ -8,6 +8,7 @@ tiktok
 amazon
 twitter
 instagram
+uber
 
 
 
