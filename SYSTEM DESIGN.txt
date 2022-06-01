@@ -1,12 +1,12 @@
 SYSTEM DESIGN TOPICS
 
-Tinder
+Tinder @
 Stock price exchange
 Logging system
-WhatsApp
-tiktok
+WhatsApp @
+tiktok @
 amazon
-twitter
+twitter @
 instagram
 uber
 
