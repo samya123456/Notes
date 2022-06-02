@@ -30,7 +30,6 @@ Extensible messaging presence protocol
 Push to update/ get messages
 
 whatsApp:
---------
 Language == Alang
 10 million connections per server
 OS == FreeBSD
@@ -39,7 +38,6 @@ Webserver == YAWS
 
 
 OLA/UBER:
----------
 Google S2 library created 1km/1km small blocks and provides a unique id to that in google map.
 =================================================================================================
 *Low latency:
