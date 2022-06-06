@@ -38,6 +38,9 @@
 36) apt list --installed | grep ^nmap ---> list all the packages installed.
 37) apt remove <software name> ---> remove installed software but keeps the user data.
 38) purge <software name> --> remove installed software WITHOUT keeping the user data.
+39) free -m : available memory in MB.
+40) vmstat : memory statistics.
+41) sar: cpu useage.
 
 
 
