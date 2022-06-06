@@ -41,6 +41,7 @@
 39) free -m : available memory in MB.
 40) vmstat : memory statistics.
 41) sar: cpu useage.
+42) sudo systemctl stop/start/staus sshd  ---> stop/status/view status of a deamon process
 
 
 
