@@ -45,7 +45,8 @@
 43) sudo systemctl enable/disable  sshd ---> enable /disable processes after restart
 44) sudo systemctl list-units --all ---> list all the  deamons. **note it'll only list that are parsed into the memory i.e not enabled during the system start up(Like nginx it'll NOT include)
 45) sudo systemctl list-unit-files --all -->  list all the  deamons.(Like nginx it'll  include)
-46) journald --> logs all the events run by systemd
+46) journald --> deamon that logs all the events run by systemd.
+47) journalctl -xe ---> read logs of all the events run by systemd.
 
 
 
