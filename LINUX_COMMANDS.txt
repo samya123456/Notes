@@ -42,7 +42,7 @@
 40) vmstat : memory statistics.
 41) sar: cpu useage.
 42) sudo systemctl stop/start/staus/reload/restart/reload-or-restart sshd  ---> stop/status/view status of a deamon process
-
+43) sudo systemctl enable/disable  sshd ---> enable /disable processes after restart
 
 
 
