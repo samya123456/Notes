@@ -47,7 +47,8 @@
 45) sudo systemctl list-unit-files --all -->  list all the  deamons.(Like nginx it'll  include)
 46) journald --> deamon that logs all the events run by systemd.
 47) journalctl -xe ---> read logs of all the events run by systemd.
-
+48) ln -s file1 file2 ----> creating the soft link(shortcut) of file1 and name it file2. 
+49) ll -i --> find the inode(index to the karnel) of a file.
 
 
 
