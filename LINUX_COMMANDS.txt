@@ -60,7 +60,7 @@
 
 * All the configuration files will be there in etc folder.
 1) basic commands
-2) packages
+2) repository
 3) networking
 4) volume
 5) security
