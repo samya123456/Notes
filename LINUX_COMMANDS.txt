@@ -47,9 +47,20 @@
 45) sudo systemctl list-unit-files --all -->  list all the  deamons.(Like nginx it'll  include)
 46) journald --> deamon that logs all the events run by systemd.
 47) journalctl -xe ---> read logs of all the events run by systemd.
-48) ln -s file1 file2 ----> creating the soft link(shortcut) of file1 and name it file2. 
-49) ll -i --> find the inode(index to the karnel) of a file.
+48) ln file1 file3 --> creating the hard link of file1 and name it file3. 
+49) ln -s file1 file2 ----> creating the soft link(shortcut) of file1 and name it file2. 
+50) ll -i --> find the inode(index to the karnel) of a file.
+   ** hard link can of be associated with same system and link can be associated with inside and outside of system. inode number is same as the file and it's hadr         link but it's different for it's softlink.
+ 51) ls > file1 ---> create the file1  and override the output in it .
+ 52)  ls >> file1 ---> create the file1  and append the output in it .
+ 53) grep -v what file1 --> delete all the lines containing word 'what' ,we can use wildcards like 'wha*' to do that
+ 54) zombie process
 
 
 
 * All the configuration files will be there in etc folder.
+1) basic commands
+2) packages
+3) networking
+4) volume
+5) security
