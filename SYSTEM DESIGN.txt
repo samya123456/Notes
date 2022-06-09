@@ -1,19 +1,22 @@
 SYSTEM DESIGN TOPICS
 
-Tinder @
+Tinder 
 Stock price exchange
 Logging system
-WhatsApp @
-tiktok @
+WhatsApp  -----> Google /pegasystems
+tiktok 
 amazon
-twitter @
-instagram @
+twitter 
+instagram 
 uber
+web scroller ---> microsoft
+rate limiter ----->amazon
+auto complete ----->amazon
 
 
 
-
-
+*redis row expiration policy.
+*chaos Engineering
 
 
 ===============================================================================================
