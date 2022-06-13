@@ -33,6 +33,7 @@ AnnotationConfigApplicationContext
 @Value —>inject the value
 @PropertySource
 @Required
+@Profile
 
 
 How to create an Annotations
