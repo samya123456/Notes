@@ -6,6 +6,6 @@ Microsoft:
 
 Factory
 Abstruct factory
-Builder 
+Builder - construct a complex object from simple objects using step-by-step approach
 Decorator - attach a flexible additional responsibilities to an object dynamically
 Strategy - defines a family of functionality, encapsulate each one, and make them interchangeable.
