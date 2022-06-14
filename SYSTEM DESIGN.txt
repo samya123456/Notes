@@ -17,7 +17,7 @@ auto complete ----->amazon
 
 *redis row expiration policy.
 *chaos Engineering
-
+*GraphQL
 
 ===============================================================================================
 *Entry point to any app or website:
