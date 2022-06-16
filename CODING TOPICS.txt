@@ -71,6 +71,7 @@
 67. Isomorphic String
 68. Find peak elements 
 69. Majority element 
+69. Majority Element II Leetcode 229
 70. Rotate array***  
 71. Tree with right sublink — leetcode 116( Microsoft)  
 72. Right view of Binary tree — leetcode 199 
@@ -91,7 +92,6 @@
 87. Relative Sort Array || leetcode 1122
 89. Number of Dice Rolls With Target Sum || leetcode 1155
 90. Leftmost Column with at Least a One 1428.
-91. Majority Element II Leetcode 229
 92. Minimum Time Visiting All Points 1266.
 93. network delay time** LeetCode 743 (Dijkstra algorithm)
 94. Maximize Distance to Closest Person Leetcode 849.
