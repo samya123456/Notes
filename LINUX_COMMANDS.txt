@@ -54,7 +54,9 @@
  51) ls > file1 ---> create the file1  and override the output in it .
  52)  ls >> file1 ---> create the file1  and append the output in it .
  53) grep -v what file1 --> delete all the lines containing word 'what' ,we can use wildcards like 'wha*' to do that
- 54) zombie process
+ 54) zombie process ---> Apple
+ 55) iNode in linux -->Apple
+ 56) we have two 2 gb hard drive and we have to insert a 3gb file, how to do that. ----> Apple
 
 
 
