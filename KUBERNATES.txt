@@ -103,7 +103,7 @@ Master Node:
 2. Scheduler : on which node the task will be performed
 3. Controller manager
 4. etcd (key value pair database)- maintain the entire state of the cluster. When we create cluster first we create the cluster of etcd with minimum of 3 nodes for HA. These nodes talk to each other to make the data in sync is called RAFT.
-5. Addons: CNI , coreDNS
+5. Addons: CNI , coreDNS,Ingress
 
 Controller Manager:
 
