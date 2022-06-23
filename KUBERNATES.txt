@@ -201,6 +201,7 @@ Commands:
  kubectl api-resources --> all the api calls available for kubectl
  kubectl explain pod ---> api spec for creating a pod
  kubectl describe nodes ----> details of the node
+ kubectl exec -it my-app1-5697f9c4cd-td8xr  /bin/sh
  --------------------*********
 create any k8s yaml file:
 --------------------------*******
