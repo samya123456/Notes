@@ -200,4 +200,10 @@ Commands:
 ---------
  kubectl api-resources --> all the api calls available for kubectl
  kubectl explain pod ---> api spec for creating a pod
-  kubectl describe nodes ----> details of the node
+ kubectl describe nodes ----> details of the node
+ --------------------*********
+create any k8s yaml file:
+--------------------------*******
+kubectl create deployment my-app1 \
+ --image=nginx \
+ --dry-run=client -o yaml > deploy.yaml
