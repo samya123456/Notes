@@ -187,3 +187,11 @@ Pod To Pod Communication:
 1) with in a pod betwn two cointainers ---> localhost
 2) two pods in same node ------>Bridge topology
 3) two pods in two different nodes -------> layer 2 and 3 connectivity(Like Overlay networking /security group + NACL)
+
+
+Packages :
+1) ContainerD
+2) kubelet
+3) kubeadm --> creates kubeconfig
+4) kubectl
+5) for pod networking -->calico
