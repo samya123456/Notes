@@ -195,3 +195,8 @@ Packages :
 3) kubeadm --> creates kubeconfig
 4) kubectl
 5) for pod networking -->calico
+
+Commands:
+---------
+ kubectl api-resources --> all the api calls available for kubectl
+ kubectl explain pod ---> api spec for creating a pod
