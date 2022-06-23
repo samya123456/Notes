@@ -170,6 +170,8 @@ POD                 CONTROLLER               SERVICES                STORAGE
                     ReplicaSet
                     Deployment
 
+POD Creation Diagram:
+---------------------
 kubectl create deployment with 3 replicas ------> request submitted to API Server ----> 
 API server store the Info in etcd -----> Controller manager will create the repila set (3 pods)--->
 request submitted to schedular ---> 
@@ -177,3 +179,11 @@ schedular will submit the info that the pod to be created in perticular nodes to
 API server will store the info of which pod is in which node in etcd ----> 
 kubelet will ask API server "Hey is there any task for me" ---> 
 kubelet will spin up the Pod in the respective Nodes -------> Controller manager is monitoring the sate of the cluster
+
+
+Pod To Pod Communication:
+--------------------------
+
+1) with in a pod betwn two cointainers ---> localhost
+2) two pods in same node ------>Bridge topology
+3) two pods in two different nodes -------> layer 2 and 3 connectivity(Like Overlay networking /security group + NACL)
