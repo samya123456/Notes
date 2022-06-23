@@ -1,0 +1,41 @@
+
+
+Docker Engine:
+-------------
+https://app.pluralsight.com/course-player?clipId=4814282c-55e0-45b4-ac7f-c6b4c10173e6
+
+
+HeapDump Java:
+-------------
+https://app.pluralsight.com/library/courses/java-understanding-solving-memory-problems/table-of-contents
+
+
+kubernates logging:
+------------------
+https://app.pluralsight.com/library/courses/managing-advanced-kubernetes-logging-tracing/table-of-contents
+
+
+kubernates Core:
+----------------
+https://app.pluralsight.com/library/courses/kubernetes-developers-deploying-code/table-of-contents
+
+
+
+Docker overall:
+--------------
+https://app.pluralsight.com/library/courses/containerizing-software-application-docker/table-of-contents
+
+kubernates Services:
+--------------------
+https://app.pluralsight.com/library/courses/configuring-managing-kubernetes-networking-services-ingress/table-of-contents
+
+
+Thread Executor service:
+------------------------
+https://app.pluralsight.com/library/courses/java-concurrent-patterns-advanced/table-of-contents
+
+
+
+Thread Basics:
+--------------
+https://app.pluralsight.com/library/courses/java-patterns-concurrency-multi-threading/table-of-contents
