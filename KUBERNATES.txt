@@ -208,3 +208,10 @@ create any k8s yaml file:
 kubectl create deployment my-app1 \
  --image=nginx \
  --dry-run=client -o yaml > deploy.yaml
+
+
+
+kubectl create service clusterip NAME [--tcp=<port>:<targetPort>] [--dry-run=server|client|none] [options]
+Example :
+
+kubectl create service nodeport ns-service --tcp=80:80 --dry-run=client -o yaml
