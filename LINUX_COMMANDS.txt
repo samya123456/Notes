@@ -1,4 +1,3 @@
-
 1) ls ---> list all the files
 2) cp 1.txt /home/usr ---> copy file to the directory
 3) pwd  ---> present working directory
@@ -67,7 +66,8 @@ syslogs ---> to check system logs
 
 create volume:
 ---------------
-create Physical volume from the available disks -----> attach it with volume group ---> now we can create multiple logical volume from volume group
+create Physical volume from the available disks -----> attach it with volume group ---> now we can create multiple logical volume from volume group and
+the default path of the logical volume /dev/<group_name>/<logical_volume_name> ---> create the file system of the logical volume ---> mount the logical volume into a directory
 
 * All the configuration files will be there in etc folder.
 1) basic commands
