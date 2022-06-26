@@ -54,6 +54,8 @@
  52)  ls >> file1 ---> create the file1  and append the output in it .
  53) grep -v what file1 --> delete all the lines containing word 'what' ,we can use wildcards like 'wha*' to do that
  54) ls file.txt not-here 1>out.txt 2> out.err  ----> 1 is standard output store in out.txt and 2 is standard output store in out.err
+55)ip addr -->see the ip address
+56)hostname ---> see the hostname
  
  
  interview questions:
@@ -68,6 +70,43 @@ create volume:
 ---------------
 create Physical volume from the available disks -----> attach it with volume group ---> now we can create multiple logical volume from volume group and
 the default path of the logical volume /dev/<group_name>/<logical_volume_name> ---> create the file system of the logical volume ---> mount the logical volume into a directory
+
+Networking:
+-----------
+Ip range:
+---------
+class A : 1 -->127.0            
+class B : 128.0 -->191.255
+class C : 192.0.0 ---> 233.255.255
+
+class    :   subnet mask
+class A  --> 255.0.0.0
+class B  --> 255.255.0.0
+class C  --> 255.255.255.0
+
+/etc/hosts ----> contains all the ip and FQDN names ex :
+	1.2.3.5 company.com
+	
+/etc/nsswitch.conf	
+
+nss ---> name server switch
+it controll search order for resolutions in DNS
+
+/etc/services
+
+all ports are defined : 80 --> http, 443 -->https , 22 --> ssh etc ...
+
+assign a static ip address :
+/etc/sysconfig/network-scripts/ifcfg-ens3
+
+manually assigning ip address
+ifconfig eth0 <ip_addr>
+
+to bring the network interface up
+ifconfig eth0 up
+
+GUI tool to edit network interface:
+nmtui
 
 * All the configuration files will be there in etc folder.
 1) basic commands
