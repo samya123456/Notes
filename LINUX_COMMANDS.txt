@@ -108,6 +108,33 @@ ifconfig eth0 up
 GUI tool to edit network interface:
 nmtui
 
+
+testing connectivity with ping:
+------------------------------
+ping -c 3 google.com
+
+ping command doesn't tell anything about the path or the route the packets take, it can be done using traceroute.
+traceroute(requires root privileges) : sends 3 packets to each hop that the route path taken.
+
+another option is tracepath
+tracepath: donot require root previlages
+
+
+netstat: 
+ -n :display numaric address and port
+ -r : display route table
+ -ntlp : displays all the listening to TCP Port
+
+tcpdump
+
+telnet:
+ telnet can be used to ping any host with specified port.
+ Ex - if you want to do telnet on 80 http port for google.com 
+ telnet google.com 80 GET /
+ res : http/1.0.0 200 OK
+ 
+ https://ibm-learning.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/
+
 * All the configuration files will be there in etc folder.
 1) basic commands
 2) repository
