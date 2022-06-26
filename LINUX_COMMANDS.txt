@@ -133,6 +133,47 @@ telnet:
  telnet google.com 80 GET /
  res : http/1.0.0 200 OK
  
+ 
+Security:
+--------
+
+	Firewall :
+	---------
+
+	/etc/sysconfig/iptables(RHEL) ---> firewall can be configured inside iptables. iptables communicates with the net filter module in Kernal to implement
+	firewall
+	*firewalld --> deamon that enables firewall anytime
+
+	*start firewalld:
+	 systemctl start firewalld
+	 
+	*we can specify inbound and outbound rules in iptables 
+
+	*in runtime if you want to allow/deny then use firewalld.
+
+
+	Server:
+	--------
+	
+	Physical Security:
+	-----------------
+	1) keep you softwares up-to-date : yum update
+	2) minimal privileges to the users
+	3) use encriptions
+	4) Avoide non secure Protocols
+	5) minimum number of services per server
+	6) enforcing good password policy .for password expiry use chage command .
+										change  /etc/login.defs file.
+	7) disable root login. 
+        /etc/ssh/sshd_conf
+    8) defend ssh attack 
+       /etc/hosts.deny
+		change default ssh port 22.
+	9) enable security scan (nmap)
+	10) additional security tools
+	    wirehark
+	11) regular back up : amanda
+ 
  https://ibm-learning.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/
 
 * All the configuration files will be there in etc folder.
