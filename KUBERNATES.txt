@@ -215,3 +215,5 @@ kubectl create service clusterip NAME [--tcp=<port>:<targetPort>] [--dry-run=ser
 Example :
 
 kubectl create service nodeport ns-service --tcp=80:80 --dry-run=client -o yaml
+
+In Kubernetes, container logs are written to /var/log/pods/*.log on the node. Kubelet and container runtime write their own logs to /var/logs
