@@ -25,6 +25,7 @@
 25) netstat ---> status of your network
 26) ss ---> session details
 27) who ---> who else is logged into the system
+27) last ----> last logged in users with status
 28) env ---> environment variables
 29) man <command>  / <command> --help ---> details of the command what it'll do
 30) apropos <text to search> ---> list all the suggestion commands
@@ -56,6 +57,11 @@
  54) ls file.txt not-here 1>out.txt 2> out.err  ----> 1 is standard output store in out.txt and 2 is standard output store in out.err
 55)ip addr -->see the ip address
 56)hostname ---> see the hostname
+57)  ls | sort | uniq ----> sort and unique
+
+talking to users:
+----------------
+wall ---> broadcast a message to everyone logged in the linux
  
  
  interview questions:
@@ -182,3 +188,38 @@ Security:
 3) networking
 4) volume
 5) security
+
+
+RSYNC:
+------
+rsync org/* bkp  ---> only copy directory not the sub-directory
+rsync -r org/ bkp ---> copy directory and  the sub-directories
+rsync -a org/ bkp ---> a archive . it's the best as it copy with all permissions,group,user,timestamp
+rsync -av --dry-run org/ bkp/ ---> display all the files that will be synced without actually synching them.
+rsync -av --delete org/ bkp/ ---> it'll copy all the files in bkp from org and it'll also delete any extra files available in bkp folder
+
+rsync over the network :
+ rsync -zaP ~/Project/my_site samya@10.12.0.1:~/project ---> z --> compress , a --> archive , P --> show progress 
+
+CRON:
+-----
+crontab -e ---> open the editor for crontab
+min(0-59)| hour(0-23)| day of month(1-31)| month (1-12)| day of week(0-6) 
+* * * * * --> every min all hour all days all month all day of week
+* * 1,15 * * --> every min all hour 1st and 15th day all month all day of week
+*/10 * * * * ---> every 10 mins all hour all days all month all day of week
+* 0-5 * * * --> every min 0 to 5 hour all days all month all day of week
+
+
+PROC:
+-----
+df -ah 
+proc filesystem is a filesystem mounted at /proc in linux where kernal post information about currently running stopped or active processes.
+
+ls -alh /proc
+stored PID as a directory
+
+/proc/1 --> cwd --> current working directory info
+			maps --> memory mapping info
+			cmd --> what command the process is currently executing
+			environ --> environment variables
