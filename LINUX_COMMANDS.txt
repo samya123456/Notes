@@ -189,7 +189,9 @@ Security:
 4) volume
 5) security
 
-
+CREATE MANUAL REPO:
+------------------
+https://ibm-learning.udemy.com/course/learn-linux-administration-and-linux-command-line-skills/learn/lecture/15527798#overview
 RSYNC:
 ------
 rsync org/* bkp  ---> only copy directory not the sub-directory
@@ -223,3 +225,38 @@ stored PID as a directory
 			maps --> memory mapping info
 			cmd --> what command the process is currently executing
 			environ --> environment variables
+			
+SYSTEM PERFORMANCE:
+------------------
+make a process background process --> add & . Example firefox&
+
+change the nice value --> renice -n -12 <PID>  --> -ve nice value means higher priority
+
+vmstat --> large r value is cause of concern
+iostat --> disk utilizations
+sar -n DEV 1 ---> network stat
+strace -tp | head 1 --> application monitoring
+
+REPO:
+-----
+
+cd /etc/yum.repos.d -->list of all repos file
+yum repolist-->list all the repo 
+
+Create local REPO:
+------------------
+1) yum install -y yum-utils
+2) mkdir /repos
+3) yumdownloader -v vsftpd
+4) yum install -y createrepo
+5) createrepo /repos
+6) create file local.repo 
+	local.repo
+	[localrepo]
+	name=repo
+	baseurl =file://repo
+	gpgcheck=0
+	enable=1
+
+7) move the local.repo to /etc/yum.repos.d
+8) check with yum repolist
