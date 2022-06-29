@@ -77,8 +77,24 @@ create volume:
 create Physical volume from the available disks -----> attach it with volume group ---> now we can create multiple logical volume from volume group and
 the default path of the logical volume /dev/<group_name>/<logical_volume_name> ---> create the file system of the logical volume ---> mount the logical volume into a directory
 
-Networking:
+(https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/5720634#overview)
+* if partition is mounted in /home all the subdirectories partition will be available in the sub-directory of /home
+* if you mount volume in /home and unmount and mount in new directory , all the data will be available in the new mount point.
+* file are created in /home when /home is not mounted , whose files will not be available after /home is mounted.
+
+fdisk : create and modify partitions
+fdisk -l : list of available devices
+fdisk -n : new partition
+mkfs -t <type> DEVICE --> create new file system (type : ext3 ,ext4 ,xfs) : mkfs -t ext3 /dev/std2
+mount /dev/std2 /opt --> mount /dev/std2 into /opt folder
+df -h -- disk free space
+*/etc/fstab  --> we have to make entry to /etc/fstab to persist the mount after reboot.
+umount <mount_path_or_device_path> /opt or /dev/std2
+
+
+Networking: (https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/5720646#overview)
 -----------
+ping ,netstar,telnet, tcpdump,traceroute,nmtui
 Ip range:
 ---------
 class A : 1 -->127.0            
@@ -94,6 +110,9 @@ class C  --> 255.255.255.0
 	1.2.3.5 company.com
 	
 /etc/nsswitch.conf	
+
+ip addr : lo (loopback device : special ip address linux uses to communicate with itself)(127.0.0.1)
+		  eth0: actual harddrive device(192.168.1.122)
 
 nss ---> name server switch
 it controll search order for resolutions in DNS
@@ -127,7 +146,8 @@ tracepath: donot require root previlages
 
 
 netstat: 
- -n :display numaric address and port
+ -i : display network interface
+ -n : display numaric address and port
  -r : display route table
  -ntlp : displays all the listening to TCP Port
 
@@ -140,7 +160,7 @@ telnet:
  res : http/1.0.0 200 OK
  
  
-Security:
+Security: (https://ibm-learning.udemy.com/course/learn-linux-administration-and-linux-command-line-skills/learn/lecture/17069944#overview)
 --------
 
 	Firewall :
@@ -212,7 +232,9 @@ min(0-59)| hour(0-23)| day of month(1-31)| month (1-12)| day of week(0-6)
 */10 * * * * ---> every 10 mins all hour all days all month all day of week
 * 0-5 * * * --> every min 0 to 5 hour all days all month all day of week
 
-
+PROCESS :
+---------
+ps,top,
 PROC:
 -----
 df -ah 
