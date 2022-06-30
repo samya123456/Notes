@@ -19,7 +19,9 @@ kubernates Core:
 ----------------
 https://app.pluralsight.com/library/courses/kubernetes-developers-deploying-code/table-of-contents
 
-
+CKA:
+----
+https://app.pluralsight.com/paths/certificate/certified-kubernetes-administrator
 
 Docker overall:
 --------------
