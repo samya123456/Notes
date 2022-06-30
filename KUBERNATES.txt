@@ -217,3 +217,41 @@ Example :
 kubectl create service nodeport ns-service --tcp=80:80 --dry-run=client -o yaml
 
 In Kubernetes, container logs are written to /var/log/pods/*.log on the node. Kubelet and container runtime write their own logs to /var/logs
+
+
+Installations:
+-------------
+1) Linux OS
+2) 2 CPU ,2GB RAM
+3) disable swap
+4) container runtime interface(CRI)
+5) cointainerD
+  softwere:
+  --------
+  apt-get(UBUNTU)
+  containerD ----> apt-get install containerD
+  kubelet -----> apt-get install kubelet
+  kubeadm -----> apt-get install kubeadm
+  kubectl -----> apt-get install kubectl
+  
+  kubeconfig:
+  ----------
+  *kubeadm init --> creates various kubeconfig file under /etc/kubernates
+  1)admin.conf ----> kubernates admin
+  2)kubelets.conf ---->
+  3)controller-manager.conf
+  4)schedular.conf
+  *kubeadm init --> creates the static pod manifests(/etc/kubernates/manifests) for the pod to be
+   created to bootstrap and make the cluster up and running
+   static pod manifests:
+   --------------------
+   1)etcd
+   2)API server
+   3)Controller manager
+   4)Schedular
+   *it's the job of the kubelet to look at the /etc/kubernates/manifests directory and spin up the pods for each manifest files.
+   POD NETWORKING:
+   --------------
+   overlay networking(Flannel/Calico)via tunnel or bridge
+  
+  
