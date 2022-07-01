@@ -40,7 +40,7 @@ Cluster ip(kube -proxy)<—— Node port <—— Load balancer
 PORT FLOW
 ——————-
 
-Node port port——> cluster ip por(target port)——> application port
+Node port port——> cluster ip port(target port)——> application port
 
 
 Load balancer:
@@ -81,8 +81,10 @@ Strategy
 
 
 Requests and Limits:
-1. Request: If a pod requests certain hardware requirements such as 100 MB memory and 0.5 cpu, Then scheduler will only deploy the pods to that Node who can give it the required specifications
+1. Request: If a container requests certain hardware requirements such as 100 MB memory and 0.5 cpu, Then scheduler will only deploy the pods to that Node who can give it the required specifications
 2. Limits: Means a container can go upto that limit of memory and cpu
+3. ResourceQuota: Total cpu and and memory can the requested by  all the containers in a namespace.
+4. LimitRange :   cpu and and memory can the requested by  one  container in a namespace.
 
 Ingress vs load balancer:
 
@@ -95,7 +97,7 @@ AWSLoad balancer——> ingress controller—->service
 
 
 Control plane
-———————-
+———————------
 
 Master Node:
 
@@ -117,7 +119,7 @@ Cron Jobs. —————->. Cronjob
 
 
 Daemonset:
-———————
+———————---
 The property of Daemonset is that it’ll be deployed as one pod per worker node.
 Example: Fluentd : Container logs,cluster log
 CloudWatch Agent: matrix insight of application,pods , serives,cpu, memory usage
@@ -128,7 +130,7 @@ CloudWatch Agent: matrix insight of application,pods , serives,cpu, memory usage
 
 
 Child Nodes:
-——————-
+——————-------
 1. kubelets : calls the api server on master node to get the job done
 2. Runtime: docker Run time
 3. Kube-proxy
@@ -185,7 +187,7 @@ Pod To Pod Communication:
 --------------------------
 
 1) with in a pod betwn two cointainers ---> localhost
-2) two pods in same node ------>Bridge topology
+2) two pods in same node ------> Bridge topology
 3) two pods in two different nodes -------> layer 2 and 3 connectivity(Like Overlay networking /security group + NACL)
 
 
