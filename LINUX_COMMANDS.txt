@@ -64,10 +64,7 @@ talking to users:
 wall ---> broadcast a message to everyone logged in the linux
  
  
- interview questions:
- 1) zombie process ---> Apple
- 2) iNode in linux -->Apple
- 3) we have two 2 gb hard drive and we have to insert a 3gb file, how to do that. ----> Apple
+
 
 BIOS(Basic input/output devices harddrive ect) ------>Boot loader(GRUB grand unified boot loader) ---> /boot contains the files to boot linux
 syslogs ---> to check system logs
@@ -282,3 +279,17 @@ Create local REPO:
 
 7) move the local.repo to /etc/yum.repos.d
 8) check with yum repolist
+
+
+
+
+ interview questions:
+ 1) zombie process ---> Apple
+ 2) iNode in linux -->Apple
+ 3) we have two 2 gb hard drive and we have to insert a 3gb file, how to do that. ----> Apple
+ 4) inbuild functions in unix --> apple
+ 5) inbuild function to list files ----> echo * --->apple
+ 6) inbuild function for read file ---> read * ----> apple
+ 7) crontab file name ----> apple
+ 8) how to check a file is external file system or inbuild
+ 
