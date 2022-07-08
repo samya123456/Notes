@@ -1,1 +1,6 @@
 https://ibm-learning.udemy.com/course/google-cloud-certification-associate-cloud-engineer/
+
+gcloud init ---> create configurations
+gcloud config list ------> list of configurations
+gcloud config list core/account ----> list only the account
+gcloud config set core/project <value> ----> change the default project
