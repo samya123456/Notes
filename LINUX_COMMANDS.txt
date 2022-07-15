@@ -311,4 +311,8 @@ fi
  6) inbuild function for read file ---> read * ----> apple
  7) crontab file name ----> apple (/var/spool/cron/crontabs)
  8) how to check a file is external file system or inbuild
+ 9) difference between oistat vs vmstat
+ 10) swap memory
+ 11) strace
+ 12) how to print lines that contains word "error"  and how to print lines that  doesn't contains the word "error"
  
