@@ -280,7 +280,17 @@ Create local REPO:
 7) move the local.repo to /etc/yum.repos.d
 8) check with yum repolist
 
+for loop read files:
 
+
+for f in *.txt
+     do
+	echo "file name is $f";
+        while read -r row; 
+	   do 
+	     echo "Hi $row" ; 
+	   done < $f;
+     done;
 
 
  interview questions:
