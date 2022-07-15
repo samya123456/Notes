@@ -309,6 +309,6 @@ fi
  4) inbuild functions in unix --> apple
  5) inbuild function to list files ----> echo * --->apple
  6) inbuild function for read file ---> read * ----> apple
- 7) crontab file name ----> apple
+ 7) crontab file name ----> apple (/var/spool/cron/crontabs)
  8) how to check a file is external file system or inbuild
  
