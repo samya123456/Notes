@@ -166,7 +166,8 @@ aws eks —region us-east-1 —name clustername— query cluster.status
 Update kubeconfig to run kubectl commands:
 aws eks— region us-east-1 update- kubeconfig — name awseks
 
-
+Link Ref : https://app.pluralsight.com/library/courses/kubernetes-installation-configuration-fundamentals/table-of-contents
+----------------------------------------------------------------------------------------------------------------------------
 
 POD                 CONTROLLER               SERVICES                STORAGE
                     ReplicaSet
