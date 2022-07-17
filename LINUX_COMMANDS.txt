@@ -315,4 +315,5 @@ fi
  10) swap memory
  11) strace
  12) how to print lines that contains word "error"  and how to print lines that  doesn't contains the word "error"
+ 13) what is TCP/UDP
  
