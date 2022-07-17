@@ -316,4 +316,9 @@ fi
  11) strace
  12) how to print lines that contains word "error"  and how to print lines that  doesn't contains the word "error"
  13) what is TCP/UDP
+ 14) real time example of fork being used.
+ 15) stateless webserver vs stateful web server
+ 16) advantace of REST over HTTP and SOAP
+ 17) if ssh is not working in which port we should be connecting to debug the linux box in baremetel services.
+ 18) if any application server is slow how to monitor that.
  
