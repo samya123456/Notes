@@ -173,7 +173,7 @@ POD                 CONTROLLER               SERVICES                STORAGE
                     ReplicaSet
                     Deployment
 
-POD Creation Diagram:
+POD Creation Diagram: https://app.pluralsight.com/course-player?clipId=a12438f5-fc25-4604-88b2-c0755f0d8f07
 ---------------------
 kubectl create deployment with 3 replicas ------> request submitted to API Server ----> 
 API server store the Info in etcd -----> Controller manager will create the repila set (3 pods)--->
