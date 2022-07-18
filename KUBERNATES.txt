@@ -222,7 +222,7 @@ kubectl create service nodeport ns-service --tcp=80:80 --dry-run=client -o yaml
 In Kubernetes, container logs are written to /var/log/pods/*.log on the node. Kubelet and container runtime write their own logs to /var/logs
 
 
-Installations:
+Installations: https://app.pluralsight.com/course-player?clipId=982d8f0e-d017-4f76-8bd5-c243179677d4
 -------------
 1) Linux OS
 2) 2 CPU ,2GB RAM
