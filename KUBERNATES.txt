@@ -197,7 +197,7 @@ Packages :
 2) kubelet
 3) kubeadm --> creates kubeconfig
 4) kubectl
-5) for pod networking -->calico
+5) for pod networking -->calico(deamon set)
 
 Commands:
 ---------
