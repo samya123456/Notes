@@ -305,12 +305,12 @@ fi
  interview questions:
  1) zombie process ---> Apple
  2) iNode in linux -->Apple
- 3) we have two 2 gb hard drive and we have to insert a 3gb file, how to do that. ----> Apple
+ 3) we have two 2 gb hard drive and we have to insert a 3gb file, how to do that. ----> Apple RAID concept(https://en.wikipedia.org/wiki/Standard_RAID_levels)
  4) inbuild functions in unix --> apple
  5) inbuild function to list files ----> echo * --->apple
  6) inbuild function for read file ---> read * ----> apple
  7) crontab file name ----> apple (/var/spool/cron/crontabs)
- 8) how to check a file is external file system or inbuild
+ 8) how to check a file is external file system or inbuild --> do df -h and then see the filesystem column , if you see those are under /dev the those are virtual
  9) difference between oistat vs vmstat
  10) swap memory
  11) strace
