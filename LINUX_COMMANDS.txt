@@ -126,6 +126,7 @@ lsblk -p
 6) pvcreate /dev/sdb ---> create physical volume
 7) pvs ---> list of physical volumes created 
 8) vgcreate vg_app <atleast one pv> --> create volume group.
+8) vgextends <group_name> <device_to_add> --> add device to the volume group
 9) vgs ---> list of volume groups
 10) lvcreate -L 20G -n <logical_volume_name> <volume_group_name> -----> create logical volume
 11) lvs or lvdispaly ---->  list of logical volume 
