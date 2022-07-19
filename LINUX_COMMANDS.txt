@@ -107,9 +107,42 @@ lsblk -f ---> labels and uuid of the devices attached
 
 
 
-create Physical volume from the available disks -----> attach it with volume group ---> now we can create multiple logical volume from volume group and
-the default path of the logical volume /dev/<group_name>/<logical_volume_name> ---> create the file system of the logical volume ---> mount the logical volume into a directory
 
+
+
+
+
+
+LVM(LOGICAL VOLUME MANAGER) :https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/9549294#overview
+-------------------------------------------------------------------------------------------------------------------------------
+lsblk -p
+
+
+1) LOGICAL VOLUME MANAGER : With LVM you can aggregate multiple storage devices into the single logical volume.
+2) LVM allow you to extract data from two or more disk parallely,which increases the throughput.
+3) DATA Mirroring -----> with LVM we can create multiple replicas of data by data mirroring to avoide single point of failure
+4) LVM gives us point in time snapsort of you data. 
+5) lsblk -p ---> available devices 
+6) pvcreate /dev/sdb ---> create physical volume
+7) pvs ---> list of physical volumes created 
+8) vgcreate vg_app <atleast one pv> --> create volume group.
+9) vgs ---> list of volume groups
+10) lvcreate -L 20G -n <logical_volume_name> <volume_group_name> -----> create logical volume
+11) lvs or lvdispaly ---->  list of logical volume 
+12) mkfs -t ext4 <path_to_logical_vloume>  ---> create filesystem from the logical volume
+13) ****logical extends ---> logical volume(https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/9549464#overview)
+
+
+
+Layer of abstractions --> Physical volume(pv) ----> volume group(vg) -----> logical volume(lv) ----> filesystem(mkfs) -----> mount
+
+
+
+
+
+
+create Physical volume from the available disks (pvcreate /dev/sdb) -----> attach it with volume group ---> now we can create multiple logical volume from volume group and
+the default path of the logical volume /dev/<group_name>/<logical_volume_name> ---> create the file system of the logical volume ---> mount the logical volume into a directory
 
 
 NETWORKING: (https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/5720646#overview)
