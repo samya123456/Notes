@@ -392,6 +392,7 @@ fi
  17) if ssh is not working in which port we should be connecting to debug the linux box in baremetel services.
  18) if any application server is slow how to monitor that.
  19) what is TCP/UDP
+ 20) How to check if any command is built in or not --> type <command> . ex: type cd ---------> "cd is a shell builtin"
 
 
 
