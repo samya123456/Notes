@@ -240,6 +240,31 @@ SECURITY: (https://ibm-learning.udemy.com/course/learn-linux-administration-and-
  
 
 
+PROCESS : https://ibm-learning.udemy.com/course/learn-linux-administration-and-linux-command-line-skills/learn/lecture/17069988#overview
+---------------------------------------------------------------------------------------------------------
+ps -eaf ,top,pstree,kill, jobs
+command& ----> make process background
+niceness: we can see NI (niceness) in top command . It determines the priortity of the process. Niceness starts from -20 to +19. default is 0. 
+	  More -ve means more prior .-20 niceness is most priority process to run. 
+
+
+PROC:
+-----
+df -ah 
+proc filesystem is a filesystem mounted at /proc in linux where kernal post information about currently running stopped or active processes.
+
+ls -alh /proc
+stored PID as a directory
+
+/proc/1 --> cwd --> current working directory info
+			maps --> memory mapping info
+			cmd --> what command the process is currently executing
+			environ --> environment variables
+
+
+
+
+
 RSYNC:
 ------
 rsync org/* bkp  ---> only copy directory not the sub-directory
@@ -258,25 +283,6 @@ min(0-59)| hour(0-23)| day of month(1-31)| month (1-12)| day of week(0-6)
 * * 1,15 * * --> every min all hour 1st and 15th day all month all day of week
 */10 * * * * ---> every 10 mins all hour all days all month all day of week
 * 0-5 * * * --> every min 0 to 5 hour all days all month all day of week
-
-PROCESS :https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/5720600#overview
----------------------------------------------------------------------------------------------------------
-ps,top,pstree,kill, jobs
-command& ----> make process background
-
-
-PROC:
------
-df -ah 
-proc filesystem is a filesystem mounted at /proc in linux where kernal post information about currently running stopped or active processes.
-
-ls -alh /proc
-stored PID as a directory
-
-/proc/1 --> cwd --> current working directory info
-			maps --> memory mapping info
-			cmd --> what command the process is currently executing
-			environ --> environment variables
 			
 SYSTEM PERFORMANCE:
 ------------------
