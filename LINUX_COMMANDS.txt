@@ -259,8 +259,8 @@ min(0-59)| hour(0-23)| day of month(1-31)| month (1-12)| day of week(0-6)
 */10 * * * * ---> every 10 mins all hour all days all month all day of week
 * 0-5 * * * --> every min 0 to 5 hour all days all month all day of week
 
-PROCESS :
----------
+PROCESS :https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/5720600#overview
+---------------------------------------------------------------------------------------------------------
 ps,top,
 
 PROC:
