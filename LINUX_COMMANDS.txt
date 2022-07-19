@@ -136,7 +136,7 @@ ping -c 3 google.com
 	 -i : display network interface
 	 -n : display numaric address and port
 	 -r : display route table
-	 -ntlp : displays all the listening to TCP Port
+	 -ntlp******** : displays all the listening to TCP Port
 
 5) tcpdump
 6) telnet:
