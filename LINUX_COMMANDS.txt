@@ -392,3 +392,17 @@ fi
  17) if ssh is not working in which port we should be connecting to debug the linux box in baremetel services.
  18) if any application server is slow how to monitor that.
  19) what is TCP/UDP
+
+
+
+uptime -----------> Load average
+dmesg | tail -------> kernal error
+vmstat 1 ----------> overall stats by time
+mpstat -P ALL 1 ------> cpu balance
+pidstat 1 ---------> process useage
+iostat -xz 1 -----------> disk I/O
+free -m ----------> memory usage
+sar -n DEV 1 ------------> network I/O
+sar -n TCP,ETCP 1
+top ---------> process info
+staces ------> application info
