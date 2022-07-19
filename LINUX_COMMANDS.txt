@@ -405,4 +405,5 @@ free -m ----------> memory usage
 sar -n DEV 1 ------------> network I/O
 sar -n TCP,ETCP 1
 top ---------> process info
-staces ------> system calls made from the appications
+staces ------> system calls made from the appications.
+perf ------------> monitor sort live process which can't be traced by top commands
