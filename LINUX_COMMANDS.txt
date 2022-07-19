@@ -261,7 +261,7 @@ min(0-59)| hour(0-23)| day of month(1-31)| month (1-12)| day of week(0-6)
 
 PROCESS :https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/5720600#overview
 ---------------------------------------------------------------------------------------------------------
-ps,top,pstree,kill, 
+ps,top,pstree,kill, jobs
 command& ----> make process background
 
 
