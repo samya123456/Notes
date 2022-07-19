@@ -63,47 +63,70 @@ talking to users:
 ----------------
 wall ---> broadcast a message to everyone logged in the linux
  
- 
-
 
 BIOS(Basic input/output devices harddrive ect) ------>Boot loader(GRUB grand unified boot loader) ---> /boot contains the files to boot linux
 syslogs ---> to check system logs
 
-create volume:
----------------
-create Physical volume from the available disks -----> attach it with volume group ---> now we can create multiple logical volume from volume group and
-the default path of the logical volume /dev/<group_name>/<logical_volume_name> ---> create the file system of the logical volume ---> mount the logical volume into a directory
+
+ https://ibm-learning.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/
+
+* All the configuration files will be there in etc folder.
+1) basic commands
+2) repository
+3) networking
+4) volume
+5) security
+
+
+
+
+FILESYSTEM:https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/5720634#overview
+--------------------------------------------------------------------------------------------------------------
+fdisk,mkfs,mount,df -h,
+
+
+fdisk ----> create and modify partitions
+fdisk -l ----> list of available devices
+fdisk -n ----> new partition
+mkfs -t <type> DEVICE --> create new file system (type : ext3 ,ext4 ,xfs) : mkfs -t ext3 /dev/std2
+mount /dev/std2 /opt --> mount /dev/std2 into /opt folder
+umount <mount_path_or_device_path> /opt or /dev/std2 -------> unmount
+mnkswap ----> create the swap space
+swapon -----> enable swap space
+df -h ----> disk free space
+lsblk -f ---> labels and uuid of the devices attached
+
+
 
 (https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/5720634#overview)
 * if partition is mounted in /home all the subdirectories partition will be available in the sub-directory of /home
 * if you mount volume in /home and unmount and mount in new directory , all the data will be available in the new mount point.
 * file are created in /home when /home is not mounted , whose files will not be available after /home is mounted.
-
-fdisk : create and modify partitions
-fdisk -l : list of available devices
-fdisk -n : new partition
-mkfs -t <type> DEVICE --> create new file system (type : ext3 ,ext4 ,xfs) : mkfs -t ext3 /dev/std2
-mount /dev/std2 /opt --> mount /dev/std2 into /opt folder
-df -h -- disk free space
-*/etc/fstab  --> we have to make entry to /etc/fstab to persist the mount after reboot.
-umount <mount_path_or_device_path> /opt or /dev/std2
+* To use any disk attached to linux box  ---> create partition (fdisk -n) ---> create filesystem (mkfs -t ext3 /dev/sdb3) ----> mount volume (mount /dev/sdb3 /opt) 
+* /etc/fstab  --> we have to make entry to /etc/fstab to persist the mount after reboot.
 
 
-Networking: (https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/5720646#overview)
+
+create Physical volume from the available disks -----> attach it with volume group ---> now we can create multiple logical volume from volume group and
+the default path of the logical volume /dev/<group_name>/<logical_volume_name> ---> create the file system of the logical volume ---> mount the logical volume into a directory
+
+
+
+NETWORKING: (https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/5720646#overview)
 ------------------------------------------------------------------------------------------------------------------
 ping ,netstar,telnet, tcpdump,traceroute,nmtui
 
 
-Ip range:
----------
-class A : 1 -->127.0            
-class B : 128.0 -->191.255
-class C : 192.0.0 ---> 233.255.255
+	Ip range:
+	---------
+	class A : 1 -->127.0            
+	class B : 128.0 -->191.255
+	class C : 192.0.0 ---> 233.255.255
 
-class    :   subnet mask
-class A  --> 255.0.0.0
-class B  --> 255.255.0.0
-class C  --> 255.255.255.0
+	class    :   subnet mask
+	class A  --> 255.0.0.0
+	class B  --> 255.255.0.0
+	class C  --> 255.255.255.0
 
 /etc/hosts ----> contains all the ip and FQDN names ex : 1.2.3.5 company.com
 	
@@ -125,9 +148,8 @@ to bring the network interface up -------> ifconfig eth0 up
 GUI tool to edit network interface -----> nmtui
 
 
-testing connectivity with ping:
-------------------------------
-ping -c 3 google.com
+testing connectivity with ping ---> ping -c 3 google.com
+
 
 1) ping---> command doesn't tell anything about the path or the route the packets take, it can be done using traceroute.
 2) traceroute(requires root privileges) ----> sends 3 packets to each hop that the route path taken.
@@ -146,7 +168,7 @@ ping -c 3 google.com
 	 res : http/1.0.0 200 OK
  
  
-Security: (https://ibm-learning.udemy.com/course/learn-linux-administration-and-linux-command-line-skills/learn/lecture/17069944#overview)
+SECURITY: (https://ibm-learning.udemy.com/course/learn-linux-administration-and-linux-command-line-skills/learn/lecture/17069944#overview)
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 	Firewall :
@@ -181,14 +203,7 @@ Security: (https://ibm-learning.udemy.com/course/learn-linux-administration-and-
 	10) additional security tool ------ >wirehark
 	11) regular back up -----> amanda
  
- https://ibm-learning.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/
 
-* All the configuration files will be there in etc folder.
-1) basic commands
-2) repository
-3) networking
-4) volume
-5) security
 
 RSYNC:
 ------
@@ -212,6 +227,7 @@ min(0-59)| hour(0-23)| day of month(1-31)| month (1-12)| day of week(0-6)
 PROCESS :
 ---------
 ps,top,
+
 PROC:
 -----
 df -ah 
