@@ -129,26 +129,21 @@ testing connectivity with ping:
 ------------------------------
 ping -c 3 google.com
 
-ping command doesn't tell anything about the path or the route the packets take, it can be done using traceroute.
-traceroute(requires root privileges) : sends 3 packets to each hop that the route path taken.
+1) ping---> command doesn't tell anything about the path or the route the packets take, it can be done using traceroute.
+2) traceroute(requires root privileges) ----> sends 3 packets to each hop that the route path taken.
+3) another option is tracepath ---->tracepath: donot require root previlages
+4) netstat: 
+	 -i : display network interface
+	 -n : display numaric address and port
+	 -r : display route table
+	 -ntlp : displays all the listening to TCP Port
 
-another option is tracepath
-tracepath: donot require root previlages
-
-
-netstat: 
- -i : display network interface
- -n : display numaric address and port
- -r : display route table
- -ntlp : displays all the listening to TCP Port
-
-tcpdump
-
-telnet:
- telnet can be used to ping any host with specified port.
- Ex - if you want to do telnet on 80 http port for google.com 
- telnet google.com 80 GET /
- res : http/1.0.0 200 OK
+5) tcpdump
+6) telnet:
+	 telnet can be used to ping any host with specified port.
+	 Ex - if you want to do telnet on 80 http port for google.com 
+	 telnet google.com 80 GET /
+	 res : http/1.0.0 200 OK
  
  
 Security: (https://ibm-learning.udemy.com/course/learn-linux-administration-and-linux-command-line-skills/learn/lecture/17069944#overview)
