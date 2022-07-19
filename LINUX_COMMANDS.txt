@@ -90,7 +90,9 @@ umount <mount_path_or_device_path> /opt or /dev/std2
 
 
 Networking: (https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/5720646#overview)
------------
+------------------------------------------------------------------------------------------------------------------
+
+
 ping ,netstar,telnet, tcpdump,traceroute,nmtui
 Ip range:
 ---------
@@ -158,7 +160,7 @@ telnet:
  
  
 Security: (https://ibm-learning.udemy.com/course/learn-linux-administration-and-linux-command-line-skills/learn/lecture/17069944#overview)
---------
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 	Firewall :
 	---------
@@ -185,17 +187,12 @@ Security: (https://ibm-learning.udemy.com/course/learn-linux-administration-and-
 	3) use encriptions
 	4) Avoide non secure Protocols
 	5) minimum number of services per server
-	6) enforcing good password policy .for password expiry use chage command .
-										change  /etc/login.defs file.
-	7) disable root login. 
-        /etc/ssh/sshd_conf
-    8) defend ssh attack 
-       /etc/hosts.deny
-		change default ssh port 22.
+	6) enforcing good password policy .for password expiry use chage command ----------> change  /etc/login.defs file.
+	7) disable root login  ----> /etc/ssh/sshd_conf
+        8) defend ssh attack -------------> /etc/hosts.deny  && change default ssh port 22.
 	9) enable security scan (nmap)
-	10) additional security tools
-	    wirehark
-	11) regular back up : amanda
+	10) additional security tool ------ >wirehark
+	11) regular back up -----> amanda
  
  https://ibm-learning.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/
 
@@ -206,9 +203,6 @@ Security: (https://ibm-learning.udemy.com/course/learn-linux-administration-and-
 4) volume
 5) security
 
-CREATE MANUAL REPO:
-------------------
-https://ibm-learning.udemy.com/course/learn-linux-administration-and-linux-command-line-skills/learn/lecture/15527798#overview
 RSYNC:
 ------
 rsync org/* bkp  ---> only copy directory not the sub-directory
@@ -216,9 +210,8 @@ rsync -r org/ bkp ---> copy directory and  the sub-directories
 rsync -a org/ bkp ---> a archive . it's the best as it copy with all permissions,group,user,timestamp
 rsync -av --dry-run org/ bkp/ ---> display all the files that will be synced without actually synching them.
 rsync -av --delete org/ bkp/ ---> it'll copy all the files in bkp from org and it'll also delete any extra files available in bkp folder
-
 rsync over the network :
- rsync -zaP ~/Project/my_site samya@10.12.0.1:~/project ---> z --> compress , a --> archive , P --> show progress 
+rsync -zaP ~/Project/my_site samya@10.12.0.1:~/project ---> z --> compress , a --> archive , P --> show progress 
 
 CRON:
 -----
@@ -248,9 +241,7 @@ stored PID as a directory
 SYSTEM PERFORMANCE:
 ------------------
 make a process background process --> add & . Example firefox&
-
 change the nice value --> renice -n -12 <PID>  --> -ve nice value means higher priority
-
 vmstat --> large r value is cause of concern
 iostat --> disk utilizations
 sar -n DEV 1 ---> network stat
@@ -258,6 +249,11 @@ strace -tp | head 1 --> application monitoring
 
 REPO:
 -----
+
+
+CREATE MANUAL REPO:
+------------------
+https://ibm-learning.udemy.com/course/learn-linux-administration-and-linux-command-line-skills/learn/lecture/15527798#overview
 
 cd /etc/yum.repos.d -->list of all repos file
 yum repolist-->list all the repo 
