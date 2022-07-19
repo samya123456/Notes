@@ -91,9 +91,9 @@ umount <mount_path_or_device_path> /opt or /dev/std2
 
 Networking: (https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/5720646#overview)
 ------------------------------------------------------------------------------------------------------------------
-
-
 ping ,netstar,telnet, tcpdump,traceroute,nmtui
+
+
 Ip range:
 ---------
 class A : 1 -->127.0            
@@ -105,32 +105,24 @@ class A  --> 255.0.0.0
 class B  --> 255.255.0.0
 class C  --> 255.255.255.0
 
-/etc/hosts ----> contains all the ip and FQDN names ex :
-	1.2.3.5 company.com
+/etc/hosts ----> contains all the ip and FQDN names ex : 1.2.3.5 company.com
 	
-/etc/nsswitch.conf	
+/etc/nsswitch.conf -----------> name server switch ,it controll search order for resolutions in DNS .
 
-ip addr : lo (loopback device : special ip address linux uses to communicate with itself)(127.0.0.1)
-		  eth0: actual harddrive device(192.168.1.122)
+ip addr command o/p contains 2 parts ---> 1) lo (loopback device : special ip address linux uses to communicate with itself)(127.0.0.1)
+		                      2) eth0: actual harddrive device(192.168.1.122)
 
-nss ---> name server switch
-it controll search order for resolutions in DNS
 
-/etc/services
 
-all ports are defined : 80 --> http, 443 -->https , 22 --> ssh etc ...
+/etc/services -----> all ports are defined : 80 --> http, 443 -->https , 22 --> ssh etc ...
 
-assign a static ip address :
-/etc/sysconfig/network-scripts/ifcfg-ens3
+assign a static ip address ----> /etc/sysconfig/network-scripts/ifcfg-ens3
 
-manually assigning ip address
-ifconfig eth0 <ip_addr>
+manually assigning ip address ------>ifconfig eth0 <ip_addr>
 
-to bring the network interface up
-ifconfig eth0 up
+to bring the network interface up -------> ifconfig eth0 up
 
-GUI tool to edit network interface:
-nmtui
+GUI tool to edit network interface -----> nmtui
 
 
 testing connectivity with ping:
