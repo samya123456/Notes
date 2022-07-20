@@ -56,6 +56,7 @@ Docker network driver:
 0. docker ps: all the containers running on docker
 0. docker run vs start: run —>create a new container with the image and start the container. Start—-> start the existing container which is stopped
 0. docker system prune**** : remove all the stopped images , network caches
+0. docker container diff : difference between filesystem of the base image and filesystem of the current container
 
 
 *States of the container:
