@@ -434,7 +434,8 @@ cd,echo,read,break,continue,eval,exec,exit,kill,jobs,history,help
  9) difference between oistat vs vmstat
  10) swap memory
  11) strace
- 12) how to print lines that contains word "error"  and how to print lines that  doesn't contains the word "error"
+ 12) how to print lines that contains word "error"  ----> cat a.txt | grep -F 'error'
+ 12) how to print lines that  doesn't contains the word "error" -->  cat a.txt | grep -v 'error'
  13) what is TCP/UDP
  14) real time example of fork being used.
  15) stateless webserver vs stateful web server
