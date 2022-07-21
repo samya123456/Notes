@@ -101,7 +101,8 @@
 98. Kth Smallest Element in a Sorted Matrix leetcode 378
 99. Asteroid Collision 735 (Amazon)
 100. Chocolate Distribution Problem --> https://www.geeksforgeeks.org/chocolate-distribution-problem/
-101. given a sorted array with -ve and +ve numbers , print the square of those numbers in sorted order.
+101. given a sorted array with -ve and +ve numbers , print the square of those numbers in sorted order. ---apple
+102. https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
 
 
 Quick sort
