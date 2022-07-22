@@ -1,1 +1,26 @@
 
+ *******SYSTEM CALLS: fork() , exit() , exec() ,getpid(), alarm(), sleep() , open(), read(), write(), close(), ioctl()
+ 
+ *******INBUILT COMMANDS : cd, echo, read, break, continue, eval, exec, exit, kill,jobs, history, help
+ 
+ *******PROCESS COMMANDS: ps -eaf , top, pstree, kill, jobs, nice 
+ 
+ *******FILESYSTEM COMMANDS: fdisk, mkfs, mount ,df -h, /etc/fstab , pvcreate ,vgextends , lvcreate ,lvdispaly
+ 
+ *******NETWORK COMMANDS: ping ,netstar, telnet, tcpdump , traceroute, nmtui 
+			 
+
+ ********DEBUG CALLS***********************
+
+			uptime -----------> Load average
+			dmesg | tail -------> kernal error
+			vmstat 1 ----------> overall stats by time
+			mpstat -P ALL 1 ------> cpu balance
+			pidstat 1 ---------> process useage
+			iostat -xz 1 -----------> disk I/O
+			free -m ----------> memory usage
+			sar -n DEV 1 ------------> network I/O
+			sar -n TCP,ETCP 1
+			top ---------> process info
+			staces ------> system calls made from the appications.
+			perf ------------> monitor sort live process which can't be traced by top commands
