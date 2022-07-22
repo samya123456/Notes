@@ -87,7 +87,7 @@ fdisk,mkfs,mount,df -h,
 
 fdisk ----> create and modify partitions
 fdisk -l ----> list of available devices
-fdisk -n ----> new partition
+fdisk <storage_path> then -n ----> new partition
 mkfs -t <type> DEVICE --> create new file system (type : ext3 ,ext4 ,xfs) : mkfs -t ext3 /dev/std2
 mount /dev/std2 /opt --> mount /dev/std2 into /opt folder
 umount <mount_path_or_device_path> /opt or /dev/std2 -------> unmount
