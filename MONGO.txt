@@ -1,0 +1,38 @@
+
+
+https://app.pluralsight.com/course-player?clipId=bf331c74-4751-4c86-a2e8-e68170732743
+
+
+db.slaveOk() -----> To Enable the replications in secondary.
+rs.staus() -----> relica set status
+
+db.collection('quotes').insertOne({id:1,value:"Hello world"})
+
+eval ---> allow users to run administritive commands without from mongo.
+
+DB.prototype.database = function(){
+	print("don't do it ")
+
+}   ----------> creating prototype to avoide accidentally delete database in production.
+
+.mongorc.js -----> where we can write all the scripts bo be retained.
+
+DB COMMANDS:
+-----------
+1) show collections: showing all the collections;
+2) db.createCollection("foo")
+3) db.foo.insertOne({_id:1 ,value:"Hello World"}): foo -->collection name
+4) db.foo.find({_id:1})
+5) system.index collection : mongo creates the indices on each _id field of each collections and store it in system.index file.
+6) if we don't put _id then mongo will assign id : 'objectId(adadasdadsda)' field by it self.
+7) objectId.getTimeStamp();
+8) db.save() : overrides the value if same _id is already present. 
+9) db.insertOne ---> gives error if same _id is already present. 
+10) db.foo.updateOne({_id :1} ,{$inc:{x:1}}) ---> $inc increment x by 1.
+11) db.foo.updateOne({_id :1} ,{$set:{y:1}}) -----> $set add field y without touching the other columns 
+12) db.foo.updateOne({_id :1} ,{$unset:{y:''}}) -----> $unset remove field y without touching the other columns 
+13) db.foo.updateOne({_id :1} ,{$rename:{'naem':'name'}})
+14) db.a.update({_id: 1}, {$push:{things:"one"}) ----> $push add items to the array;
+15) db.a.update({_id: 1}, {$pull:{things:"one"}) ----> $pull removes all  items having value 'one' from  the array;
+14) db.a.update({_id: 1}, {$pop:{things: 1}) ----> $pop remove the last as {things : 1}  from  the array , if {things: -1} $pop remove the first element.
+16) db.a.updateMany({}, {$pop:{things: 1}) -----> updateMany will update  all the records as {}; update --> by default it updates only one.
