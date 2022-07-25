@@ -1,7 +1,17 @@
 
 
-https://app.pluralsight.com/course-player?clipId=bf331c74-4751-4c86-a2e8-e68170732743
+Replica set controller : https://app.pluralsight.com/course-player?clipId=f6cef7e0-c31e-442f-b7a3-58b40a97914a
 
+
+
+@REM Primary
+start "a" mongod -- dbpath C://data//db1 --port 3000 --replSet "demo"
+
+@REM Secondary
+start "b" mongod -- dbpath ./db2 --port 4000 --replSet "demo"
+
+@REM Arbiter
+start "c" mongod -- dbpath ./db3 --port 5000 --replSet "demo"
 
 db.slaveOk() -----> To Enable the replications in secondary.
 rs.staus() -----> relica set status
@@ -132,3 +142,14 @@ db.foo.find({"info.canFly" : {$exists:true}})
 	index name:
 	-----------
 	db.foo.ensureIndex({name:1},{name:"myindex"})
+	
+	
+	covered index:
+	--------------
+	
+	if I query in the indexed field and all the information is already there in the index then mongo don't have to search the documents it can directly query from the index itself;
+	
+	db.foo.ensureIndex({name:1});
+	
+	now query :
+	db.foo.find({name:"cat"},{_id:-1 ,name:1}) ---> covered index;
