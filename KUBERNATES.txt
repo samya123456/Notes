@@ -229,7 +229,7 @@ Installations: https://app.pluralsight.com/course-player?clipId=982d8f0e-d017-4f
 3) disable swap
 4) container runtime interface(CRI)
 5) cointainerD
-  softwere:
+  softwere: https://app.pluralsight.com/course-player?clipId=099a5e65-8d7c-4db0-89e0-079cebb29f10
   --------
   apt-get(UBUNTU)
   containerD ----> apt-get install containerD
@@ -237,7 +237,7 @@ Installations: https://app.pluralsight.com/course-player?clipId=982d8f0e-d017-4f
   kubeadm -----> apt-get install kubeadm
   kubectl -----> apt-get install kubectl
   
-  kubeconfig:
+  kubeconfig: https://app.pluralsight.com/course-player?clipId=113b6ea4-9ebe-43d1-a5fc-2dadce715710
   ----------
   *kubeadm init --> creates various kubeconfig file under /etc/kubernates
   1)admin.conf ----> kubernates admin
