@@ -246,13 +246,16 @@ Installations: https://app.pluralsight.com/course-player?clipId=982d8f0e-d017-4f
   4)schedular.conf
   *kubeadm init --> creates the static pod manifests(/etc/kubernates/manifests) for the pod to be
    created to bootstrap and make the cluster up and running
+   
+   
    static pod manifests:
    --------------------
    1)etcd
    2)API server
    3)Controller manager
    4)Schedular
-   *it's the job of the kubelet to look at the /etc/kubernates/manifests directory and spin up the pods for each manifest files.
+   
+   *****when system reboots the systemd starts the kubelet and it's the job of the kubelet to look at the /etc/kubernates/manifests directory and spin up the pods for   each manifest files.
    POD NETWORKING:
    --------------
    overlay networking(Flannel/Calico)via tunnel or bridge
