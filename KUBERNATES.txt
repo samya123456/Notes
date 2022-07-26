@@ -184,7 +184,7 @@ kubelet will ask API server "Hey is there any task for me" --->
 kubelet will spin up the Pod in the respective Nodes -------> Controller manager is monitoring the sate of the cluster
 
 
-Pod To Pod Communication:
+Pod To Pod Communication: https://app.pluralsight.com/course-player?clipId=d37d5b82-a8ad-4120-896f-1652639fdf1f
 --------------------------
 
 1) with in a pod betwn two cointainers ---> localhost
