@@ -134,8 +134,8 @@ lsblk -p
 12) mkfs -t ext4 <path_to_logical_vloume>  ---> create filesystem from the logical volume
 13) ****logical extends ---> logical volume(https://ibm-learning.udemy.com/course/linux-administration-bootcamp/learn/lecture/9549464#overview)
 14) lvcreate -L --> capital L for human readable space(25G like that)
-	     -l --> available extends (lvdisplay -m)
-
+	     -l --> available logical extends (lvdisplay -m)
+15) lvdisplay -----> available logical extends (lvdisplay -m)
 
 Layer of abstractions --> Physical volume(pv) ----> volume group(vg) -----> logical volume(lv) ----> filesystem(mkfs) -----> mount
 
