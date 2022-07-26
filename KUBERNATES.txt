@@ -189,7 +189,7 @@ Pod To Pod Communication: https://app.pluralsight.com/course-player?clipId=d37d5
 
 1) with in a pod betwn two cointainers ---> localhost
 2) two pods in same node ------> Bridge topology
-3) two pods in two different nodes -------> layer 2 and 3 connectivity(Like Overlay networking /security group + NACL)
+3) two pods in two different nodes -------> (tunneling)l ayer 2 and 3 connectivity(Like Overlay networking /security group + NACL)
 
 
 Packages :
