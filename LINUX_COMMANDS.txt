@@ -16,6 +16,7 @@
 16) ls -a ------> list all the files including the hidden files
 17) ps -ef ---> list all the process 
 18) rm 1.txt ---> remove the 1.txt file
+18) rm -rf <folder_name> ---> remove folder
 19) whoami ----> current logged in user
 20) $ ---> normal user . # --> root
 21) id ---> user details
