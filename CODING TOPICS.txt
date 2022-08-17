@@ -105,6 +105,7 @@
 102. https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
 103. Sliding Window Maximum
 104. Longest Substring With K Unique Characters -- apple
+105. Grumpy Bookstore Owner (Sliding Window) ---leetcode 1052
 
 
 Quick sort
