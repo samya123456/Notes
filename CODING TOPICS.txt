@@ -132,3 +132,20 @@ Maximum Number of Visible Points leetcode 1610
 Student Attendance Record II leetcode 552
 Guess the Word leetcode 843
 Longest String Chain leetcode 1048
+
+
+
+*******TOPIC WISE******
+----------------------
+
+Sliding Window:
+--------------
+1) https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
+2) Sliding Window Maximum
+3) Longest Substring With K Unique Characters -- apple
+4) Grumpy Bookstore Owner (Sliding Window) ---leetcode 1052
+
+Heap:
+----
+1) kth largest element in an array
+2) reorganize-string leetcode 767
