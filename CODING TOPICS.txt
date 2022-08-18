@@ -149,3 +149,4 @@ Heap:
 ----
 1) kth largest element in an array
 2) reorganize-string leetcode 767
+3) Furthest Building You Can Reach 1642
