@@ -148,5 +148,6 @@ Sliding Window:
 Heap:
 ----
 1) kth largest element in an array
-2) reorganize-string leetcode 767
+2) Reorganize string leetcode 767
 3) Furthest Building You Can Reach 1642
+4) Find the most competitive subsequence 1673
