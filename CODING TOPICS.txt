@@ -151,3 +151,8 @@ Heap:
 2) Reorganize string leetcode 767
 3) Furthest Building You Can Reach 1642
 4) Find the most competitive subsequence 1673
+
+Greedy:
+------ 
+1) Gas Station Leetcode 134. 
+2) Task Scheduler Leetcode 621 
