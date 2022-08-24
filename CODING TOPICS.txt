@@ -162,3 +162,4 @@ Greedy:
 Dynamic:
 --------
 1) Delete and Earn Leetcode 740
+2) Maximal Square Leetcode 221
