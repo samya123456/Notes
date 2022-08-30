@@ -170,3 +170,8 @@ Dynamic:
 Array:
 ------
 1) Find All Duplicates in an Array Leetcode 442. 
+
+Tree:
+----
+1) Invert Binary Tree Leetcode 226.
+2) Convert Sorted Array to Binary Search Tree Leetcode 108
