@@ -166,3 +166,7 @@ Dynamic:
 3) Continuous Subarray Sum Leetcode 523
 4) Count Square Submatrices with All Ones 1277 (Same concept of Maximal Square Leetcode 221)
 5) Longest Arithmetic Subsequence Leetcode 1027
+
+Array:
+------
+1) Find All Duplicates in an Array Leetcode 442. 
