@@ -175,3 +175,4 @@ Tree:
 ----
 1) Invert Binary Tree Leetcode 226.
 2) Convert Sorted Array to Binary Search Tree Leetcode 108
+3) Count Good Nodes in Binary Tree 1448
