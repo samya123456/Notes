@@ -190,3 +190,7 @@ Two Pointer:
 ------------
 1) Partition Labels Leetcode 763
 2) Longest Repeating Character Replacement Leetcode 424
+
+Graph:
+------
+1) Network Delay Time Leetcode 743
