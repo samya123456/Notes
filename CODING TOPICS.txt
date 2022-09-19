@@ -8,7 +8,7 @@
 6. Max sum sub array 
 7. Minimum no of stations
 8. Permutations string 
-9. Permutation number 
+9. Permutation number Leetcode 47
 10. Fibonacci series
 11. Spyral rotation of array 2D 
 12. parenthesis checker 
