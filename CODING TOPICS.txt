@@ -108,33 +108,6 @@
 105. Grumpy Bookstore Owner (Sliding Window) ---leetcode 1052
 
 
-Quick sort
-Merge sorting
-
-
-
-Google interview problems
-
-Shortest Path in a Grid with Obstacles Elimination leetCode 1293
-Find Leaves of Binary Tree leetCode 366
-Step-By-Step Directions From a Binary Tree Node to Another leetcode 2096
-Snapshot Array	leetcode 1146
-Remove All Ones With Row and Column Flips leetcode 2128
-Maximum Number of Points with Cost leetcode 1937
-Evaluate Reverse Polish Notation leetcode 150
-Race Car leetcode 818
-Stock Price Fluctuation leetcode 2034
-Find All Possible Recipes from Given Supplies leetcode 2115
-Find And Replace in String leetcode 833
-Detect Squares  leetcode 2013
-Minimum Time Difference leetcode 539
-Maximum Number of Visible Points leetcode 1610
-Student Attendance Record II leetcode 552
-Guess the Word leetcode 843
-Longest String Chain leetcode 1048
-
-
-
 *******TOPIC WISE******
 ----------------------
 
