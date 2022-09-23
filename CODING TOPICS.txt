@@ -100,7 +100,7 @@
 96. Word Break Leetcode 139
 97. Asteroid Collision 735 (Amazon)
 98. Chocolate Distribution Problem --> https://www.geeksforgeeks.org/chocolate-distribution-problem/
-99. given a sorted array with -ve and +ve numbers , print the square of those numbers in sorted order. ---apple
+99. Squares of a Sorted Array Leetcode 977 ---apple
 100. https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
 101. Sliding Window Maximum
 102. Longest Substring With K Unique Characters -- apple
