@@ -98,15 +98,13 @@
 94. Maximize Distance to Closest Person Leetcode 849.
 95. Reorder Routes to Make All Paths Lead to the City Zero Leetcode 1466
 96. Word Break Leetcode 139
-97. Delete Node in a Linked List Leetcode 237 (Microsoft)
-98. Kth Smallest Element in a Sorted Matrix leetcode 378
-99. Asteroid Collision 735 (Amazon)
-100. Chocolate Distribution Problem --> https://www.geeksforgeeks.org/chocolate-distribution-problem/
-101. given a sorted array with -ve and +ve numbers , print the square of those numbers in sorted order. ---apple
-102. https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
-103. Sliding Window Maximum
-104. Longest Substring With K Unique Characters -- apple
-105. Grumpy Bookstore Owner (Sliding Window) ---leetcode 1052
+97. Asteroid Collision 735 (Amazon)
+98. Chocolate Distribution Problem --> https://www.geeksforgeeks.org/chocolate-distribution-problem/
+99. given a sorted array with -ve and +ve numbers , print the square of those numbers in sorted order. ---apple
+100. https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
+101. Sliding Window Maximum
+102. Longest Substring With K Unique Characters -- apple
+103. Grumpy Bookstore Owner (Sliding Window) ---leetcode 1052
 
 
 *******TOPIC WISE******
