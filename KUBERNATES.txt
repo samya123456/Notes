@@ -18,12 +18,34 @@ Control plane
 Scheduler
 Etcd
 Raft
-
 Statefullset
 
+===========================================================
+COMMANDS:
+--------
+
+kubectl get pods -o wide 
+kubectl apply -f pod.yaml
+kubectl apply -f service.yaml
+kubectl delete service <service-name>
+kubectl get pods -o wide | grep -i <Pod Name> 
+kubectl exec -it transaction-invoking-service   /bin/sh
+kubectl exec -it transaction-service-app  /bin/sh
+kubectl describe svc transaction-service-app
+kubectl scale deployment transaction-service-app --replicas=0; kubectl scale deployment transaction-service-app --replicas=2;
+kubectl create secret docker-registry artifact_jfrog_secret --docker-server=https://artifactory.wureachprod.awswuintranet.net/  --docker-username=AFUSER --docker-password=AFPASS
+kubectl get secret artifactjfrogsecret -o yaml
 
 
-Kubernates service
+
+=========================================================
+
+
+
+
+
+Kubernates service:
+-------------------
 
 1. External name service for external service registers
 2. External DNS pod will register DNS NAME of the application to aws route 53
@@ -276,3 +298,4 @@ Persistant Volume Claim Reclaim Policy : RETAIN, DELETE
 POD DEBUG:
 ---------
 1) kubectl describe pod <pod name>
+
