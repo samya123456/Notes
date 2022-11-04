@@ -262,3 +262,12 @@ Installations: https://app.pluralsight.com/course-player?clipId=982d8f0e-d017-4f
    overlay networking(Flannel/Calico)via tunnel or bridge
   
   
+K8s Networking Topology: https://app.pluralsight.com/course-player?clipId=8cc9db8d-3242-4d3d-bfb6-1dbdcc021247
+Pod Networking Topology: https://app.pluralsight.com/course-player?clipId=416680ab-7965-4ee6-9a05-d886e750e755 :
+---------------
+Pod shares a Network namespace , network namespace inside the pod is maintained by a special container called Pause/infracture container.
+
+Container Network Interface: https://app.pluralsight.com/course-player?clipId=97b4f64e-8951-4b6a-9ecf-b9526a6483c5
+Understanding services: https://app.pluralsight.com/course-player?clipId=9d84f2c0-1ea4-4689-ae36-63b264ac8113
+
+Persistant Volume Claim Reclaim Policy : RETAIN, DELETE 
