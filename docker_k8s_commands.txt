@@ -25,10 +25,6 @@ docker push samya123/transactionservices:0.0.3-SNAPSHOT
 
 deployment.apps/transaction-service-app
 
-kubectl describe svc transaction-service-app
-
-kubectl scale deployment transaction-service-app --replicas=0; kubectl scale deployment transaction-service-app --replicas=2;
-
 docker rmi -f transaction-invoking-service
 docker rmi $(docker images -a -q)
 samya123
@@ -36,17 +32,6 @@ Docker@123
 
 samya123/transactioninvokingservice
 samya123/transactionservices
-
-
-
-kubectl get pods -o wide 
-
-kubectl apply -f pod.yaml
-kubectl apply -f service.yaml
-kubectl delete service <service-name>
-
-kubectl exec -it transaction-invoking-service   /bin/sh
-kubectl exec -it transaction-service-app  /bin/sh
 
 http://localhost:8284/oauth/token
 http://localhost:8284/oauth/check_token?token=24cd5e94-9554-46c9-89fa-640724270f8c
@@ -58,5 +43,4 @@ helm ls
 helm delete vam-ref-project
 helm package vam-ref-project
 
-kubectl create secret docker-registry artifact_jfrog_secret --docker-server=https://artifactory.wureachprod.awswuintranet.net/  --docker-username=AFUSER --docker-password=AFPASS
-kubectl get secret artifactjfrogsecret -o yaml
+
