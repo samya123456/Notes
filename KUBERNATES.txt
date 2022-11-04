@@ -271,3 +271,8 @@ Container Network Interface: https://app.pluralsight.com/course-player?clipId=97
 Understanding services: https://app.pluralsight.com/course-player?clipId=9d84f2c0-1ea4-4689-ae36-63b264ac8113
 
 Persistant Volume Claim Reclaim Policy : RETAIN, DELETE 
+
+
+POD DEBUG:
+---------
+1) kubectl describe pod <pod name>
