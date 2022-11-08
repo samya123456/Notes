@@ -54,7 +54,7 @@
    ** hard link can of be associated with same system and link can be associated with inside and outside of system. inode number is same as the file and it's hadr         link but it's different for it's softlink.
  51) ls > file1 ---> create the file1  and override the output in it .
  52)  ls >> file1 ---> create the file1  and append the output in it .
- 53) grep -v what file1 --> delete all the lines containing word 'what' ,we can use wildcards like 'wha*' to do that
+ 53) grep -v what file1 --> exclude all the lines containing word 'what' ,we can use wildcards like 'wha*' to do that
  54) ls file.txt not-here 1>out.txt 2> out.err  ----> 1 is standard output store in out.txt and 2 is standard output store in out.err
 55)ip addr -->see the ip address
 56)hostname ---> see the hostname
