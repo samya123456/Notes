@@ -40,6 +40,7 @@ Docker network driver:
 
 
 0. docker build: to build the image
+0. docker images | grep -i 'samya123/*'
 0. docker pull : pull the image from repo
 0. docker run -it imageid : run the container
 0. docker info : gives the number of containers running stopped or paused
