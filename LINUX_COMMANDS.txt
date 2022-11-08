@@ -59,6 +59,7 @@
 55)ip addr -->see the ip address
 56)hostname ---> see the hostname
 57)  ls | sort | uniq ----> sort and unique
+58) INode ,Soft Link and Hard Link ---> https://ibm-learning.udemy.com/course/learn-linux-administration-and-linux-command-line-skills/learn/lecture/15414446#overview
 
 talking to users:
 ----------------
