@@ -163,9 +163,20 @@ Two Pointer:
 1) Partition Labels Leetcode 763
 2) Longest Repeating Character Replacement Leetcode 424
 
-Graph:
+Graph: 
 ------
-1) Network Delay Time Leetcode 743 (Dijkstra Algo)
-2) Possible Bipartition Leetcode 886 (Bipartite graph)***
-3) Cheapest Flights Within K Stops Leetcode 787(Dijkstra Algo)***
-4) Time Needed to Inform All Employees Leetcode 1376
+
+  Topics: (https://youtube.com/playlist?list=PLUcsbZa0qzu1EhwPcQfbDfl9VitpSUgBp)
+  -------
+    1) Adj List
+    2) BFS and DFS
+    3) Topological Sort
+    4) Detect cycle in un directed graph
+    5) Dijkstra Algo
+    
+  Problems:
+  ---------
+    1) Network Delay Time Leetcode 743 (Dijkstra Algo)
+    2) Possible Bipartition Leetcode 886 (Bipartite graph)***
+    3) Cheapest Flights Within K Stops Leetcode 787(Dijkstra Algo)***
+    4) Time Needed to Inform All Employees Leetcode 1376
