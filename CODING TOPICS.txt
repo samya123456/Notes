@@ -172,6 +172,7 @@ Graph:
     2) BFS and DFS
     3) Topological Sort
     4) Detect cycle in un directed graph
+    6) Prims Algo
     5) Dijkstra Algo
     
   Problems:
