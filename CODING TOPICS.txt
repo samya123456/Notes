@@ -1,12 +1,12 @@
 ****CODING TOPICS****
 
-1. longest increasing subsequence(LIS) 
-2. Maximum Sum increasing subsequence (MSIS)
-3. Longest common subsequence String 
-4. Insert update delete string to match other( Minimum edit distance) 
-5. Longest palindrome substring
-6. Max sum sub array 
-7. Minimum no of stations
+1. longest increasing subsequence(LIS) --> Leetcode 300
+2. Maximum Sum increasing subsequence (MSIS) --> https://www.geeksforgeeks.org/maximum-sum-increasing-subsequence-dp-14/
+3. Longest common subsequence String --> Leetcode 1143
+4. Insert update delete string to match other( Minimum edit distance) --> Leetcode 72
+5. Longest palindrome substring --> Leetcode 5
+6. Max sum sub array ----> Leetcode 53
+7. Minimum no of stations --> https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/
 8. Permutations string 
 9. Permutation number Leetcode 47
 10. Fibonacci series
