@@ -17,7 +17,7 @@
 14. Container with most water --> Leetcode 11
 15. Trapping rain  --> Leetcode 42
 16. Longest substring without repeating characters  --> Leetcode 3
-17. Zigzag conversation 
+17. Zigzag conversation --> Leetcode 6
 18. Cutting rod 
 19. Decode ways 
 20. Jump game 
