@@ -8,15 +8,15 @@
 6. Max sum sub array ----> Leetcode 53
 7. Minimum no of stations --> https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/
 8. Permutations string 
-9. Permutation number Leetcode 47
+9. Permutation number --> Leetcode 47
 10. Fibonacci series
-11. Spyral rotation of array 2D 
-12. parenthesis checker 
+11. Spyral rotation of array 2D --> Leetcode 54
+12. parenthesis checker --> Leetcode 20
 12. Longest Valid Parentheses leetcode 32 
 13. Generate parenthesis 
-14. Container with most water 
-15. Trapping rain  
-16. Longest substring without repeating characters  
+14. Container with most water --> Leetcode 11
+15. Trapping rain  --> Leetcode 42
+16. Longest substring without repeating characters  --> Leetcode 3
 17. Zigzag conversation 
 18. Cutting rod 
 19. Decode ways 
