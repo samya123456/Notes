@@ -18,9 +18,9 @@
 15. Trapping rain  --> Leetcode 42
 16. Longest substring without repeating characters  --> Leetcode 3
 17. Zigzag conversation --> Leetcode 6
-18. Cutting rod 
-19. Decode ways 
-20. Jump game 
+18. Cutting rod --> https://www.geeksforgeeks.org/cutting-a-rod-dp-13/
+19. Decode ways --> Leetcode 91
+20. Jump game  --> Leetcode 55
 21. rotate image 
 22. anagram sentence 
 23. Sum of pair in array 
