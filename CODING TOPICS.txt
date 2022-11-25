@@ -28,15 +28,15 @@
 25. Coin change --> Leetcode 322
 26. Snake and ladders 
 27. Arrange 0 1 2 in array --> Leetcode 75
-28. Celebrity problem 
+28. Celebrity problem --> https://www.geeksforgeeks.org/the-celebrity-problem/
 29. Doubly Linkedlist
-30. Spiral rotation of tree
+30. Spiral rotation of tree ---> https://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/
 31. Maximum path sum 2D array 
 32. Get minimum value in stack in O(1) time and space complexity 
 33. Write a data structure to insert delete and search in O(1) time complexity 
-34. Lowest common Ancestor of B tree 
-35. Distance between two Nodes of a B tree 
-36. Kth largest element in an array with O(n) time complexity 
+34. Lowest common Ancestor of B tree --> Leetcode 235
+35. Distance between two Nodes of a B tree --> https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree
+36. Kth largest element in an array with O(n) time complexity --> Leetcode 215
 37. Find the element appear once and other elements appear three times
 38. Insert update and delete in O(1) time complexity 
 39. Print even odd in two different Threads
