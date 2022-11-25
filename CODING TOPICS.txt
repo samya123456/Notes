@@ -21,13 +21,13 @@
 18. Cutting rod --> https://www.geeksforgeeks.org/cutting-a-rod-dp-13/
 19. Decode ways --> Leetcode 91
 20. Jump game  --> Leetcode 55
-21. rotate image 
-22. anagram sentence 
-23. Sum of pair in array 
-24. Rotten oranges 
-25. Coin change 
+21. rotate image --> Leetcode 48
+22. anagram sentence --> Leetcode 242
+23. Sum of pair in array ---> Leetcode 1
+24. Rotten oranges --> Leetcode 994
+25. Coin change --> Leetcode 322
 26. Snake and ladders 
-27. Arrange 0 1 2 in array 
+27. Arrange 0 1 2 in array --> Leetcode 75
 28. Celebrity problem 
 29. Doubly Linkedlist
 30. Spiral rotation of tree
