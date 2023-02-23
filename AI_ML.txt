@@ -108,9 +108,17 @@ Compile your model
 Step 11:
 =======
 
-Train your Model.
+Train your Model as well as validate your model training with test data which will ultimate return
+you mean square error
 
-	model.fit(x=X_train,y=y_train,epochs=250)
+	model.fit(x=X_train,y=y_train,validation_date=(X_test,y_test),epochs=600)
+	
+calculate the losses:
+
+losses = model.history.history
+
+looses.plot
+
 	
 Step 12:
 ========
