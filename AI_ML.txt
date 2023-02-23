@@ -152,3 +152,25 @@ take the 1st row for a test data and predict the price and look the csv to see t
 	single_house = df.drop('price',axis=1).iloc[0]
 	single_house = scaler.transform(single_house.values.reshape(-1,19)) // scale the data
 	model.predict(single_house)
+	
+
+Check the validation loss:
+
+	new_losses = pd.DataFrame(model.history.history)
+	new_losses.plot()
+	
+**To prevent validation loss we have to restrict no of EPOCHES in training by applying early stop.
+
+	from tensorflow.keras.callbacks import EarlyStopping
+	earlystopping = EarlyStopping(monitor='val_loss',patience=25,verbose=1,mode='min')
+	model.fit(x=X_train,y=y_train,validation_data=(X_test,y_test),epochs=600,callbacks=[earlystopping])
+
+**To prevent Overfitting we add drop out layers. Drop out layer will turn  off a certain percentage of Neurons randomly.
+   	model = Sequential()
+	model.add(Dense(30,activation='relu'))
+	model.add(Dropout(0.5)) // random 50% neurons will be turned off.
+	model.add(Dense(15,activation='relu'))
+	model.add(Dropout(0.5) // random 50% neurons will be turned off.
+
+
+
