@@ -103,9 +103,16 @@ Compile your model
 
 	model.compile(optimizer='adam',loss='mse')
 	
-	
-	
+
+
 Step 11:
+=======
+
+Train your Model.
+
+	model.fit(x=X_train,y=y_train,epochs=250)
+	
+Step 12:
 ========
 
 Predict the result with your model by using your test data
@@ -113,7 +120,7 @@ Predict the result with your model by using your test data
 	predictions = model.predict(X_test)
 
 
-Step 12:
+Step 13:
 ========
 
 calculate the errors with predicted result vs actual y_test.
@@ -129,7 +136,7 @@ Plot the y_test and predictions to visualize
 	plt.scatter(y_test,predictions)
 	
 	
-Step 13:
+Step 14:
 =======
 
 take the 1st row for a test data and predict the price and look the csv to see the actual price .
