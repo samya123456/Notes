@@ -3,11 +3,136 @@ import numpy as np
 import seaborn as sns
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
 from sklearn.preprocessing import MinMaxScaler
 
-Target 
+Target is to create a model so that it can predict the price.
+
+
 Step 1:
+=======
+Create the datafream
+
+	df = pd.read_csv("./DATA/kc_house_data.csv") // create the dataframe
+
+Step 2:
 ======
-df = pd.read_csv("./DATA/kc_house_data.csv") // create the dataframe
+
+we have to check the other columns which as the higher correlation with price .
+
+   df.corr()['price'].sort_values()
+
+We can plot the correlation in plot and check
+
+	plt.figure(figsize=(12,8))
+	sns.scatterplot(x='price',y='long',data=df) 
+	
+Step 3:
+=======
+
+We can delete some of the columns which has lower correlation with price
+
+	df = df.drop('id', axis=1)
+	df = df.drop('date',axis=1)
+	df = df.drop('zipcode',axis=1)
+
+
+NOW THE ACTUAL WORK STARTS:
+===========================
+
+Step 4:
+=======
+
+Take the prediction cloumn in y-axis and all other columns in X-axis
+
+	X = df.drop('price',axis=1).values
+	y = df['price']
+
+Step 5:
+=======
+
+Create the train test split.
+
+	from sklearn.model_selection import train_test_split
+	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=101)
+	
+Step 6:
+=======
+
+Scale The X-axis data. We will do fit and transform to X_train data and only transform to X_test data
+
+	X_train = scaler.fit_transform(X_train)
+	X_test = scaler.transform(X_test)
+
+Step 7:
+=======
+
+Initialize the model object.
+
+	from tensorflow.keras.models import Sequential
+	model = Sequential()
+
+Step 8:
+=======
+
+We have to identify how many Neurons are required in each layer.
+
+	X_train.shape
+	output :- (rows,columns)
+	
+No of columns == no of neurons in each layer
+
+Step 9:
+=======
+
+Creating the Neural Networking model
+
+	from tensorflow.keras.layers import Dense
+	model.add(Dense(19,activation='relu'))
+	model.add(Dense(19,activation='relu'))
+	model.add(Dense(19,activation='relu'))
+	model.add(Dense(19,activation='relu'))
+
+	model.add(Dense(1))		// output layer 
+	
+Step 10:
+========
+
+Compile your model
+
+	model.compile(optimizer='adam',loss='mse')
+	
+	
+	
+Step 11:
+========
+
+Predict the result with your model by using your test data
+
+	predictions = model.predict(X_test)
+
+
+Step 12:
+========
+
+calculate the errors with predicted result vs actual y_test.
+
+	from sklearn.metrics import mean_absolute_error,mean_squared_error,explained_variance_score
+	mean_absolute_error(y_test,predictions)**0.5
+	mean_absolute_error(y_test,predictions)
+	explained_variance_score(y_test,predictions)
+	
+	
+Plot the y_test and predictions to visualize
+
+	plt.scatter(y_test,predictions)
+	
+	
+Step 13:
+=======
+
+take the 1st row for a test data and predict the price and look the csv to see the actual price .
+
+	single_house = df.drop('price',axis=1).iloc[0]
+	single_house = scaler.transform(single_house.values.reshape(-1,19)) // scale the data
+	model.predict(single_house)
