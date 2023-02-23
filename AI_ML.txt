@@ -60,7 +60,8 @@ Step 6:
 =======
 
 Scale The X-axis data. We will do fit and transform to X_train data and only transform to X_test data
-
+	from sklearn.preprocessing import MinMaxScaler
+	scaler = MinMaxScaler()
 	X_train = scaler.fit_transform(X_train)
 	X_test = scaler.transform(X_test)
 
