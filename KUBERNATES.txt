@@ -6,7 +6,7 @@ Taints and tolerant ****
 Init container
 Node affinity and pod anti affinity ***
 Readiness prob****
-Likeness prob***
+Liveness prob***
 Request and limit
 K8s deployment strategy
 Node log: kubectl describe node
