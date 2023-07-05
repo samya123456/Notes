@@ -1,0 +1,6 @@
+1) Different types of Chain : https://learn.deeplearning.ai/langchain/lesson/4/chains
+  i) Simple chain
+  ii) Multiple Chain
+  iii) Router Chain
+
+2) Embedding and Vector DB : https://learn.deeplearning.ai/langchain/lesson/5/question-and-answer
