@@ -4,3 +4,4 @@
   iii) Router Chain
 
 2) Embedding and Vector DB : https://learn.deeplearning.ai/langchain/lesson/5/question-and-answer
+3) Evaluation of the LLM Model : https://learn.deeplearning.ai/langchain/lesson/6/evaluation
