@@ -1,3 +1,6 @@
+https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/20244422#overview
+
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
