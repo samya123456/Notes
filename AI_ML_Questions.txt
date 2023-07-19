@@ -1,3 +1,3 @@
-1) Machine Learning : Automated Analytical model
-2) Neural Network: A Type of machine learing Architecture modeled after bialogical neurons.
-3) Deep Learing: A Neural Network with more than one hidden layers.
+1) Machine Learning: Automated Analytical model
+2) Neural Network: A Type of machine learning Architecture modeled after biological neurons.
+3) Deep Learning: A Neural Network with more than one hidden layer.
