@@ -40,3 +40,6 @@ Tasks in unsupervised Learning:
 i) Clustering - Grouping together unlabeled data points into cluster based on similarity
 ii) Anomaly Detection - Attempt to detect outlier (Exceptions) in the dataset
 iii) dimensionality reduction
+
+
+Difference between supervised learing and Unsupervised learning stages: Only one difference is that we don't split the dataset into Train and Test dataset in Unsupervised learning as the data is unlebeled. 
