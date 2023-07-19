@@ -1,3 +1,10 @@
 1) Machine Learning: Automated Analytical model
 2) Neural Network: A Type of machine learning Architecture modeled after biological neurons.
 3) Deep Learning: A Neural Network with more than one hidden layer.
+
+4) Overfitting:
+doWhen your Model touches every single point of your training data , your error is really low in the training set. but it doesn't create a good prediction model as it doesn't fall under any matematical equation y = f(x) . that's why we get error large in validation set or in test set. this is called Overfitting i.e fitting too much to the noise data.
+
+5) Good Model should look like having large error at the begining and error will reduce over over training ovar period of time.
+6) Epochs: 1 echochs is running the entire training data 1 time through your model.
+
