@@ -31,3 +31,12 @@ Linear Regression Problem is when your model is continous predicting the result 
  iii) Root Mean Square Error
 
 
+Unsupervised Learing
+====================
+Dealing with unlabeled data.
+
+Tasks in unsupervised Learning:
+==============================
+i) Clustering - Grouping together unlabeled data points into cluster based on similarity
+ii) Anomaly Detection - Attempt to detect outlier (Exceptions) in the dataset
+iii) dimensionality reduction
