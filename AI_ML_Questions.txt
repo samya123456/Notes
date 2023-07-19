@@ -8,7 +8,8 @@ doWhen your Model touches every single point of your training data , your error 
 5) Good Model should look like having large error at the begining and error will reduce over over training ovar period of time.
 6) Epochs: 1 echochs is running the entire training data 1 time through your model.
 
-Model Evaluation matrix:
+Model Evaluation matrix : Classification Problem
+================================================
   i) Accuracy = number of currect prediction / total number of predictions.
   ii) Recall = number of true positive / (number of true positive + number of false negative)
   iii) Precision = number of true positive / (number of true positive + number of false positive)
@@ -20,4 +21,13 @@ False positive : the pic is not of the Dog and the model predicted it's a Dog.
 False Negative : the pic is of the Dog and the model predicted it's not a Dog.
 
 Confusion Matrix :  We can Organise our predicted values compare to the real values in the Cofusion matrix
+
+Model Evaluation matrix : Regression Problem
+===============================================
+Linear Regression Problem is when your model is continous predicting the result of a problem
+
+ i) Mean Square Error
+ ii) Mean Square Error
+ iii) Root Mean Square Error
+
 
