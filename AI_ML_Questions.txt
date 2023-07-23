@@ -20,7 +20,7 @@ True Negative: the pic is not of the Dog and the model predicted it's not a Dog.
 False positive: the pic is not of the Dog and the model predicted it's a Dog.
 False Negative: the pic is of the Dog and the model predicted it's not a Dog.
 
-Confusion Matrix:  We can Organise our predicted values compare to the real values in the Cofusion matrix
+Confusion Matrix:  We can Organise our predicted values compared to the real values in the Cofusion matrix
 
 Model Evaluation Matrix: Regression Problem
 ===============================================
@@ -42,4 +42,98 @@ ii) Anomaly Detection - Attempt to detect outliers (Exceptions) in the dataset
 iii) dimensionality reduction
 
 
-Difference between supervised learning and Unsupervised learning stages: Only one difference is that we don't split the dataset into Train and Test datasets in Unsupervised learning as the data is unlabeled. 
+Difference between supervised learning and Unsupervised learning stages: Only difference is that we don't split the dataset into Train and Test datasets in Unsupervised learning as the data is unlabeled. 
+
+
+Percepron Model
+===============
+
+
+Single Biological Neuron ---> Percepron ---> Multi-Layer Perceptron Model ---> Deep learning Neural network
+
+y = f(x) = x1*w1 + x2*w2 ; but if x1 or x2 =0 then that input will not be having any impact in the output. To fix that we add b.
+
+y = f(x) = (x1*w1 + b) + (x2*w2 + b)
+
+Neural network
+==============
+
+1st layer => input layer
+last layer => output layer
+middle layers => hidden layer
+
+
+Activation Functions
+====================
+
+y = f(x) = x*w + b 
+
+w = weight 
+b = bias
+
+if you want to set a boundary to the output 
+
+z = x*w + b 
+
+and we pass z in some activation function to limit the value
+
+if we are doing a binary classification problem the output will be 0 or 1.
+When we are doing Binary classification problems there are the Activation function functions used: 
+https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844498#overview
+
+	 A) Sigmoid function: 
+	 ====================
+	 
+	 f(z) = 1/ (1 + e^(-z))
+	 the output value will be 0 to 1
+	 
+	 B) Hyperbolic Tangent: 
+	 ======================
+	 
+	 f(z) = tanh(z)
+	 the output value will be -1 to 1
+	 
+	 C) Rectified linear unit: (most used Activation funcion)
+	 =========================
+	 f(z) = max(0 , z) , if value is > 0 then 0 else z
+ 
+ 
+When we are doing Multi-class  classification problems there are the Activation function functions used: 
+https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844504#overview
+
+ ** in multi-class classification problem we are 2 situations
+ i) Non-Exclusive classes: A data point can have multiple classes/categories assigned to it.
+   Ex - photos can have multiple tags, beach, family vacations, etc.
+   
+   
+ ii) Mutually Exclusive classes:
+   Ex - Photos in grayscale can be categorized black n white or full color
+   
+ 
+To organize data for  Multi-class  classification problems  we use one-hot encoding
+
+ Non Exclusive Multi-class  classification problems Activation function :
+	 A) Sigmoid function: 
+	 ====================
+	 
+	 f(z) = 1/ (1 + e^(-z))
+	 the output value will be 0 to 1
+ Mutually Exclusive classes classification problems Activation function :
+ 
+     A) SoftMax activation function:
+	 ==============================
+	 This function will calculate the probability of each target class,over all possible target classes.	
+	 this probability will range between 0 to 1.
+	 
+	 this model returns the probabilities of each class and the target class will be chosen will have the highest probability.
+	 
+	 Example :
+	  Red = 0.1
+	  Green = 0.6
+	  Blue = 0.3
+	  
+	  probablity sum =1
+	  
+	  so in this case we'll chose target class as green as it has the highest probability
+	  
+	  
