@@ -157,7 +157,12 @@ https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learn
  ============================
  
  A) Quadratic Cost Function: Which essentially means root mean square error
-
+ 
+ The cost function consists of four main things :
+ W = weight
+ B = Bias
+ Sr = input of a single training sample
+ Er = desired output
 
 
 
@@ -170,10 +175,5 @@ https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learn
 
 INTERVIEW QUESTIONS:
 1) what is embedding
-2) How chatGPT supports local languages although there is so low data set to train a model.
- 
- The cost function consists of four main things :
- W = weight
- B = Bias
- Sr = input of a single training sample
- Er = desired output
+2) How chatGPT supports local languages although there is so low data set to train a model. --> First, ChatGPT uses its language-processing features to identify the language you’ve used in your question/prompt. It uses natural language processing (NLP) techniques to understand the intent and emotion behind the text.
+
