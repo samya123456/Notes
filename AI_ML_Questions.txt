@@ -157,6 +157,20 @@ https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learn
  ============================
  
  A) Quadratic Cost Function: Which essentially means root mean square error
+
+
+
+
+
+
+
+
+
+
+
+INTERVIEW QUESTIONS:
+1) what is embedding
+2) How chatGPT supports local languages although there is so low data set to train a model.
  
  The cost function consists of four main things :
  W = weight
