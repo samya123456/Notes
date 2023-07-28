@@ -5,6 +5,11 @@
 4) Overfitting:
 when your Model touches every single point of your training data, your error is really low in the training set. but it doesn't create a good prediction model as it doesn't fall under any mathematical equation y = f(x). that's why we get an error large in the validation set or in the test set. this is called Overfitting i.e. fitting too much to the noise data.
 
+
+Overcome Overfitting
+Early stopping. Early stopping pauses the training phase before the machine learning model learns the noise in the data.
+Pruning. You might identify several features or parameters that impact the final prediction when you build a model. ...
+
 5) Good Model should look like having large errors at the beginning and errors will reduce over training a period of time.
 6) Epochs: 1 epoch is running the entire training data 1 time through your model.
 
