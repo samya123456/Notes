@@ -222,6 +222,10 @@ If your data appears to be of good quality, but your model's performance is not 
 	iii) Feature Engineering: Evaluate if you have captured all the relevant features from your data. Sometimes, domain knowledge and creative feature engineering can significantly improve model performance.
 
 
+Rule-Based Algorithms in Machine Learning:
+==========================================
+
+Rule-based algorithms are a class of machine learning approaches that rely on predefined rules or logical conditions to make predictions or decisions. Unlike traditional machine learning algorithms that learn patterns from data, rule-based algorithms are based on explicit rules set by domain experts or through manual analysis. These rules are often represented in the form of "if-then" statements or logical expressions.
 
 
 MLOPS:
