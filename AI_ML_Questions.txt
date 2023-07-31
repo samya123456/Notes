@@ -199,3 +199,9 @@ MLOPS:
 https://www.youtube.com/watch?v=NVY0FucNRU4
   i) save the whole model (in HDF5 format)
      model.save("nn.h5")
+
+2) Import a model from file:
+============================
+https://www.youtube.com/watch?v=NVY0FucNRU4
+
+  i) model = keras.models.load_model("nn.h5")
