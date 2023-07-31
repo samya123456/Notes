@@ -196,10 +196,17 @@ issues faced different with data , when the data looks good but they are not rea
 Model optimization:
 ===================
 
-1) Quantization
-2) Pruning
+Model optimization in TensorFlow involves a set of techniques aimed at improving the performance, efficiency, and generalization of your machine learning models. There are various approaches to optimizing TensorFlow models
 
+1) Data Preprocessing: Ensuring that your input data is appropriately prepared can have a significant impact on model performance. Techniques like
+    i) normalization
+    ii) feature scaling
+    iii) handling missing values are crucial steps to consider.
 
+2) Choosing the Right Architecture: Choosing the right model is important.
+3) Transfer Learning: For certain tasks, using pre-trained models and fine-tuning them on your specific dataset can be more efficient than training from scratch.
+4) Pruning: Pruning involves removing insignificant weights from the model, leading to a more compact model with potential speed-up during inference.
+	
 
 MLOPS:
 =======
