@@ -206,7 +206,23 @@ Model optimization in TensorFlow involves a set of techniques aimed at improving
 2) Choosing the Right Architecture: Choosing the right model is important.
 3) Transfer Learning: For certain tasks, using pre-trained models and fine-tuning them on your specific dataset can be more efficient than training from scratch.
 4) Pruning: Pruning involves removing insignificant weights from the model, leading to a more compact model with potential speed-up during inference.
-	
+
+
+Issues faced with data when the data looks good but they are not really that good :
+=================================================================================
+If your data appears to be of good quality, but your model's performance is not as good as expected, there could be several reasons for this discrepancy. Here are some steps to investigate and improve the situation:
+
+	i) Data Exploration and Visualization: Revisit your data exploration process to ensure you haven't missed any important patterns or insights. Visualize the data in different ways to get a better understanding of its characteristics and potential issues.
+
+	ii) Data Preprocessing: Check if your data preprocessing steps are appropriate. Ensure that you are
+		1) handling missing values, 
+                2) scaling features, and applying any necessary transformations correctly. 
+	Incorrect preprocessing can lead to suboptimal model performance.
+
+	iii) Feature Engineering: Evaluate if you have captured all the relevant features from your data. Sometimes, domain knowledge and creative feature engineering can significantly improve model performance.
+
+
+
 
 MLOPS:
 =======
