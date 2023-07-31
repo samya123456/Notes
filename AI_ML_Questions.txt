@@ -189,3 +189,13 @@ databricks
 =================
 deploy model
 issues faced different with data , when the data looks good but they are not really that good
+
+
+MLOPS:
+=======
+
+1) Export a model:
+================
+https://www.youtube.com/watch?v=NVY0FucNRU4
+  i) save the whole model (in HDF5 format)
+     model.save("nn.h5")
