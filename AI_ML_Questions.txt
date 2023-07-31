@@ -191,6 +191,16 @@ deploy model
 issues faced different with data , when the data looks good but they are not really that good
 
 
+
+
+Model optimization:
+===================
+
+1) Quantization
+2) Pruning
+
+
+
 MLOPS:
 =======
 
