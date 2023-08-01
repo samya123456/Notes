@@ -228,6 +228,20 @@ Rule-Based Algorithms in Machine Learning:
 Rule-based algorithms are a class of machine learning approaches that rely on predefined rules or logical conditions to make predictions or decisions. Unlike traditional machine learning algorithms that learn patterns from data, rule-based algorithms are based on explicit rules set by domain experts or through manual analysis. These rules are often represented in the form of "if-then" statements or logical expressions.
 
 
+Dealing with Missing Data:
+=========================
+
+determine the number of missing data in each column.
+
+	i) 	df.isnull().sum()
+	ii) determine how much percentage of that perticular column has missing data
+		100* (df.isnull().sum())/ len(df)
+	iii) drop the columns those have very less percentage
+	iv) columns that we can't drop , we have to fill data. 
+		two approach :
+		1) K Nearest Neighbour
+		2) Find out other columns which has highest correlation with this column and fill out the missing datas with those values.
+
 MLOPS:
 =======
 
