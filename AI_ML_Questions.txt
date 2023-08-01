@@ -247,7 +247,9 @@ determine the number of missing data in each column.
 What is Databricks:
 ==================
 
-The core of data bricks is an open-source distributed computing processing engine called Apache Spark. Microsoft makes the Databricks service available on its azure cloud platform . These are combined and called Azure Databricks.
+The core of data bricks is an open-source distributed computing processing engine called Apache Spark. Microsoft makes the Databricks service available on its azure cloud platform. These are combined and called Azure Databricks.
+
+Apache Spark is a lighting fast unified analytics engine for big data processing and Machine learning.
 
 MLOPS:
 =======
