@@ -242,6 +242,13 @@ determine the number of missing data in each column.
 		1) K Nearest Neighbour
 		2) Find out other columns which has highest correlation with this column and fill out the missing datas with those values.
 
+
+
+What is Databricks:
+==================
+
+The core of data bricks is an open-source distributed computing processing engine called Apache Spark. Microsoft makes the Databricks service available on its azure cloud platform . These are combined and called Azure Databricks.
+
 MLOPS:
 =======
 
