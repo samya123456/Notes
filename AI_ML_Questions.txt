@@ -265,3 +265,49 @@ https://www.youtube.com/watch?v=NVY0FucNRU4
 https://www.youtube.com/watch?v=NVY0FucNRU4
 
   i) model = keras.models.load_model("nn.h5")
+
+
+
+
+Questions:
+=========
+https://www.youtube.com/watch?v=E5wVPKJkwCg&list=PLKnIA16_Rmva_ZdY31wpEICG0KHnvIhu2&index=4
+
+
+What is the difference between Parametric & Non-Parametric ML Algorithms?
+
+Parametric Algorithms:
+======================
+Parametric algorithms make strong assumptions about the functional form of the underlying data distribution (y = f(x)). They assume that the data is generated from a specific mathematical model with a fixed number of parameters. Once these parameters are learned from the training data, the model is fully specified and can make predictions.
+
+Examples of parametric algorithms include linear regression, logistic regression, and Naive Bayes classifiers.
+
+
+Non-Parametric Algorithms:
+==========================
+Non-parametric algorithms, on the other hand, make fewer assumptions about the underlying data distribution. They don't assume a fixed form of the model and instead attempt to learn the structure of the data directly from the training examples.
+
+Examples of non-parametric algorithms include k-nearest neighbors, decision trees, support vector machines with non-linear kernels, and neural networks.
+
+
+Difference between convex & non-convex cost function; what happens when cost function is non-convex?
+
+Convex Cost Function:
+====================
+
+A convex cost function is a function where any line segment connecting two points on the curve lies above the curve itself. In other words, it's a function that has a "bowl" shape, and there are no local minima other than the global minimum. Convex cost functions are desirable in optimization because they guarantee that optimization algorithms will converge to the global minimum, which represents the best set of parameters for the model.
+
+Non-Convex Cost Function:
+=========================
+
+A non-convex cost function is one that has multiple local minima and may have complex shapes, such as peaks, valleys, and plateaus. This means that there are multiple solutions that the optimization algorithm can converge to, and it might not find the global optimum. Non-convex functions are more challenging to optimize because the optimization algorithms can get stuck in a local minimum instead of finding the global minimum.
+
+What Happens When Cost Function Is Non-Convex:
+
+When the cost function is non-convex, the optimization process becomes more challenging and uncertain. The model might fail to reach the best possible performance, and its training could be more sensitive to hyperparameters and initial conditions.
+
+
+
+
+
+
