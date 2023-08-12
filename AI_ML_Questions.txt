@@ -274,7 +274,7 @@ Questions:
 https://www.youtube.com/watch?v=E5wVPKJkwCg&list=PLKnIA16_Rmva_ZdY31wpEICG0KHnvIhu2&index=4
 
 
-What is the difference between Parametric & Non-Parametric ML Algorithms?
+1) What is the difference between Parametric & Non-Parametric ML Algorithms?
 
 Parametric Algorithms:
 ======================
@@ -290,7 +290,7 @@ Non-parametric algorithms, on the other hand, make fewer assumptions about the u
 Examples of non-parametric algorithms include k-nearest neighbors, decision trees, support vector machines with non-linear kernels, and neural networks.
 
 
-Difference between convex & non-convex cost function; what happens when cost function is non-convex?
+2) Difference between convex & non-convex cost function; what happens when cost function is non-convex?
 
 Convex Cost Function:
 ====================
@@ -306,8 +306,34 @@ What Happens When Cost Function Is Non-Convex:
 
 When the cost function is non-convex, the optimization process becomes more challenging and uncertain. The model might fail to reach the best possible performance, and its training could be more sensitive to hyperparameters and initial conditions.
 
+3) Why is 'Naïve' Bayes naïve?
 
 
+Naïve Bayes is a machine learning algorithm based on Bayesian probability theory that is used for classification and probabilistic modeling.
+
+Naïve Bayes assumes that features (attributes or variables) are independent of each other, given the class label. This means that the presence or absence of one feature does not affect the presence or absence of another feature
+
+4) What do you mean by the unreasonable effectiveness of data?
+
+The phrase “unreasonable effectiveness of data” in machine learning refers to the remarkable ability of large datasets to produce highly accurate models, even when the algorithms used to analyze them are relatively simple.
+
+5) What is Lazy Learining
+
+In lazy learning, the model stores the entire training dataset and uses it directly to make predictions on new, unseen data instances.
+
+Example: KNN
+
+6) What is Eger Learining 
+	
+This is in contrast to eager learning (or model-based learning), where a model is trained on the entire dataset before making predictions.
+
+Example: Most of the Machine learing model falls under Eger Learining .
 
 
+7) What do you mean by semi supervised learning?
 
+
+Semi supervised learning involves a small portion of labeled examples and a large number of unlabeled examples from which a model must learn and make predictions on new examples.
+
+
+8) What is an OOB(out of bag) error and how is it useful?
