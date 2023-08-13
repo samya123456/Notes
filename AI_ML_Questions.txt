@@ -435,3 +435,11 @@ Example: ChatBots, Personal Recommendations
 11) What is the No Free Lunch Theorem in Machine Learning?
 
 Without taking assumptions it's very difficult to choose a machine learning model for a particular problem. 
+
+
+12) Imagine you are working with a laptop of 2GB RAM, how would you process a dataset of 10GB?
+
+	i) Stream the data: Read the data in chunks. this is possible using Pandas/keras.
+	ii) Extract features: Extract the features from the chunk of data.
+	iii) Train model: do partinal fit . model.partial_fit :  model that support partial_fit = > Naive Based
+		
