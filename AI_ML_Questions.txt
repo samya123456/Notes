@@ -234,20 +234,20 @@ Dealing with Missing Data:
 determine the number of missing data in each column.
 
 	i) 	df.isnull().sum()
-	ii) determine how much percentage of that perticular column has missing data
+	ii) determine how much percentage of that particular column has missing data
 		100* (df.isnull().sum())/ len(df)
-	iii) drop the columns those have very less percentage
-	iv) columns that we can't drop , we have to fill data. 
-		two approach :
+	iii) drop the columns that have very less percentage
+	iv) columns that we can't drop, we have to fill data. 
+		two approaches:
 		1) K Nearest Neighbour
-		2) Find out other columns which has highest correlation with this column and fill out the missing datas with those values.
+		2) Find out other columns which have the highest correlation with this column and fill out the missing data with those values.
 
 
 
 What is Databricks:
 ==================
 
-The core of data bricks is an open-source distributed computing processing engine called Apache Spark. Microsoft makes the Databricks service available on its azure cloud platform. These are combined and called Azure Databricks.
+The core of data bricks is an open-source distributed computing processing engine called Apache Spark. Microsoft makes the Databricks service available on its Azure cloud platform. These are combined and called Azure Databricks.
 
 Apache Spark is a lighting fast unified analytics engine for big data processing and Machine learning.
 
@@ -257,15 +257,83 @@ MLOPS:
 1) Export a model:
 ================
 https://www.youtube.com/watch?v=NVY0FucNRU4
-  i) save the whole model (in HDF5 format)
+  i) Save the whole model (in HDF5 format)
      model.save("nn.h5")
 
-2) Import a model from file:
+2) Import a model from the file:
 ============================
 https://www.youtube.com/watch?v=NVY0FucNRU4
 
   i) model = keras.models.load_model("nn.h5")
 
+
+
+
+Different Machine Learning Models:
+
+
+1) Linear Regression:
+=====================
+Use for: Regression problems where the relationship between features and target is approximately linear.
+Strengths: Simplicity, interpretability, good for basic regression tasks.
+Weaknesses: Assumes a linear relationship, and may not handle complex data well.
+
+
+2) Logistic Regression:
+=======================
+
+Use for: Binary classification problems.
+Strengths: Interpretable, works well when the relationship between features and target is not too complex.
+Weaknesses: Assumes linear separation boundaries.
+
+
+3) Decision Trees:
+==================
+
+Use for: Both classification and regression problems, especially when dealing with non-linear relationships.
+Strengths: Can handle both categorical and numerical features, interpretable (for simpler trees).
+Weaknesses: Prone to overfitting, can be sensitive to small changes in data.
+
+
+4) Random Forests:
+==================
+Use for: Classification and regression tasks where higher accuracy is desired, and overfitting is a concern.
+Strengths: Robust, handles non-linearity, overcomes decision tree limitations.
+Weaknesses: Less interpretable than individual decision trees, more complex.
+
+
+5) Support Vector Machines (SVM):
+=================================
+Use for: Binary classification tasks, especially when data is not linearly separable.
+Strengths: Effective in high-dimensional spaces, can handle non-linear data with kernel trick.
+Weaknesses: Computationally expensive for large datasets, may not perform well on noisy data.
+
+
+6) K-Nearest Neighbors (KNN):
+=============================
+Use for: Classification and regression tasks, especially when local patterns are important.
+Strengths: Simple, non-parametric, can capture complex relationships.
+Weaknesses: Can be computationally expensive for large datasets, and sensitive to irrelevant features.
+
+7) Clustering Algorithms (e.g., K-Means, DBSCAN):
+==================================================
+Use for: Grouping similar data points together (unsupervised learning).
+Strengths: Useful for data exploration, finding patterns, and segmenting data.
+Weaknesses: Need to specify the number of clusters and sensitivity to initialization.
+
+
+8) Neural Networks (Deep Learning):
+===================================
+Use for: Complex tasks like image and speech recognition, natural language processing, and large datasets.
+Strengths: Can capture intricate patterns, high accuracy potential.
+Weaknesses: Requires large amounts of data, computational resources, and careful tuning.
+
+
+9) Naive Bayes:
+==============
+Use for: Text classification, spam filtering, and other probabilistic classification tasks.
+Strengths: Simple, works well with high-dimensional data (e.g., text).
+Weaknesses: Assumes features are independent, and may not work well with complex data.
 
 
 
@@ -285,12 +353,12 @@ Examples of parametric algorithms include linear regression, logistic regression
 
 Non-Parametric Algorithms:
 ==========================
-Non-parametric algorithms, on the other hand, make fewer assumptions about the underlying data distribution. They don't assume a fixed form of the model and instead attempt to learn the structure of the data directly from the training examples.
+Non-parametric algorithms, on the other hand, make fewer assumptions about the underlying data distribution. They don't assume a fixed form of the model and instead, attempt to learn the structure of the data directly from the training examples.
 
 Examples of non-parametric algorithms include k-nearest neighbors, decision trees, support vector machines with non-linear kernels, and neural networks.
 
 
-2) Difference between convex & non-convex cost function; what happens when cost function is non-convex?
+2) Difference between convex & non-convex cost function; what happens when the cost function is non-convex?
 
 Convex Cost Function:
 ====================
@@ -317,23 +385,53 @@ Naïve Bayes assumes that features (attributes or variables) are independent of 
 
 The phrase “unreasonable effectiveness of data” in machine learning refers to the remarkable ability of large datasets to produce highly accurate models, even when the algorithms used to analyze them are relatively simple.
 
-5) What is Lazy Learining
+5) What is Lazy learning
 
 In lazy learning, the model stores the entire training dataset and uses it directly to make predictions on new, unseen data instances.
 
 Example: KNN
 
-6) What is Eger Learining 
+6) What is Eger learning 
 	
 This is in contrast to eager learning (or model-based learning), where a model is trained on the entire dataset before making predictions.
 
-Example: Most of the Machine learing model falls under Eger Learining .
+Example: Most of the Machine learning model falls under Eger Learning.
 
 
-7) What do you mean by semi supervised learning?
+7) What do you mean by semi-supervised learning?
 
 
-Semi supervised learning involves a small portion of labeled examples and a large number of unlabeled examples from which a model must learn and make predictions on new examples.
+Semi-supervised learning involves a small portion of labeled examples and a large number of unlabeled examples from which a model must learn and make predictions on new examples.
 
 
-8) What is an OOB(out of bag) error and how is it useful?
+8) What is an OOB(out of the bag) error and how is it useful?
+
+9) In what scenario decision tree should be preferred over a random forest?
+
+Decision trees are much more interpretable than random forests. A single decision tree can be visualized and understood easily, making it a good choice when you need to explain the logic of the model's decisions to non-technical stakeholders.
+
+Decision tree:
+==============
+
+It's a tree-like structure that represents a sequence of decisions and their possible outcomes. Each internal node of the tree represents a decision based on a particular feature, while each leaf node represents a prediction or an outcome.
+
+Random forest:
+=============
+
+A Random Forest is a powerful ensemble machine-learning algorithm that combines multiple individual decision trees to create a more accurate and robust model. It's designed to overcome some of the limitations of a single decision tree by leveraging the concept of "wisdom of the crowd."
+
+10) Why Logistic Regression is called regression?
+
+In Logistic regression we do linear regression first we use a Sigmoid Function  to transform the linear combination of features into a value between 0 and 1, representing the probability of the positive class in a binary classification problem.
+
+
+
+10) What is Online Machine Learning?
+
+Online machine learning, also known as incremental or streaming machine learning, refers to a machine learning paradigm in which a model is updated continuously as new data becomes available, as opposed to the traditional batch learning approach where the model is trained on a fixed dataset.
+
+Example: ChatBots, Personal Recommendations
+
+11) What is the No Free Lunch Theorem in Machine Learning?
+
+Without taking assumptions it's very difficult to choose a machine learning model for a particular problem. 
