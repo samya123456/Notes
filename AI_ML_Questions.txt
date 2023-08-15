@@ -183,12 +183,12 @@ INTERVIEW QUESTIONS:
 2) How chatGPT supports local languages although there is so low data set to train a model. --> First, ChatGPT uses its language-processing features to identify the language you’ve used in your question/prompt. It uses natural language processing (NLP) techniques to understand the intent and emotion behind the text.
 
 optimization
-rule based algo -- mean square error , root mean square error
+rule-based algo -- mean square error, root mean square error
 pysprak ***
 databricks
 =================
 deploy model
-issues faced different with data , when the data looks good but they are not really that good
+issues faced differently with data , when the data looks good but they are not really that good
 
 
 
@@ -236,7 +236,7 @@ determine the number of missing data in each column.
 	i) 	df.isnull().sum()
 	ii) determine how much percentage of that particular column has missing data
 		100* (df.isnull().sum())/ len(df)
-	iii) drop the columns that have very less percentage
+	iii) drop the columns that have a very less percentage
 	iv) columns that we can't drop, we have to fill data. 
 		two approaches:
 		1) K Nearest Neighbour
@@ -290,6 +290,8 @@ Weaknesses: Assumes linear separation boundaries.
 3) Decision Trees:
 ==================
 
+https://www.youtube.com/watch?v=PHxYNGo8NcI
+
 Use for: Both classification and regression problems, especially when dealing with non-linear relationships.
 Strengths: Can handle both categorical and numerical features, interpretable (for simpler trees).
 Weaknesses: Prone to overfitting, can be sensitive to small changes in data.
@@ -304,9 +306,15 @@ Weaknesses: Less interpretable than individual decision trees, more complex.
 
 5) Support Vector Machines (SVM):
 =================================
+
+https://www.youtube.com/watch?v=_YPScrckx28
+
 Use for: Binary classification tasks, especially when data is not linearly separable.
 Strengths: Effective in high-dimensional spaces, can handle non-linear data with kernel trick.
 Weaknesses: Computationally expensive for large datasets, may not perform well on noisy data.
+
+kernel trick:
+https://www.youtube.com/watch?v=Q7vT0--5VII
 
 
 6) K-Nearest Neighbors (KNN):
@@ -412,6 +420,8 @@ Decision trees are much more interpretable than random forests. A single decisio
 
 Decision tree:
 ==============
+
+
 
 It's a tree-like structure that represents a sequence of decisions and their possible outcomes. Each internal node of the tree represents a decision based on a particular feature, while each leaf node represents a prediction or an outcome.
 
