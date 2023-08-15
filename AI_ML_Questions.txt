@@ -299,6 +299,8 @@ Weaknesses: Prone to overfitting, can be sensitive to small changes in data.
 
 4) Random Forests:
 ==================
+https://www.youtube.com/watch?v=v6VJ2RO66Ag
+
 Use for: Classification and regression tasks where higher accuracy is desired, and overfitting is a concern.
 Strengths: Robust, handles non-linearity, overcomes decision tree limitations.
 Weaknesses: Less interpretable than individual decision trees, more complex.
@@ -319,6 +321,7 @@ https://www.youtube.com/watch?v=Q7vT0--5VII
 
 6) K-Nearest Neighbors (KNN):
 =============================
+
 Use for: Classification and regression tasks, especially when local patterns are important.
 Strengths: Simple, non-parametric, can capture complex relationships.
 Weaknesses: Can be computationally expensive for large datasets, and sensitive to irrelevant features.
