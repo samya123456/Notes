@@ -461,7 +461,7 @@ Without taking assumptions it's very difficult to choose a machine learning mode
 
 14) What is multi-colinearity?
 
-If the feature data itself has a correlation with each other then it is called multi-colinearity. Which is very bad for Linear regression model.
+If the feature data itself has a correlation with each other then it is called multi-colinearity. Which is very bad for the Linear regression model.
 To Determine the correlation of feature data we use variance_inflation_factor in the X_train data. if the value is in the range of 1-4 it's good. 
 If the value is greater than 5 then it's bad i.e the feature data have a correlation with each other.
 
@@ -470,3 +470,6 @@ If the value is greater than 5 then it's bad i.e the feature data have a correla
 
 16) Null Hypothesis and P Value
 https://www.youtube.com/watch?v=zII6KLR4Lb4
+Null Hypothesis: Threat everything as equal
+P value: Probability of null hypothesis to be true
+
