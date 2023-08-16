@@ -466,3 +466,7 @@ To Determine the correlation of feature data we use variance_inflation_factor in
 If the value is greater than 5 then it's bad i.e the feature data have a correlation with each other.
 
 15) Reducible Vs Irreducible Error in Machine Learning?
+
+
+16) Null Hypothesis and P Value
+https://www.youtube.com/watch?v=zII6KLR4Lb4
