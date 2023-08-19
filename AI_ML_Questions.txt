@@ -3,6 +3,8 @@
 3) Deep Learning: A Neural Network with more than one hidden layer.
 
 4) Overfitting:
+https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844592#overview
+
 when your Model touches every single point of your training data, your error is really low in the training set. but it doesn't create a good prediction model as it doesn't fall under any mathematical equation y = f(x). that's why we get an error large in the validation set or in the test set. this is called Overfitting i.e. fitting too much to the noise data.
 
 
@@ -15,6 +17,9 @@ Pruning. You might identify several features or parameters that impact the final
 
 Model Evaluation Matrix: Classification Problem
 ================================================
+
+https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844594#overview
+
   i) Accuracy = number of correct predictions / total number of predictions.
   ii) Recall = number of true positive / (number of true positive + number of false negative)
   iii) Precision = number of true positive / (number of true positive + number of false positive)
