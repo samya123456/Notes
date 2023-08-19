@@ -474,6 +474,7 @@ Null Hypothesis: Threat everything as equal
 P value: Probability of null hypothesis to be true
 
 17) k means clustering and Euclidean Distance:
-
 https://www.youtube.com/watch?v=CLKW6uWJtTc
 
+Elbow method in k means clustering: To determine what should the Ideal number of clusters we use Elbow method
+https://www.youtube.com/watch?v=ivFJZPYl2L0
