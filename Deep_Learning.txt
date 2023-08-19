@@ -22,4 +22,4 @@ Optimizer
   1) Gradient Descent
   2) SGD
   3) mini batch SGD
-  4) Adam
+  4) Adam(mometum + Rmsprop)
