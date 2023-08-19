@@ -1,0 +1,25 @@
+1) ANN
+2) CNN
+3) RNN
+
+How Neural network work.
+what is weight
+what is bias
+what is activation function
+vanising gradient factor
+why Exploding gradient problem happens
+
+Loss function: Classification problem
+  1) binary cross entropy
+  2) catagorical cross entropy
+
+Loss function: Regression problem
+  1) Mean absolute error
+  2) mean square error
+  3) Root mean square error
+
+Optimizer
+  1) Gradient Descent
+  2) SGD
+  3) mini batch SGD
+  4) Adam
