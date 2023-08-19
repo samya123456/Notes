@@ -415,7 +415,9 @@ Example: Most of the Machine learning model falls under Eger Learning.
 Semi-supervised learning involves a small portion of labeled examples and a large number of unlabeled examples from which a model must learn and make predictions on new examples.
 
 
-8) What is an OOB(out of the bag) error and how is it useful?
+8) What is an OOB(out of the bag) score in random forest model and how is it useful?
+
+https://www.youtube.com/watch?v=fXfs_6o_hOs
 
 9) In what scenario decision tree should be preferred over a random forest?
 
