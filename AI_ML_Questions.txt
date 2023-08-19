@@ -34,6 +34,8 @@ Confusion Matrix:  We can Organise our predicted values compared to the real val
 
 Model Evaluation Matrix: Regression Problem
 ===============================================
+https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844602#overview
+
 A linear Regression Problem is when your model is continuously predicting the result of a problem
 
  i) Mean Square Error
