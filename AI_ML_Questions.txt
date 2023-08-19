@@ -387,7 +387,7 @@ When the cost function is non-convex, the optimization process becomes more chal
 
 3) Why is 'Naïve' Bayes naïve?
 
-
+https://www.youtube.com/watch?v=Ty7knppVo9E
 Naïve Bayes is a machine learning algorithm based on Bayesian probability theory that is used for classification and probabilistic modeling.
 
 Naïve Bayes assumes that features (attributes or variables) are independent of each other, given the class label. This means that the presence or absence of one feature does not affect the presence or absence of another feature
