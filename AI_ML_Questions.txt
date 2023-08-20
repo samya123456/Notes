@@ -68,12 +68,14 @@ Model Evaluation Matrix:
 	  iii) Precision = number of true positive / (number of true positive + number of false positive)
 	  iv) f1 Score = combination of Recall and Precision  matrix = 2*(Recall * Precision) / (Recall + Precision)
 
-	True positive: the pic is of the Dog and the model predicted it as Dog.
-	True Negative: the pic is not of the Dog and the model predicted it's not a Dog.
-	False positive: the pic is not of the Dog and the model predicted it's a Dog.
-	False Negative: the pic is of the Dog and the model predicted it's not a Dog.
+	Confusion Matrix:  We can Organise our predicted values compared to the real values in the Cofusion matrix:
+	------------------
+		True positive: the pic is of the Dog and the model predicted it as Dog.
+		True Negative: the pic is not of the Dog and the model predicted it's not a Dog.
+		False positive: the pic is not of the Dog and the model predicted it's a Dog.
+		False Negative: the pic is of the Dog and the model predicted it's not a Dog.
 
-	Confusion Matrix:  We can Organise our predicted values compared to the real values in the Cofusion matrix
+	
 
 	Regression Problem:
 	-------------------
