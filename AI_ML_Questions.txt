@@ -2,6 +2,21 @@
 MACHINE LEARNING BASICS:
 ========================
 
+Topics:
+-------
+1) Overview
+2) Artificial Neural network
+3) Overfitting
+4) Model Evaluation Matrix
+5) Unsupervised Learning
+6) Activation Functions
+7) Cost Function
+8) Different Machine Learning Algorithms
+9) INTERVIEW QUESTIONS:
+	
+
+
+
 Overview:
 ==========
 
@@ -269,10 +284,6 @@ Different Machine Learning Algorithms:
 
 
 
-
-
-Questions:
-=========
 
 INTERVIEW QUESTIONS:
 ====================
