@@ -503,3 +503,9 @@ https://www.youtube.com/watch?v=NVY0FucNRU4
 https://www.youtube.com/watch?v=NVY0FucNRU4
 
   i) model = keras.models.load_model("nn.h5")
+
+23) Boosting Algorithm:
+  1) AdaBoost
+  2) XGBoost 
+  3) Gradient Boosting 
+24) Boosting vs Bagging
