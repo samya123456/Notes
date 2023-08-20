@@ -10,7 +10,6 @@ Topics:
 4) Model Evaluation Matrix
 5) Unsupervised Learning
 6) Activation Functions
-7) Cost Function
 8) Different Machine Learning Algorithms
 9) INTERVIEW QUESTIONS:
 
@@ -21,7 +20,7 @@ https://www.youtube.com/watch?v=KlJe9h438_w&list=PLZoTAELRMXVM0zN0cgJrfT6TK2ypCp
 13) what is the activation function
 14) vanishing gradient factor
 15) why Exploding gradient problem happens
-16) Loss function: Classification problem
+16) Cost Function/Loss function: Classification problem
   1) binary cross entropy
   2) categorical cross entropy
 Loss function: Regression problem
@@ -189,8 +188,7 @@ To organize data for  Multi-class  classification problems  we use one-hot encod
 	  Green = 0.6
 	  Blue = 0.3
 	  
-	  probablity sum =1
-	  
+	  probability sum =1
 	  so in this case we'll choose the target class as green as it has the highest probability
 	  
 	
@@ -198,28 +196,20 @@ To organize data for  Multi-class  classification problems  we use one-hot encod
 Cost Function:
 ==============	
 https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844516#overview
-
-
-
 *Cost Function tells you how far you are from the true value based on your prediction.
-
 *It Compares Our Neural Network with the true Value we use the cost function or loss function or error function.
 
- Here :
- =====
  y = true value 
  a = neural predictions
  
  Commonly used Cost function:
- ============================
- 
- A) Quadratic Cost Function: Which essentially means root mean square error
- 
- The cost function consists of four main things :
- W = weight
- B = Bias
- Sr = input of a single training sample
- Er = desired output
+----------------------------
+	 A) Quadratic Cost Function: Which essentially means root mean square error
+	 The cost function consists of four main things :
+	 W = weight
+	 B = Bias
+	 Sr = input of a single training sample
+	 Er = desired output
 
 
 Different Machine Learning Algorithms:
