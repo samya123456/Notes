@@ -1,60 +1,71 @@
-1) Machine Learning: Automated Analytical model
-2) Neural Network: A Type of machine learning Architecture modeled after biological neurons.
-3) Deep Learning: A Neural Network with more than one hidden layer.
 
-4) Overfitting:
-https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844592#overview
+MACHINE LEARNING BASICS:
+========================
 
-when your Model touches every single point of your training data, your error is really low in the training set. but it doesn't create a good prediction model as it doesn't fall under any mathematical equation y = f(x). that's why we get an error large in the validation set or in the test set. this is called Overfitting i.e. fitting too much to the noise data.
+Overview:
+==========
+
+* Machine Learning: Automated Analytical model
+* Neural Network: A Type of machine learning Architecture modeled after biological neurons.
+* Deep Learning: A Neural Network with more than one hidden layer.
+* Overfitting:
+
+	https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844592#overview
+
+	when your Model touches every single point of your training data, your error is really low in the training set. but it doesn't create a good prediction model as it doesn't fall under any mathematical equation y = f(x). that's why we get an error large in the validation set or in the test set. this is called Overfitting i.e. fitting too much to the noise data.
+
+	Overcome Overfitting:
+	--------------------
+
+	Early stopping. Early stopping pauses the training phase before the machine learning model learns the noise in the data.
+	Pruning. You might identify several features or parameters that impact the final prediction when you build a model. ...
+
+	* Good Model should look like having large errors at the beginning and errors will reduce over training a period of time.
+	* Epochs: 1 epoch is running the entire training data 1 time through your model.
 
 
-Overcome Overfitting
-Early stopping. Early stopping pauses the training phase before the machine learning model learns the noise in the data.
-Pruning. You might identify several features or parameters that impact the final prediction when you build a model. ...
+Model Evaluation Matrix: 
+=======================
 
-5) Good Model should look like having large errors at the beginning and errors will reduce over training a period of time.
-6) Epochs: 1 epoch is running the entire training data 1 time through your model.
+	Classification Problem:
+	-----------------------
+	https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844594#overview
 
-Model Evaluation Matrix: Classification Problem
-================================================
+	  i) Accuracy = number of correct predictions / total number of predictions.
+	  ii) Recall = number of true positive / (number of true positive + number of false negative)
+	  iii) Precision = number of true positive / (number of true positive + number of false positive)
+	  iv) f1 Score = combination of Recall and Precision  matrix = 2*(Recall * Precision) / (Recall + Precision)
 
-https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844594#overview
+	True positive: the pic is of the Dog and the model predicted it as Dog.
+	True Negative: the pic is not of the Dog and the model predicted it's not a Dog.
+	False positive: the pic is not of the Dog and the model predicted it's a Dog.
+	False Negative: the pic is of the Dog and the model predicted it's not a Dog.
 
-  i) Accuracy = number of correct predictions / total number of predictions.
-  ii) Recall = number of true positive / (number of true positive + number of false negative)
-  iii) Precision = number of true positive / (number of true positive + number of false positive)
-  iv) f1 Score = combination of Recall and Precision  matrix = 2*(Recall * Precision) / (Recall + Precision)
+	Confusion Matrix:  We can Organise our predicted values compared to the real values in the Cofusion matrix
 
-True positive: the pic is of the Dog and the model predicted it as Dog.
-True Negative: the pic is not of the Dog and the model predicted it's not a Dog.
-False positive: the pic is not of the Dog and the model predicted it's a Dog.
-False Negative: the pic is of the Dog and the model predicted it's not a Dog.
+	Regression Problem:
+	-------------------
+	https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844602#overview
 
-Confusion Matrix:  We can Organise our predicted values compared to the real values in the Cofusion matrix
+	A linear Regression Problem is when your model is continuously predicting the result of a problem
 
-Model Evaluation Matrix: Regression Problem
-===============================================
-https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844602#overview
-
-A linear Regression Problem is when your model is continuously predicting the result of a problem
-
- i) Mean Square Error
- ii) Mean Square Error
- iii) Root Mean Square Error
+	 i) Mean Absolute Error
+	 ii) Mean Square Error
+	 iii) Root Mean Square Error
 
 
 Unsupervised Learning
-====================
+=====================
 Dealing with unlabeled data.
 
-Tasks in unsupervised Learning:
-==============================
-i) Clustering - Grouping together unlabeled data points into clusters based on similarity
-ii) Anomaly Detection - Attempt to detect outliers (Exceptions) in the dataset
-iii) dimensionality reduction
+	Tasks in unsupervised Learning:
+	------------------------------
+	i) Clustering - Grouping together unlabeled data points into clusters based on similarity
+	ii) Anomaly Detection - Attempt to detect outliers (Exceptions) in the dataset
+	iii) dimensionality reduction
 
 
-Difference between supervised learning and Unsupervised learning stages: Only difference is that we don't split the dataset into Train and Test datasets in Unsupervised learning as the data is unlabeled. 
+* Difference between supervised learning and Unsupervised learning stages: Only difference is that we don't split the dataset into Train and Test datasets in Unsupervised learning as the data is unlabeled. 
 
 
 Percepron Model
@@ -67,7 +78,7 @@ y = f(x) = x1*w1 + x2*w2 ; but if x1 or x2 =0 then that input will not be having
 
 y = f(x) = (x1*w1 + b) + (x2*w2 + b)
 
-Neural network
+Neural network:
 ==============
 
 1st layer => input layer
@@ -75,7 +86,7 @@ last layer => output layer
 middle layers => hidden layer
 
 
-Activation Functions
+Activation Functions:
 ====================
 
 y = f(x) = x*w + b 
@@ -177,15 +188,94 @@ https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learn
  Er = desired output
 
 
+Different Machine Learning Algorithms:
+=====================================
+
+
+	1) Linear Regression:
+	=====================
+	Use for: Regression problems where the relationship between features and target is approximately linear.
+	Strengths: Simplicity, interpretability, good for basic regression tasks.
+	Weaknesses: Assumes a linear relationship, and may not handle complex data well.
+
+
+	2) Logistic Regression:
+	=======================
+
+	Use for: Binary classification problems.
+	Strengths: Interpretable, works well when the relationship between features and target is not too complex.
+	Weaknesses: Assumes linear separation boundaries.
+
+
+	3) Decision Trees:
+	==================
+
+	https://www.youtube.com/watch?v=PHxYNGo8NcI
+
+	Use for: Both classification and regression problems, especially when dealing with non-linear relationships.
+	Strengths: Can handle both categorical and numerical features, interpretable (for simpler trees).
+	Weaknesses: Prone to overfitting, can be sensitive to small changes in data.
+
+
+	4) Random Forests:
+	==================
+	https://www.youtube.com/watch?v=v6VJ2RO66Ag
+
+	Use for: Classification and regression tasks where higher accuracy is desired, and overfitting is a concern.
+	Strengths: Robust, handles non-linearity, overcomes decision tree limitations.
+	Weaknesses: Less interpretable than individual decision trees, more complex.
+
+
+	5) Support Vector Machines (SVM):
+	=================================
+
+	https://www.youtube.com/watch?v=_YPScrckx28
+
+	Use for: Binary classification tasks, especially when data is not linearly separable.
+	Strengths: Effective in high-dimensional spaces, can handle non-linear data with kernel trick.
+	Weaknesses: Computationally expensive for large datasets, may not perform well on noisy data.
+
+	kernel trick:
+	https://www.youtube.com/watch?v=Q7vT0--5VII
+
+
+	6) K-Nearest Neighbors (KNN):
+	=============================
+
+	Use for: Classification and regression tasks, especially when local patterns are important.
+	Strengths: Simple, non-parametric, can capture complex relationships.
+	Weaknesses: Can be computationally expensive for large datasets, and sensitive to irrelevant features.
+
+	7) Clustering Algorithms (e.g., K-Means, DBSCAN):
+	==================================================
+	Use for: Grouping similar data points together (unsupervised learning).
+	Strengths: Useful for data exploration, finding patterns, and segmenting data.
+	Weaknesses: Need to specify the number of clusters and sensitivity to initialization.
+
+
+	8) Neural Networks (Deep Learning):
+	===================================
+	Use for: Complex tasks like image and speech recognition, natural language processing, and large datasets.
+	Strengths: Can capture intricate patterns, high accuracy potential.
+	Weaknesses: Requires large amounts of data, computational resources, and careful tuning.
+
+
+	9) Naive Bayes:
+	==============
+	Use for: Text classification, spam filtering, and other probabilistic classification tasks.
+	Strengths: Simple, works well with high-dimensional data (e.g., text).
+	Weaknesses: Assumes features are independent, and may not work well with complex data.
 
 
 
 
 
 
-
+Questions:
+=========
 
 INTERVIEW QUESTIONS:
+====================
 1) what is embedding
 2) How chatGPT supports local languages although there is so low data set to train a model. --> First, ChatGPT uses its language-processing features to identify the language you’ve used in your question/prompt. It uses natural language processing (NLP) techniques to understand the intent and emotion behind the text.
 
@@ -197,166 +287,6 @@ databricks
 deploy model
 issues faced differently with data , when the data looks good but they are not really that good
 
-
-
-
-Model optimization:
-===================
-
-Model optimization in TensorFlow involves a set of techniques aimed at improving the performance, efficiency, and generalization of your machine learning models. There are various approaches to optimizing TensorFlow models
-
-1) Data Preprocessing: Ensuring that your input data is appropriately prepared can have a significant impact on model performance. Techniques like
-    i) normalization
-    ii) feature scaling
-    iii) handling missing values are crucial steps to consider.
-
-2) Choosing the Right Architecture: Choosing the right model is important.
-3) Transfer Learning: For certain tasks, using pre-trained models and fine-tuning them on your specific dataset can be more efficient than training from scratch.
-4) Pruning: Pruning involves removing insignificant weights from the model, leading to a more compact model with potential speed-up during inference.
-
-
-Issues faced with data when the data looks good but they are not really that good :
-=================================================================================
-If your data appears to be of good quality, but your model's performance is not as good as expected, there could be several reasons for this discrepancy. Here are some steps to investigate and improve the situation:
-
-	i) Data Exploration and Visualization: Revisit your data exploration process to ensure you haven't missed any important patterns or insights. Visualize the data in different ways to get a better understanding of its characteristics and potential issues.
-
-	ii) Data Preprocessing: Check if your data preprocessing steps are appropriate. Ensure that you are
-		1) handling missing values, 
-                2) scaling features, and applying any necessary transformations correctly. 
-	Incorrect preprocessing can lead to suboptimal model performance.
-
-	iii) Feature Engineering: Evaluate if you have captured all the relevant features from your data. Sometimes, domain knowledge and creative feature engineering can significantly improve model performance.
-
-
-Rule-Based Algorithms in Machine Learning:
-==========================================
-
-Rule-based algorithms are a class of machine learning approaches that rely on predefined rules or logical conditions to make predictions or decisions. Unlike traditional machine learning algorithms that learn patterns from data, rule-based algorithms are based on explicit rules set by domain experts or through manual analysis. These rules are often represented in the form of "if-then" statements or logical expressions.
-
-
-Dealing with Missing Data:
-=========================
-
-determine the number of missing data in each column.
-
-	i) 	df.isnull().sum()
-	ii) determine how much percentage of that particular column has missing data
-		100* (df.isnull().sum())/ len(df)
-	iii) drop the columns that have a very less percentage
-	iv) columns that we can't drop, we have to fill data. 
-		two approaches:
-		1) K Nearest Neighbour
-		2) Find out other columns which have the highest correlation with this column and fill out the missing data with those values.
-
-
-
-What is Databricks:
-==================
-
-The core of data bricks is an open-source distributed computing processing engine called Apache Spark. Microsoft makes the Databricks service available on its Azure cloud platform. These are combined and called Azure Databricks.
-
-Apache Spark is a lighting fast unified analytics engine for big data processing and Machine learning.
-
-MLOPS:
-=======
-
-1) Export a model:
-================
-https://www.youtube.com/watch?v=NVY0FucNRU4
-  i) Save the whole model (in HDF5 format)
-     model.save("nn.h5")
-
-2) Import a model from the file:
-============================
-https://www.youtube.com/watch?v=NVY0FucNRU4
-
-  i) model = keras.models.load_model("nn.h5")
-
-
-
-
-Different Machine Learning Models:
-
-
-1) Linear Regression:
-=====================
-Use for: Regression problems where the relationship between features and target is approximately linear.
-Strengths: Simplicity, interpretability, good for basic regression tasks.
-Weaknesses: Assumes a linear relationship, and may not handle complex data well.
-
-
-2) Logistic Regression:
-=======================
-
-Use for: Binary classification problems.
-Strengths: Interpretable, works well when the relationship between features and target is not too complex.
-Weaknesses: Assumes linear separation boundaries.
-
-
-3) Decision Trees:
-==================
-
-https://www.youtube.com/watch?v=PHxYNGo8NcI
-
-Use for: Both classification and regression problems, especially when dealing with non-linear relationships.
-Strengths: Can handle both categorical and numerical features, interpretable (for simpler trees).
-Weaknesses: Prone to overfitting, can be sensitive to small changes in data.
-
-
-4) Random Forests:
-==================
-https://www.youtube.com/watch?v=v6VJ2RO66Ag
-
-Use for: Classification and regression tasks where higher accuracy is desired, and overfitting is a concern.
-Strengths: Robust, handles non-linearity, overcomes decision tree limitations.
-Weaknesses: Less interpretable than individual decision trees, more complex.
-
-
-5) Support Vector Machines (SVM):
-=================================
-
-https://www.youtube.com/watch?v=_YPScrckx28
-
-Use for: Binary classification tasks, especially when data is not linearly separable.
-Strengths: Effective in high-dimensional spaces, can handle non-linear data with kernel trick.
-Weaknesses: Computationally expensive for large datasets, may not perform well on noisy data.
-
-kernel trick:
-https://www.youtube.com/watch?v=Q7vT0--5VII
-
-
-6) K-Nearest Neighbors (KNN):
-=============================
-
-Use for: Classification and regression tasks, especially when local patterns are important.
-Strengths: Simple, non-parametric, can capture complex relationships.
-Weaknesses: Can be computationally expensive for large datasets, and sensitive to irrelevant features.
-
-7) Clustering Algorithms (e.g., K-Means, DBSCAN):
-==================================================
-Use for: Grouping similar data points together (unsupervised learning).
-Strengths: Useful for data exploration, finding patterns, and segmenting data.
-Weaknesses: Need to specify the number of clusters and sensitivity to initialization.
-
-
-8) Neural Networks (Deep Learning):
-===================================
-Use for: Complex tasks like image and speech recognition, natural language processing, and large datasets.
-Strengths: Can capture intricate patterns, high accuracy potential.
-Weaknesses: Requires large amounts of data, computational resources, and careful tuning.
-
-
-9) Naive Bayes:
-==============
-Use for: Text classification, spam filtering, and other probabilistic classification tasks.
-Strengths: Simple, works well with high-dimensional data (e.g., text).
-Weaknesses: Assumes features are independent, and may not work well with complex data.
-
-
-
-Questions:
-=========
 https://www.youtube.com/watch?v=E5wVPKJkwCg&list=PLKnIA16_Rmva_ZdY31wpEICG0KHnvIhu2&index=4
 
 
@@ -487,3 +417,76 @@ https://www.youtube.com/watch?v=CLKW6uWJtTc
 
 Elbow method in k means clustering: To determine what should the Ideal number of clusters we use Elbow method
 https://www.youtube.com/watch?v=ivFJZPYl2L0
+
+
+18) Model optimization:
+
+Model optimization in TensorFlow involves a set of techniques aimed at improving the performance, efficiency, and generalization of your machine learning models. There are various approaches to optimizing TensorFlow models
+
+1) Data Preprocessing: Ensuring that your input data is appropriately prepared can have a significant impact on model performance. Techniques like
+    i) normalization
+    ii) feature scaling
+    iii) handling missing values are crucial steps to consider.
+
+2) Choosing the Right Architecture: Choosing the right model is important.
+3) Transfer Learning: For certain tasks, using pre-trained models and fine-tuning them on your specific dataset can be more efficient than training from scratch.
+4) Pruning: Pruning involves removing insignificant weights from the model, leading to a more compact model with potential speed-up during inference.
+
+
+19) Issues faced with data when the data looks good but they are not really that good :
+
+If your data appears to be of good quality, but your model's performance is not as good as expected, there could be several reasons for this discrepancy. Here are some steps to investigate and improve the situation:
+
+	i) Data Exploration and Visualization: Revisit your data exploration process to ensure you haven't missed any important patterns or insights. Visualize the data in different ways to get a better understanding of its characteristics and potential issues.
+
+	ii) Data Preprocessing: Check if your data preprocessing steps are appropriate. Ensure that you are
+		1) handling missing values, 
+                2) scaling features, and applying any necessary transformations correctly. 
+	Incorrect preprocessing can lead to suboptimal model performance.
+
+	iii) Feature Engineering: Evaluate if you have captured all the relevant features from your data. Sometimes, domain knowledge and creative feature engineering can significantly improve model performance.
+
+
+20) Rule-Based Algorithms in Machine Learning:
+
+
+Rule-based algorithms are a class of machine learning approaches that rely on predefined rules or logical conditions to make predictions or decisions. Unlike traditional machine learning algorithms that learn patterns from data, rule-based algorithms are based on explicit rules set by domain experts or through manual analysis. These rules are often represented in the form of "if-then" statements or logical expressions.
+
+
+21) Dealing with Missing Data:
+
+
+determine the number of missing data in each column.
+
+	i) 	df.isnull().sum()
+	ii) determine how much percentage of that particular column has missing data
+		100* (df.isnull().sum())/ len(df)
+	iii) drop the columns that have a very less percentage
+	iv) columns that we can't drop, we have to fill data. 
+		two approaches:
+		1) K Nearest Neighbour
+		2) Find out other columns which have the highest correlation with this column and fill out the missing data with those values.
+
+
+
+22) What is Databricks:
+
+
+The core of data bricks is an open-source distributed computing processing engine called Apache Spark. Microsoft makes the Databricks service available on its Azure cloud platform. These are combined and called Azure Databricks.
+
+Apache Spark is a lighting fast unified analytics engine for big data processing and Machine learning.
+
+MLOPS:
+=======
+
+1) Export a model:
+================
+https://www.youtube.com/watch?v=NVY0FucNRU4
+  i) Save the whole model (in HDF5 format)
+     model.save("nn.h5")
+
+2) Import a model from the file:
+============================
+https://www.youtube.com/watch?v=NVY0FucNRU4
+
+  i) model = keras.models.load_model("nn.h5")
