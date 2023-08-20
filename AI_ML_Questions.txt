@@ -30,6 +30,7 @@ Loss function: Regression problem
   3) Root mean square error
 
 17) Optimizer
+https://www.youtube.com/watch?v=JhQqquVeCE0
   1) Gradient Descent
   2) SGD
   3) mini-batch SGD
