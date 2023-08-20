@@ -291,14 +291,12 @@ INTERVIEW QUESTIONS:
 ====================
 1) what is embedding
 2) How chatGPT supports local languages although there is so low data set to train a model. --> First, ChatGPT uses its language-processing features to identify the language you’ve used in your question/prompt. It uses natural language processing (NLP) techniques to understand the intent and emotion behind the text.
-
-optimization
-rule-based algo -- mean square error, root mean square error
-pysprak ***
-databricks
-=================
-deploy model
-issues faced differently with data , when the data looks good but they are not really that good
+3) optimization
+4) rule-based algo -- mean square error, root mean square error
+5) pysprak ***
+6) databricks
+7) deploy model
+8) issues faced differently with data , when the data looks good but they are not really that good
 
 https://www.youtube.com/watch?v=E5wVPKJkwCg&list=PLKnIA16_Rmva_ZdY31wpEICG0KHnvIhu2&index=4
 
