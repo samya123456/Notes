@@ -20,13 +20,14 @@ https://www.youtube.com/watch?v=KlJe9h438_w&list=PLZoTAELRMXVM0zN0cgJrfT6TK2ypCp
 13) what is the activation function
 14) vanishing gradient factor
 15) why Exploding gradient problem happens
-16) Cost Function/Loss function: Classification problem
-  1) binary cross entropy
-  2) categorical cross entropy
-Loss function: Regression problem
-  1) Mean absolute error
-  2) mean square error
-  3) Root mean square error
+16) Cost Function/Loss function:
+	Classification problem:
+	  1) binary cross entropy
+	  2) categorical cross entropy
+        Regression problem :
+	  1) Mean absolute error
+	  2) mean square error
+	  3) Root mean square error
 
 17) Optimizer
 https://www.youtube.com/watch?v=JhQqquVeCE0
@@ -195,6 +196,14 @@ https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learn
 	 Sr = input of a single training sample
 	 Er = desired output
 
+Cost Function/Loss function:
+  Classification problem:
+    1) binary cross entropy
+    2) categorical cross entropy
+  Regression problem :
+    1) Mean absolute error
+    2) mean square error
+    3) Root mean square error
 
 Different Machine Learning Algorithms:
 =====================================
