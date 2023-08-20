@@ -13,9 +13,25 @@ Topics:
 7) Cost Function
 8) Different Machine Learning Algorithms
 9) INTERVIEW QUESTIONS:
-	
+10) How Neural network work.
+11) what is weight
+12) what is bias
+13) what is the activation function
+14) vanishing gradient factor
+15) why Exploding gradient problem happens
+16) Loss function: Classification problem
+  1) binary cross entropy
+  2) categorical cross entropy
+Loss function: Regression problem
+  1) Mean absolute error
+  2) mean square error
+  3) Root mean square error
 
-
+17) Optimizer
+  1) Gradient Descent
+  2) SGD
+  3) mini-batch SGD
+  4) Adam(mometum + Rmsprop)
 
 Overview:
 ==========
