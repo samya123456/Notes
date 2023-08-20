@@ -13,6 +13,8 @@ Topics:
 7) Cost Function
 8) Different Machine Learning Algorithms
 9) INTERVIEW QUESTIONS:
+
+https://www.youtube.com/watch?v=KlJe9h438_w&list=PLZoTAELRMXVM0zN0cgJrfT6TK2ypCpQdY&index=6
 10) How Neural network work.
 11) what is weight
 12) what is bias
