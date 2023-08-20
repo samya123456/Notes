@@ -157,7 +157,7 @@ https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learn
    Ex - Photos in grayscale can be categorized as black n white or full color
    
  
-*To organize data for  Multi-class  classification problems  we use one-hot encoding.
+
  Non Exclusive Multi-class  classification problems Activation function :
 	 A) Sigmoid function: 
 	 ====================
@@ -509,3 +509,4 @@ https://www.youtube.com/watch?v=NVY0FucNRU4
   2) XGBoost 
   3) Gradient Boosting 
 24) Boosting vs Bagging
+25) in case of categorical data how to convert them into numbers then find the distance for clustering in K mean clustering: To organize data for  Multi-class  classification problems  we use one-hot encoding.
