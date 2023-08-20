@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=KlJe9h438_w&list=PLZoTAELRMXVM0zN0cgJrfT6TK2ypCp
 16) Cost Function/Loss function:
 	Classification problem:
 	  1) binary cross entropy - https://www.youtube.com/watch?v=2ca_K2rgNVA
-	  2) categorical cross entropy
+	  2) categorical cross entropy - https://www.youtube.com/watch?v=rkULCW_h09k
         Regression problem :
 	  1) Mean absolute error
 	  2) mean square error
