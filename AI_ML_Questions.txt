@@ -42,9 +42,7 @@ Overview:
 * Neural Network: A Type of machine learning Architecture modeled after biological neurons.
 * Deep Learning: A Neural Network with more than one hidden layer.
 * Overfitting:
-
 	https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844592#overview
-
 	when your Model touches every single point of your training data, your error is really low in the training set. but it doesn't create a good prediction model as it doesn't fall under any mathematical equation y = f(x). that's why we get an error large in the validation set or in the test set. this is called Overfitting i.e. fitting too much to the noise data.
 
 	Overcome Overfitting:
@@ -101,14 +99,10 @@ Dealing with unlabeled data.
 * Difference between supervised learning and Unsupervised learning stages: Only difference is that we don't split the dataset into Train and Test datasets in Unsupervised learning as the data is unlabeled. 
 
 
-Percepron Model
+Perceptron Model:
 ===============
-
-
 Single Biological Neuron ---> Percepron ---> Multi-Layer Perceptron Model ---> Deep learning Neural network
-
 y = f(x) = x1*w1 + x2*w2 ; but if x1 or x2 =0 then that input will not be having any impact in the output. To fix that we add b.
-
 y = f(x) = (x1*w1 + b) + (x2*w2 + b)
 
 Neural network:
@@ -121,18 +115,12 @@ middle layers => hidden layer
 
 Activation Functions:
 ====================
-
 y = f(x) = x*w + b 
-
 w = weight 
 b = bias
-
 if you want to set a boundary to the output 
-
 z = x*w + b 
-
-and we pass z in some activation function to limit the value
-
+and we pass z in some activation function to limit the value.
 if we are doing a binary classification problem the output will be 0 or 1.
 When we are doing Binary classification problems there are the Activation function functions used: 
 https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844498#overview
@@ -166,21 +154,19 @@ https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learn
    Ex - Photos in grayscale can be categorized as black n white or full color
    
  
-To organize data for  Multi-class  classification problems  we use one-hot encoding
-
+*To organize data for  Multi-class  classification problems  we use one-hot encoding.
  Non Exclusive Multi-class  classification problems Activation function :
 	 A) Sigmoid function: 
 	 ====================
 	 
 	 f(z) = 1/ (1 + e^(-z))
 	 the output value will be 0 to 1
+
  Mutually Exclusive classes classification problems Activation function :
- 
      A) SoftMax activation function:
 	 ==============================
 	 This function will calculate the probability of each target class, over all possible target classes.	
 	 this probability will range between 0 to 1.
-	 
 	 this model returns the probabilities of each class and the target class will be chosen will have the highest probability.
 	 
 	 Example :
@@ -190,8 +176,6 @@ To organize data for  Multi-class  classification problems  we use one-hot encod
 	  
 	  probability sum =1
 	  so in this case we'll choose the target class as green as it has the highest probability
-	  
-	
 
 Cost Function:
 ==============	
