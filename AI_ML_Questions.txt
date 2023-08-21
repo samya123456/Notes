@@ -510,3 +510,4 @@ https://www.youtube.com/watch?v=NVY0FucNRU4
   3) Gradient Boosting 
 24) Boosting vs Bagging
 25) in case of categorical data how to convert them into numbers then find the distance for clustering in K mean clustering: To organize data for  Multi-class  classification problems  we use one-hot encoding.
+26) standardization vs normalization
