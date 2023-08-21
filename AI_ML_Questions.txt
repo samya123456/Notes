@@ -509,24 +509,23 @@ https://www.youtube.com/watch?v=NVY0FucNRU4
   2) XGBoost 
   3) Gradient Boosting 
 24) Boosting vs Bagging
-25) in case of categorical data how to convert them into numbers then find the distance for clustering in K mean clustering: To organize data for  Multi-class  classification problems  we use one-hot encoding.
-26) standardization vs normalization :
+25) In case of categorical data how to convert them into numbers then find the distance for clustering in K mean clustering: To organize data for  Multi-class  classification problems  we use one-hot encoding.
+
+26) Standardization vs normalization :
 	Standardization:
-        ----------------
-	Standardization (also known as Z-score normalization) transforms the data in such a way that it has a mean of 0 and a standard deviation of 1. The formula for 		standardization is: standardized_value = (original_value - mean) / standard_deviation
-
+	---------------
+	Standardization (also known as Z-score normalization) transforms the data in such a way that it has a mean of 0 and a standard deviation of 1. The formula for standardization is: standardized_value = (original_value - mean) / standard_deviation
+	
 	Normalization:
-        --------------
+	--------------
 	Normalization scales the data in a way that it falls within a specific range, usually between 0 and 1. It can be especially useful for algorithms that use distance-based metrics, like k-nearest neighbors or support vector machines. The formula for normalization is:
-normalized_value = (original_value - min) / (max - min)
-
+	normalized_value = (original_value - min) / (max - min)
+	
 27) In the case of scaling the data, We will do fit and transform to X_train data and only transform to X_test data, why?
-
 	Fit and Transform on Training Data (X_train):
-        ---------------------------------------------
-	You use the "fit" step to calculate the necessary parameters (such as mean and standard deviation for standardization) based on the training data. These parameters 
-        will be used to transform the training data into the desired scale.
-	The "transform" step applies the calculated parameters to the training data, scaling it appropriately.
+	---------------------------------------------
+	You use the "fit" step to calculate the necessary parameters (such as mean and standard deviation for standardization) based on the training data. These parameters will be used to transform the training data into the desired scale. The "transform" step applies the calculated parameters to the training data, scaling it appropriately.
+	
 	
 	Transform on Testing Data (X_test):
 	-----------------------------------
