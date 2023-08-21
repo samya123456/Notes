@@ -520,7 +520,6 @@ https://www.youtube.com/watch?v=NVY0FucNRU4
 	Normalization scales the data in a way that it falls within a specific range, usually between 0 and 1. It can be especially useful for algorithms that use distance-based metrics, like k-nearest neighbors or support vector machines. The formula for normalization is:
 normalized_value = (original_value - min) / (max - min)
 
-standardized_value = (original_value - mean) / standard_deviation
 27) In the case of scaling the data, We will do fit and transform to X_train data and only transform to X_test data, why?
 
 	Fit and Transform on Training Data (X_train):
