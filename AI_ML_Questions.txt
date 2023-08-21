@@ -521,4 +521,15 @@ https://www.youtube.com/watch?v=NVY0FucNRU4
 normalized_value = (original_value - min) / (max - min)
 
 standardized_value = (original_value - mean) / standard_deviation
-27) In case of Normalization, We will do fit and transform to X_train data and only transform to X_test data , why ?
+27) In the case of scaling the data, We will do fit and transform to X_train data and only transform to X_test data, why?
+
+	Fit and Transform on Training Data (X_train):
+        ---------------------------------------------
+	You use the "fit" step to calculate the necessary parameters (such as mean and standard deviation for standardization) based on the training data. These parameters 
+        will be used to transform the training data into the desired scale.
+	The "transform" step applies the calculated parameters to the training data, scaling it appropriately.
+	
+	Transform on Testing Data (X_test):
+	-----------------------------------
+	You only use the "transform" step on the testing data, using the parameters that were calculated from the training data.
+	This ensures that the testing data is scaled in the same way as the training data, maintaining the consistency of the scaling process.
