@@ -531,3 +531,5 @@ https://www.youtube.com/watch?v=NVY0FucNRU4
 	-----------------------------------
 	You only use the "transform" step on the testing data, using the parameters that were calculated from the training data.
 	This ensures that the testing data is scaled in the same way as the training data, maintaining the consistency of the scaling process.
+
+28) what is DBA scan and How it is different from K Mean Clustering 
