@@ -1,3 +1,5 @@
 1) Simple Linear Regression - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34779398#overview
 2) Ordinary Least Squares - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34779404#overview
 3) Linear Regression Assumptions - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34779566#overview
+4) Dealing with catagorical variables in Linear regression - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5772046#overview
+5) P Value - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/20160564#overview
