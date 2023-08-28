@@ -4,4 +4,4 @@
 4) Dealing with categorical variables in Linear regression - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5772046#overview
 5) One hot encoding ,creating dummy variable and dummy variable trap - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/19314930#overview
 6) P Value - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/20160564#overview
-7) Polynomial Regression Intuition - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732728#overview
+7) Polynomial Regression Intuition - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732728#overview , https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34836520#overview
