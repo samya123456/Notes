@@ -1,7 +1,10 @@
-1) Simple Linear Regression - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34779398#overview
-2) Ordinary Least Squares - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34779404#overview
-3) Linear Regression Assumptions - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34779566#overview
-4) Dealing with categorical variables in Linear regression - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5772046#overview
-5) One hot encoding ,creating dummy variable and dummy variable trap - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/19314930#overview
-6) P Value - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/20160564#overview
-7) Polynomial Regression Intuition - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732728#overview , https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34836520#overview
+
+*) Encoding categorical data - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/19039248#overview
+*) Simple Linear Regression - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34779398#overview
+*) Ordinary Least Squares - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34779404#overview
+*) Linear Regression Assumptions - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34779566#overview
+*) Dealing with categorical variables in Linear regression - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5772046#overview
+*) One hot encoding , creating dummy variable and dummy variable trap - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/19314930#overview
+*) P Value - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/20160564#overview
+*) Polynomial Linear Regression Intuition - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732728#overview , https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34836520#overview
+*) Simple linear Regression vs. Multiple linear regression vs. Polynomial Linear Regression expression difference.
