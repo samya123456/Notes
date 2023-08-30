@@ -8,3 +8,4 @@
 *) P Value - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/20160564#overview
 *) Polynomial Linear Regression Intuition - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732728#overview , https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34836520#overview
 *) Simple linear Regression vs. Multiple linear regression vs. Polynomial Linear Regression expression difference.
+*) Encoding categorical data  --> Encoding categorical data (OneHotEncoding) ,  Encoding into 0,1  (LabelEncoder)
