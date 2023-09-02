@@ -4,9 +4,31 @@
 *) Ordinary Least Squares - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34779404#overview
 *) Linear Regression Assumptions - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34779566#overview
 *) Dealing with categorical variables in Linear regression - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5772046#overview
-*) One hot encoding , creating dummy variable and dummy variable trap - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/19314930#overview
+*) One hot encoding, creating dummy variable and dummy variable trap - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/19314930#overview
 *) P Value - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/20160564#overview
 *) Polynomial Linear Regression Intuition - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732728#overview , https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34836520#overview
 *) Simple linear Regression vs. Multiple linear regression vs. Polynomial Linear Regression expression difference.
-*) Encoding categorical data  --> Encoding categorical data (OneHotEncoding) ,  Encoding into 0,1  (LabelEncoder)
+*) Encoding categorical data  --> Encoding categorical data (OneHotEncoding),  Encoding into 0,1  (LabelEncoder)
 *) Support Vector Regression LINEAR --> https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/19505880#overview
+
+
+Regression problem:
+===================
+1) Simple Linear Regression
+2) Polynomial Linear Regression
+3) Multiple linear regression
+4) Support Vector  Regression
+5) Random Forest regression
+
+
+Classification problem:
+======================
+1) Logistical Regression
+2) K nearest Neighbour
+3) Support Vector Machine
+4) Naive Bayes
+5) Decision tress classification
+6) Random Forest classification
+7) K- mean clustering
+8) Hierarchical Clustering
+
