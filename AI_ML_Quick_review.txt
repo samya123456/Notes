@@ -19,6 +19,7 @@ Regression problem:
 3) Multiple linear regression
 4) Support Vector  Regression
 5) Random Forest regression
+6) Decision Tree
 
 
 Classification problem:
