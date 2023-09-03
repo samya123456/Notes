@@ -14,6 +14,8 @@
 *) random Forest Regression --> https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732732#overview
 *) Model Evaluation Regression: 
     *) R Squared - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34780042#overview
+*) Regression Model selection: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/19411252#overview
+
 
 
 Regression problem:
