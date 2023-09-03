@@ -13,7 +13,7 @@
 *) Decision Tree Regression Intuition --> https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732730#overview
 *) random Forest Regression --> https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732732#overview
 *) Model Evaluation Regression: 
-    *) R Squared
+    *) R Squared - https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34780042#overview
 
 
 Regression problem:
