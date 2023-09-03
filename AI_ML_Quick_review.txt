@@ -12,6 +12,8 @@
 *) Support Vector Regression LINEAR --> https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/19505880#overview
 *) Decision Tree Regression Intuition --> https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732730#overview
 *) random Forest Regression --> https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732732#overview
+*) Model Evaluation Regression: 
+    *) R Squared
 
 
 Regression problem:
