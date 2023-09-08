@@ -17,6 +17,8 @@
 *) Regression Model selection: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/19411252#overview
 *) Logistic regression Intuitions: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34780086#overview
 *) Maximum likelihood: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34780088#overview
+*) K-Nearest Neighbor Intuition : https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5714404#overview
+*) Support vector machines: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5714406#overview
 
 
 
