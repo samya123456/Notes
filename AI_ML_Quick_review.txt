@@ -19,6 +19,10 @@
 *) Maximum likelihood: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34780088#overview
 *) K-Nearest Neighbor Intuition : https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5714404#overview
 *) Support vector machines: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5714406#overview
+*) Kernel SVM Intuition: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/6113144#overview
+*) Mapping to a higher dimension: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/6113148#overview
+*) The Kernel Trick: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/6113150#overview
+*) Types of Kernel Functions: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/6113152#overview
 
 
 
