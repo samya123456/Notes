@@ -24,6 +24,7 @@
 *) The Kernel Trick: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/6113150#overview
 *) Types of Kernel Functions: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/6113152#overview
 *) Bayes Theorm: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732736#overview
+*) Naive Bayes Intuition: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732738#overview
 
 
 
