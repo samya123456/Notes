@@ -26,6 +26,7 @@
 *) Bayes Theorm: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732736#overview
 *) Naive Bayes Intuition: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5732738#overview
 *) Decision Tree Classification Intuition: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5714410#overview
+*) Random Forest Classification Intuition and Ensemble Learning: https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/5714412#overview
 
 
 
