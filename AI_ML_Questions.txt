@@ -492,6 +492,14 @@ Apache Spark is a lighting fast unified analytics engine for big data processing
 MLOPS:
 =======
 
+
+The code to train the model and create the model will be stored in gitlab. but after the model has been created ,The model will be staored be staored in s3 but the code will be still in git hub.
+
+The code to train the model and create the model --->  dockerfile can be written and strored in git hub.
+model can be stored in s3.
+
+create a training pipeline which will train the model and save the model's new version in s3. we can use aws code pipeline for that and trigger it via aws event scheduler.
+
 1) Export a model:
 ================
 https://www.youtube.com/watch?v=NVY0FucNRU4
