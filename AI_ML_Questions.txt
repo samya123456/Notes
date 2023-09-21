@@ -86,6 +86,14 @@ Model Evaluation Matrix:
 	 i) Mean Absolute Error
 	 ii) Mean Square Error
 	 iii) Root Mean Square Error
+	 iv) R squared Value : https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34780042#overview
+
+		SSres (Residual sum of square) :  = SUM( Y - Ypred)^2
+		SStotal (Avegare sum of square): =  SUM( Y - Yavg)^2
+
+		R squared value = 1 - (SSres/SStotal) 
+		** Note we need to minimise SSres for model accuracy. Greater the R^2 value is better is your model
+
 
 
 Unsupervised Learning
