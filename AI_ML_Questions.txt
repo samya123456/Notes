@@ -497,29 +497,6 @@ The core of data bricks is an open-source distributed computing processing engin
 
 Apache Spark is a lighting fast unified analytics engine for big data processing and Machine learning.
 
-MLOPS:
-=======
-
-
-The code to train the model and create the model will be stored in gitlab. but after the model has been created ,The model will be staored be staored in s3 but the code will be still in git hub.
-
-The code to train the model and create the model --->  dockerfile can be written and strored in git hub.
-model can be stored in s3.
-
-create a training pipeline which will train the model and save the model's new version in s3. we can use aws code pipeline for that and trigger it via aws event scheduler.
-
-1) Export a model:
-================
-https://www.youtube.com/watch?v=NVY0FucNRU4
-  i) Save the whole model (in HDF5 format)
-     model.save("nn.h5")
-
-2) Import a model from the file:
-============================
-https://www.youtube.com/watch?v=NVY0FucNRU4
-
-  i) model = keras.models.load_model("nn.h5")
-
 23) Boosting Algorithm:
   1) AdaBoost
   2) XGBoost 
@@ -549,3 +526,42 @@ https://www.youtube.com/watch?v=NVY0FucNRU4
 	This ensures that the testing data is scaled in the same way as the training data, maintaining the consistency of the scaling process.
 
 28) what is DBA scan and How it is different from K Mean Clustering 
+
+
+
+
+
+
+
+
+
+MLOPS:
+=======
+
+https://www.youtube.com/watch?v=J9T0X9Jxl_w&list=PLnyYRPP3Sl0tNZv17rzc8NA22LxtS-X7E&index=10
+1) what is data drift
+2) what is model drift
+3) what are the constraints in the data .
+4) what is base line job
+5) what is a model performance monitoring job.
+6) what is ground truth and how it is used to  model performance monitoring job.
+
+
+The code to train the model and create the model will be stored in gitlab. but after the model has been created ,The model will be staored be staored in s3 but the code will be still in git hub.
+
+The code to train the model and create the model --->  dockerfile can be written and strored in git hub.
+model can be stored in s3.
+
+create a training pipeline which will train the model and save the model's new version in s3. we can use aws code pipeline for that and trigger it via aws event scheduler.
+
+1) Export a model:
+================
+https://www.youtube.com/watch?v=NVY0FucNRU4
+  i) Save the whole model (in HDF5 format)
+     model.save("nn.h5")
+
+2) Import a model from the file:
+============================
+https://www.youtube.com/watch?v=NVY0FucNRU4
+
+  i) model = keras.models.load_model("nn.h5")
