@@ -527,7 +527,19 @@ Apache Spark is a lighting fast unified analytics engine for big data processing
 
 28) what is DBA scan and How it is different from K Mean Clustering 
 
-
+29) Central limit theorem
+30) Cross-validation
+31) Hyperparameter optimisation
+33) DBA scan vs k means clustering
+34) sample mean vs population mean
+35) standard normal distribution 
+36) cumulative density function vs probability 
+37) density function
+36) ordinary least square
+38) Region leso regression 
+39) Regularisation
+40) Soft margin and hard margin in SVM
+41) Hamming distance in categorical data
 
 
 
