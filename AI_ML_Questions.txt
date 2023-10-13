@@ -527,8 +527,11 @@ Apache Spark is a lighting fast unified analytics engine for big data processing
 
 28) what is DBA scan and How it is different from K Mean Clustering 
 
-29) Central limit theorem
-30) Cross-validation
+29) Central limit theorem: https://www.youtube.com/watch?v=JNm3M9cqWyc&t=326s
+--------------------------
+	The Central Limit Theorem (CLT) is a fundamental concept in statistics and probability theory. It states that, under certain conditions, the sampling distribution 	of the sample mean (or other sample statistics) approaches a normal distribution as the sample size increases, regardless of the shape of the population 	 distribution. This theorem has far-reaching implications and is crucial for many statistical and inferential procedures.
+
+30) Cross-validation:
 31) Hyperparameter optimisation
 33) DBA scan vs k means clustering
 34) sample mean vs population mean
