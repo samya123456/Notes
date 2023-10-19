@@ -546,6 +546,11 @@ improving the robustness and reliability of the evaluation.
 Common types of cross-validation include k-fold cross-validation, stratified k-fold cross-validation
 (which maintains the class distribution of the target variable), and leave-one-out cross-validation (a special case where k equals the number of samples).
 
+
+32) Difference between parameter and hyperparameter in Machine Learning: https://www.youtube.com/watch?v=V4AcLJ2cgmU:
+
+Weights and biases are parameters, but epochs, activation functions, learning rate, number of layers, neurons in each layer, and number of trees in a random forest are the hyperparameters.
+
 31) Hyperparameter optimisation
 33) DBA scan vs k means clustering
 34) sample mean vs population mean
