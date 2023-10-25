@@ -565,10 +565,7 @@ Bayesian Optimization: Bayesian optimization is a more sophisticated approach th
 include scikit-optimize and Hyperopt.
 
 
-33) DBscan vs k means clustering:
-
-DBScan:
-https://www.youtube.com/watch?v=8EvtpHeUwiw
+33) DBscan vs k means clustering: https://www.youtube.com/watch?v=8EvtpHeUwiw
 
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering algorithm used in machine learning and data analysis. It is particularly effective at identifying clusters of data points that are close to each other in terms of density and separating them from areas with lower data density. Unlike some other clustering methods, DBSCAN doesn't require the user to specify the number of clusters beforehand and can discover clusters of arbitrary shapes.
 
