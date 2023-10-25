@@ -570,7 +570,16 @@ include scikit-optimize and Hyperopt.
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering algorithm used in machine learning and data analysis. It is particularly effective at identifying clusters of data points that are close to each other in terms of density and separating them from areas with lower data density. Unlike some other clustering methods, DBSCAN doesn't require the user to specify the number of clusters beforehand and can discover clusters of arbitrary shapes.
 
 
-34) sample mean vs population mean
+34) sample mean vs population mean:
+Population Mean:
+
+The population mean, often denoted as μ (mu), represents the average value of a variable in an entire population. The population is the entire set of individuals, items, or data points you are interested in studying.
+
+Sample Mean:
+
+The sample mean, often denoted as x̄ (x-bar), represents the average value of a variable in a subset of the population, known as a sample. A sample is a smaller, manageable subset of the population that you use to make inferences about the entire population.
+
+
 35) standard normal distribution 
 36) cumulative density function vs probability 
 37) density function
