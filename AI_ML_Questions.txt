@@ -551,8 +551,28 @@ Common types of cross-validation include k-fold cross-validation, stratified k-f
 
 Weights and biases are parameters, but epochs, activation functions, learning rate, number of layers, neurons in each layer, and number of trees in a random forest are the hyperparameters.
 
-31) Hyperparameter optimisation
-33) DBA scan vs k means clustering
+31) Hyperparameter optimization: https://www.youtube.com/watch?v=ttE0F7fghfk
+
+Hyperparameter optimization is a crucial step in the machine learning model development process. It involves finding the best set of hyperparameters for your model to maximize its performance on a given task. Hyperparameters are parameters that are not learned from the data but are set prior to training, and they can significantly impact the performance of a machine-learning model. Common hyperparameters include learning rates, the number of hidden layers in a neural network, the number of decision trees in a random forest, and more.
+
+Here are some common techniques and tools for hyperparameter optimization:
+
+Grid Search: Grid search is a basic but effective technique where you specify a range of values for each hyperparameter, and it evaluates the model's performance for all possible combinations. This can be computationally expensive, especially with a large number of hyperparameters.
+
+Random Search: Random search is an alternative to grid search. Instead of evaluating all possible combinations, it randomly samples a predefined number of hyperparameter configurations. This can be more efficient than grid search and often yields similar results.
+
+Bayesian Optimization: Bayesian optimization is a more sophisticated approach that models the relationship between hyperparameters and model performance using a probabilistic model (typically Gaussian Processes) and focuses on exploring the most promising hyperparameter configurations. Popular libraries for Bayesian optimization 
+include scikit-optimize and Hyperopt.
+
+
+33) DBscan vs k means clustering:
+
+DBScan:
+https://www.youtube.com/watch?v=8EvtpHeUwiw
+
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering algorithm used in machine learning and data analysis. It is particularly effective at identifying clusters of data points that are close to each other in terms of density and separating them from areas with lower data density. Unlike some other clustering methods, DBSCAN doesn't require the user to specify the number of clusters beforehand and can discover clusters of arbitrary shapes.
+
+
 34) sample mean vs population mean
 35) standard normal distribution 
 36) cumulative density function vs probability 
