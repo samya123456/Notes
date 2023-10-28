@@ -377,7 +377,7 @@ Semi-supervised learning involves a small portion of labeled examples and a larg
 
 https://www.youtube.com/watch?v=fXfs_6o_hOs
 
-9) In what scenario decision tree should be preferred over a random forest?
+9) In what scenario decision tree be preferred over a random forest?
 
 Decision trees are much more interpretable than random forests. A single decision tree can be visualized and understood easily, making it a good choice when you need to explain the logic of the model's decisions to non-technical stakeholders.
 
@@ -588,7 +588,19 @@ The sample mean, often denoted as x̄ (x-bar), represents the average value of a
 39) Regularisation
 40) Soft margin and hard margin in SVM
 41) Hamming distance in categorical data
+****42) Cross-validation: https://www.youtube.com/watch?v=fSytzGwwBVw&t=298s
 
+Cross-validation is a resampling method that uses different portions of the data to test and train a model on different iterations. It is mainly used in settings where the goal is prediction, and one wants to estimate how accurately a predictive model will perform in practice.
+
+Data Splitting: The dataset is randomly divided into k roughly equal-sized subsets, often called folds. For example, if you choose 5-fold cross-validation, the data is split into 5 subsets.
+
+Model Training and Testing: The following steps are repeated k times:
+
+Use k-1 folds for training your model.
+Use the remaining 1 fold for testing (validation).
+Evaluation: Calculate the performance metric (e.g., accuracy, mean squared error) on the validation set for each fold.
+
+Averaging: After all k iterations, average the performance metrics to get an overall estimate of the model's performance.
 
 
 
