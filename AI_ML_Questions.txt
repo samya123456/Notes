@@ -580,7 +580,7 @@ Sample Mean:
 The sample mean, often denoted as x̄ (x-bar), represents the average value of a variable in a subset of the population, known as a sample. A sample is a smaller, manageable subset of the population that you use to make inferences about the entire population.
 
 
-35) standard normal distribution : mean =0 and standard deviation as 1
+35) standard normal distribution: mean =0 and standard deviation as 1
 36) cumulative density function vs probability 
 37) density function
 36) ordinary least square
@@ -613,18 +613,18 @@ MLOPS:
 https://www.youtube.com/watch?v=J9T0X9Jxl_w&list=PLnyYRPP3Sl0tNZv17rzc8NA22LxtS-X7E&index=10
 1) what is data drift
 2) what is model drift
-3) what are the constraints in the data .
+3) what are the constraints in the data?
 4) what is base line job
-5) what is a model performance monitoring job.
-6) what is ground truth and how it is used to  model performance monitoring job.
+5) what is a model performance monitoring job?
+6) what is ground truth and how it is used to  model performance monitoring job?
 
 
-The code to train the model and create the model will be stored in gitlab. but after the model has been created ,The model will be staored be staored in s3 but the code will be still in git hub.
+The code to train the model and create the model will be stored in GitLab. but after the model has been created, The model will be stored in s3 but the code will be still in git hub.
 
-The code to train the model and create the model --->  dockerfile can be written and strored in git hub.
+The code to train the model and create the model --->  dockerfile can be written and stored in git hub.
 model can be stored in s3.
 
-create a training pipeline which will train the model and save the model's new version in s3. we can use aws code pipeline for that and trigger it via aws event scheduler.
+create a training pipeline that will train the model and save the model's new version in s3. we can use aws code pipeline for that and trigger it via aws event scheduler.
 
 1) Export a model:
 ================
@@ -637,3 +637,17 @@ https://www.youtube.com/watch?v=NVY0FucNRU4
 https://www.youtube.com/watch?v=NVY0FucNRU4
 
   i) model = keras.models.load_model("nn.h5")
+
+
+***************************************
+Capturing ground truth reality Example:
+***************************************
+
+On a social media site suppose one person is making one post and immediately some bots are posting random comments. So I have to deal with this problem to detect if a comment on that post is made by a bot or not. To determine that we can capture some features like 
+
+1) Comment time 
+2) How many times has the same profile commented on the post? 
+3) Does the comment content have any Link or ad in the content? 
+
+These things we can train our model On. if our model predicts that a particular comment is made by a bot, then immediately we will show a captcha to verify if the profile is really a bot or not. If the user passes the captcha test, then the profile is not a bot, otherwise, the profile is a bot. So in this way, we can capture the ground truth reality of what the model predicts versus what is the actual result. This way in the production, we can capture the model performance.
+
