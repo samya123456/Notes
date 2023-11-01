@@ -94,7 +94,12 @@ Model Evaluation Matrix:
 		R squared value = 1 - (SSres/SStotal) 
 		** Note we need to minimise SSres for model accuracy. Greater the R^2 value is better is your model
 
+Supervised Learning:
+===================
 
+The supervised learning algorithm learns to identify patterns and relationships in the data, enabling it to make predictions or classifications on new, unseen transactions. In the context of credit card fraud detection, the algorithm is trained to recognize patterns and features that distinguish fraudulent transactions from legitimate ones. These patterns can include transaction amounts, locations, time of day, and various other transaction details.
+
+Credit card fraud detection is typically approached as a supervised learning problem. In supervised learning, the algorithm is trained on a labeled dataset, which means it is provided with historical data that includes both legitimate and fraudulent transactions, and each transaction is labeled as either "legitimate" or "fraudulent."
 
 Unsupervised Learning
 =====================
@@ -105,6 +110,8 @@ Dealing with unlabeled data.
 	i) Clustering - Grouping together unlabeled data points into clusters based on similarity
 	ii) Anomaly Detection - Attempt to detect outliers (Exceptions) in the dataset
 	iii) dimensionality reduction
+
+Unsupervised learning techniques can be used in credit card fraud detection, but they are often used in conjunction with supervised methods or for different aspects of the problem. Unsupervised techniques may help in anomaly detection, which can identify unusual patterns or outliers in the data that could potentially be indicative of fraud. However, these techniques often require additional human intervention to validate and label anomalies as fraud or non-fraud.
 
 
 * Difference between supervised learning and Unsupervised learning stages: Only difference is that we don't split the dataset into Train and Test datasets in Unsupervised learning as the data is unlabeled. 
