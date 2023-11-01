@@ -609,9 +609,20 @@ Evaluation: Calculate the performance metric (e.g., accuracy, mean squared error
 
 Averaging: After all k iterations, average the performance metrics to get an overall estimate of the model's performance.
 
+42) Dimensionality reduction :
 
+Dimensionality reduction is a technique used in machine learning and data analysis to reduce the number of features or variables in a dataset while retaining important information and patterns. It's particularly useful when dealing with high-dimensional data, which can be computationally expensive, lead to overfitting, and make it difficult to visualize and interpret the data.
 
+43) Autoencoder: 
+An autoencoder is a type of artificial neural network used in unsupervised machine learning and dimensionality reduction tasks. It is a neural network architecture that is designed to learn efficient representations of data, typically for the purpose of reducing the dimensionality of the input while preserving important information
 
+Here's how an autoencoder works:
+
+Encoder: The encoder takes the input data and maps it to a lower-dimensional representation, often referred to as the "latent space" or "encoding." This mapping process involves multiple layers of neurons that progressively reduce the dimensionality of the input data.
+
+Latent Space: The latent space is an essential part of the autoencoder, where the encoder has learned to represent the input data in a more compact and informative way. The size of the latent space is a hyperparameter, and it determines the level of compression achieved by the autoencoder.
+
+Decoder: The decoder takes the encoded representation from the latent space and attempts to reconstruct the original input data from this compressed representation. Like the encoder, the decoder consists of multiple layers of neurons.
 
 
 MLOPS:
