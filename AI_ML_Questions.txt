@@ -31,7 +31,7 @@ https://www.youtube.com/watch?v=KlJe9h438_w&list=PLZoTAELRMXVM0zN0cgJrfT6TK2ypCp
 
 17) Optimizer
 https://www.youtube.com/watch?v=JhQqquVeCE0
-  1) Gradient Descent
+  1) Gradient Descent: In deep learning, models are trained using optimization algorithms like gradient descent. During training, gradients are calculated to update the model's parameters like weight and biases and these gradients are propagated backward through the network.
   2) SGD
   3) mini-batch SGD
   4) Adam(mometum + Rmsprop)
