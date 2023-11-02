@@ -627,8 +627,21 @@ Decoder: The decoder takes the encoded representation from the latent space and 
 
 44) One hot encoding, creating dummy variable and dummy variable trap 
 
+45) Imple linear Regression vs. Multiple linear regression vs. Polynomial Linear Regression expression difference.
+	linear Regression : y = b0 +b1x1
+	Polynomial Linear Regression: y = b0 + b1X1 + b2X2^2 + b3X3^3 .....
+	Multiple linear regression: y = b0 + b1x1 + b2x2 + b3x3 + .....
+
+46) why all these Polynomial Linear Regression is Linear although it has x^2? 
+y = b0 + b1X1 + b2X2^2 + b3X3^3 ..... 
+
+when we are talking about Linear or non-Linear we are not talking about X but we are talking about coefficient "b" , when
 
 
+47) Ensemble Learning:
+Ensemble Learning is when we use multiple algorithms of use one Algorithm multiple time , it is called Ensemble Learning. 
+
+Ex - Random forest uses multiple decision tresses.
 
 
 
