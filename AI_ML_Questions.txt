@@ -644,6 +644,8 @@ Ensemble Learning is when we use multiple algorithms of use one Algorithm multip
 Ex - Random forest uses multiple decision tresses.
 
 
+48) Reinforcement Learning: 
+It is a type of machine learning in which an agent learns to make decisions by interacting with an environment. It is inspired by behavioral psychology and is commonly used in various applications, including robotics, game playing, autonomous systems, and more.
 
 ==================================================================================================================================================================
 
