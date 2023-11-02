@@ -625,6 +625,15 @@ Latent Space: The latent space is an essential part of the autoencoder, where th
 Decoder: The decoder takes the encoded representation from the latent space and attempts to reconstruct the original input data from this compressed representation. Like the encoder, the decoder consists of multiple layers of neurons.
 
 
+44) One hot encoding, creating dummy variable and dummy variable trap 
+
+
+
+
+
+
+==================================================================================================================================================================
+
 MLOPS:
 =======
 
