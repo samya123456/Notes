@@ -8,8 +8,7 @@ It uses natural language processing (NLP) techniques to understand the intent an
   ii) Bert 
   iii) DAll E
 5) Type of prompting
-  i) Zero shot prompting:
-      The model is expected to generate a response even though it hasn't been explicitly trained on the particular prompt.
+  i) Zero shot prompting: The model is expected to generate a response even though it hasn't been explicitly trained on the particular prompt.
       This capability is a strength of large pre-trained language models like GPT-3.5, which can generalize from the broad range of data they were trained on to understand and respond to new prompts or tasks.
   ii) A few shots prompting: "A few-shot prompting" typically refers to a scenario where a language model is given a few examples or instances of a specific task or question, along with the corresponding desired responses, to help guide its understanding and performance on that task
   iii) chain of thought prompting: Instead of providing a single prompt, you supply a series of prompts where each subsequent prompt builds on the information or context from the previous one
