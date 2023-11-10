@@ -1,0 +1,16 @@
+1) what is embedding
+2) How chatGPT supports local languages although there is so low data set to train a model. -->
+First, ChatGPT uses its language-processing features to identify the language you’ve used in your question/prompt. 
+It uses natural language processing (NLP) techniques to understand the intent and emotion behind the text.
+3) Difference between GPT 3.5 vs 4.
+4) Top Generative AI models :
+  i) ChatGPT 
+  ii) Bert 
+  iii) DAll E
+5) Type of prompting
+  i) Zero shot prompting
+  ii) few shot prompting
+  iii) chain of thought prompting
+  iv) Self Consitancy prompting
+
+
