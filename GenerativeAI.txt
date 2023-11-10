@@ -18,7 +18,7 @@ along with the corresponding desired responses, to help guide its understanding 
 you supply a series of prompts where each subsequent prompt builds on the information or context from the previous one
   iv) Self-Consistency prompting: "Self-consistency prompting" involves prompting a language model to generate responses that are internally consistent or coherent. 
 This approach aims to guide the model to provide answers that align with information or context established within the same prompt or conversation.
-6) Generative Adversarial Network:
+6) Generative Adversarial Network: ********
 =================================
 The primary idea behind GANs is to train two neural networks, a generator, and a discriminator, in a competitive framework.
 Here's a brief overview of how GANs work:
@@ -33,3 +33,13 @@ Here's a brief overview of how GANs work:
   v)Equilibrium:
   Ideally, this adversarial process reaches equilibrium when the generator produces data that is indistinguishable from real data, and the discriminator is unable to differentiate between the two.
 
+7) What is generative AI, and how does it differ from other AI approaches?
+generative models’ ability to create new data rather than just analyzing or categorizing existing data.
+
+8) How do you evaluate the quality of generated content from generative AI ?
+
+i) Inception Score: 
+The Inception Score is a metric used to evaluate the quality and diversity of generated images,
+particularly in the context of generative adversarial networks (GANs).
+ii) Frechet Inception Distance (FID),
+iii) Perceptual Path Length (PPL).
