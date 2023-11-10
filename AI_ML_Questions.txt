@@ -653,7 +653,11 @@ Ex - Random forest uses multiple decision tresses.
 
 
 48) Reinforcement Learning: 
-It is a type of machine learning in which an agent learns to make decisions by interacting with an environment. It is inspired by behavioral psychology and is commonly used in various applications, including robotics, game playing, autonomous systems, and more.
+It is a type of machine learning in which an agent learns to make decisions by interacting with an environment. 
+It is inspired by behavioral psychology and is commonly used in various applications,
+including robotics, game playing, autonomous systems, and more.The agent receives feedback in the form of rewards or punishments
+based on the actions it takes, and its objective is to learn a policy—a strategy for selecting actions in different 
+situations—that maximizes the cumulative expected reward over time.
 
 ==================================================================================================================================================================
 
