@@ -1,713 +1,712 @@
 
-MACHINE LEARNING BASICS:
-========================
+    MACHINE LEARNING BASICS:
+    ========================
 
-Topics:
--------
-1) Overview
-2) Artificial Neural network
-3) Overfitting
-4) Model Evaluation Matrix
-5) Unsupervised Learning
-6) Activation Functions
-8) Different Machine Learning Algorithms
-9) INTERVIEW QUESTIONS:
+    Topics:
+    -------
+    1) Overview
+    2) Artificial Neural network
+    3) Overfitting
+    4) Model Evaluation Matrix
+    5) Unsupervised Learning
+    6) Activation Functions
+    8) Different Machine Learning Algorithms
+    9) INTERVIEW QUESTIONS:
 
-https://www.youtube.com/watch?v=KlJe9h438_w&list=PLZoTAELRMXVM0zN0cgJrfT6TK2ypCpQdY&index=6
-10) How Neural network work.
-11) what is weight
-12) what is bias
-13) what is the activation function
-14) vanishing gradient factor
-15) why Exploding gradient problem happens
-16) Cost Function/Loss function:
-	Classification problem:
-	  1) binary cross entropy - https://www.youtube.com/watch?v=2ca_K2rgNVA
-	  2) categorical cross entropy - https://www.youtube.com/watch?v=rkULCW_h09k
-        Regression problem :
-	  1) Mean absolute error
-	  2) mean square error
-	  3) Root mean square error
+    https://www.youtube.com/watch?v=KlJe9h438_w&list=PLZoTAELRMXVM0zN0cgJrfT6TK2ypCpQdY&index=6
+    10) How Neural network work.
+    11) what is weight
+    12) what is bias
+    13) what is the activation function
+    14) vanishing gradient factor
+    15) why Exploding gradient problem happens
+    16) Cost Function/Loss function:
+    	Classification problem:
+    	  1) binary cross entropy - https://www.youtube.com/watch?v=2ca_K2rgNVA
+    	  2) categorical cross entropy - https://www.youtube.com/watch?v=rkULCW_h09k
+            Regression problem :
+    	  1) Mean absolute error
+    	  2) mean square error
+    	  3) Root mean square error
 
-17) Optimizer
-https://www.youtube.com/watch?v=JhQqquVeCE0
-  1) Gradient Descent: In deep learning, models are trained using optimization algorithms like gradient descent. 
-During training, gradients are calculated to update the model's parameters like weight and biases and these gradients 
-are propagated backward through the network.
-  2) SGD
-  3) mini-batch SGD
-  4) Adam(mometum + Rmsprop)
+    17) Optimizer
+    https://www.youtube.com/watch?v=JhQqquVeCE0
+      1) Gradient Descent: In deep learning, models are trained using optimization algorithms like gradient descent. 
+    During training, gradients are calculated to update the model's parameters like weight and biases and these gradients 
+    are propagated backward through the network.
+      2) SGD
+      3) mini-batch SGD
+      4) Adam(mometum + Rmsprop)
 
-Overview:
-==========
+    Overview:
+    ==========
 
-* Machine Learning: Automated Analytical model
-* Neural Network: A Type of machine learning Architecture modeled after biological neurons.
-* Deep Learning: A Neural Network with more than one hidden layer.
-* Overfitting:
-	https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844592#overview
-	when your Model touches every single point of your training data, your error is really low in the training set. 
-but it doesn't create a good prediction model as it doesn't fall under any mathematical equation y = f(x). 
-that's why we get an error large in the validation set or in the test set. this is called Overfitting i.e. 
-fitting too much to the noise data.
+    * Machine Learning: Automated Analytical model
+    * Neural Network: A Type of machine learning Architecture modeled after biological neurons.
+    * Deep Learning: A Neural Network with more than one hidden layer.
+    * Overfitting:
+    	https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844592#overview
+    	when your Model touches every single point of your training data, your error is really low in the training set. 
+    but it doesn't create a good prediction model as it doesn't fall under any mathematical equation y = f(x). 
+    that's why we get an error large in the validation set or in the test set. this is called Overfitting i.e. 
+    fitting too much to the noise data.
 
-	Overcome Overfitting:
-	--------------------
+    	Overcome Overfitting:
+    	--------------------
 
-	Early stopping. Early stopping pauses the training phase before the machine learning model learns the noise in the data.
-	Pruning. You might identify several features or parameters that impact the final prediction when you build a model. ...
+    	Early stopping. Early stopping pauses the training phase before the machine learning model learns the noise in the data.
+    	Pruning. You might identify several features or parameters that impact the final prediction when you build a model. ...
 
-	* Good Model should look like having large errors at the beginning and errors will reduce over training a period of time.
-	* Epochs: 1 epoch is running the entire training data 1 time through your model.
+    	* Good Model should look like having large errors at the beginning and errors will reduce over training a period of time.
+    	* Epochs: 1 epoch is running the entire training data 1 time through your model.
 
 
-Model Evaluation Matrix: 
-=======================
+    Model Evaluation Matrix: 
+    =======================
 
-	Classification Problem:
-	-----------------------
-	https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844594#overview
+    	Classification Problem:
+    	-----------------------
+    	https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844594#overview
 
-	  i) Accuracy = number of correct predictions / total number of predictions.
-	  ii) Recall = number of true positive / (number of true positive + number of false negative)
-	  iii) Precision = number of true positive / (number of true positive + number of false positive)
-	  iv) f1 Score = combination of Recall and Precision  matrix = 2*(Recall * Precision) / (Recall + Precision)
+    	  i) Accuracy = number of correct predictions / total number of predictions.
+    	  ii) Recall = number of true positive / (number of true positive + number of false negative)
+    	  iii) Precision = number of true positive / (number of true positive + number of false positive)
+    	  iv) f1 Score = combination of Recall and Precision  matrix = 2*(Recall * Precision) / (Recall + Precision)
 
-	Confusion Matrix:  We can Organise our predicted values compared to the real values in the Cofusion matrix:
-	------------------
-		True positive: the pic is of the Dog and the model predicted it as Dog.
-		True Negative: the pic is not of the Dog and the model predicted it's not a Dog.
-		False positive: the pic is not of the Dog and the model predicted it's a Dog.
-		False Negative: the pic is of the Dog and the model predicted it's not a Dog.
+    	Confusion Matrix:  We can Organise our predicted values compared to the real values in the Cofusion matrix:
+    	------------------
+    		True positive: the pic is of the Dog and the model predicted it as Dog.
+    		True Negative: the pic is not of the Dog and the model predicted it's not a Dog.
+    		False positive: the pic is not of the Dog and the model predicted it's a Dog.
+    		False Negative: the pic is of the Dog and the model predicted it's not a Dog.
 
 	
 
-	Regression Problem:
-	-------------------
-	https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844602#overview
+    	Regression Problem:
+    	-------------------
+    	https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844602#overview
 
-	A linear Regression Problem is when your model is continuously predicting the result of a problem
+    	A linear Regression Problem is when your model is continuously predicting the result of a problem
 
-	 i) Mean Absolute Error
-	 ii) Mean Square Error
-	 iii) Root Mean Square Error
-	 iv) R squared Value : https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34780042#overview
+    	 i) Mean Absolute Error
+    	 ii) Mean Square Error
+    	 iii) Root Mean Square Error
+    	 iv) R squared Value : https://ibm-learning.udemy.com/course/machinelearning/learn/lecture/34780042#overview
 
-		SSres (Residual sum of square) :  = SUM( Y - Ypred)^2
-		SStotal (Avegare sum of square): =  SUM( Y - Yavg)^2
+    		SSres (Residual sum of square) :  = SUM( Y - Ypred)^2
+    		SStotal (Avegare sum of square): =  SUM( Y - Yavg)^2
 
-		R squared value = 1 - (SSres/SStotal) 
-		** Note we need to minimise SSres for model accuracy. Greater the R^2 value is better is your model
+    		R squared value = 1 - (SSres/SStotal) 
+    		** Note we need to minimise SSres for model accuracy. Greater the R^2 value is better is your model
 
-Supervised Learning:
-===================
+    Supervised Learning:
+    ===================
 
-The supervised learning algorithm learns to identify patterns and relationships in the data, enabling it to make predictions or classifications on new, 
-unseen transactions. In the context of credit card fraud detection, the algorithm is trained to recognize patterns and features that distinguish fraudulent transactions from legitimate ones. These patterns can include transaction amounts, locations, time of day, and various other transaction details.
+    The supervised learning algorithm learns to identify patterns and relationships in the data, enabling it to make predictions or classifications on new, 
+    unseen transactions. In the context of credit card fraud detection, the algorithm is trained to recognize patterns and features that distinguish fraudulent transactions from legitimate ones. These patterns can include transaction amounts, locations, time of day, and various other transaction details.
 
-Credit card fraud detection is typically approached as a supervised learning problem. In supervised learning, the algorithm is trained on a labeled dataset, which means it is provided with historical data that includes both legitimate and fraudulent transactions, and each transaction is labeled as either "legitimate" or "fraudulent."
+    Credit card fraud detection is typically approached as a supervised learning problem. In supervised learning, the algorithm is trained on a labeled dataset, which means it is provided with historical data that includes both legitimate and fraudulent transactions, and each transaction is labeled as either "legitimate" or "fraudulent."
 
-Unsupervised Learning
-=====================
-Dealing with unlabeled data.
+    Unsupervised Learning
+    =====================
+    Dealing with unlabeled data.
 
-	Tasks in unsupervised Learning:
-	------------------------------
-	i) Clustering - Grouping together unlabeled data points into clusters based on similarity
-	ii) Anomaly Detection - Attempt to detect outliers (Exceptions) in the dataset
-	iii) dimensionality reduction
+    	Tasks in unsupervised Learning:
+    	------------------------------
+    	i) Clustering - Grouping together unlabeled data points into clusters based on similarity
+    	ii) Anomaly Detection - Attempt to detect outliers (Exceptions) in the dataset
+    	iii) dimensionality reduction
 
-Unsupervised learning techniques can be used in credit card fraud detection, but they are often used in conjunction with supervised methods or for different aspects of the problem. Unsupervised techniques may help in anomaly detection, which can identify unusual patterns or outliers in the data that could potentially be indicative of fraud. However, these techniques often require additional human intervention to validate and label anomalies as fraud or non-fraud.
-
-
-* Difference between supervised learning and Unsupervised learning stages: Only difference is that we don't split the dataset into Train and Test datasets in Unsupervised learning as the data is unlabeled. 
+    Unsupervised learning techniques can be used in credit card fraud detection, but they are often used in conjunction with supervised methods or for different aspects of the problem. Unsupervised techniques may help in anomaly detection, which can identify unusual patterns or outliers in the data that could potentially be indicative of fraud. However, these techniques often require additional human intervention to validate and label anomalies as fraud or non-fraud.
 
 
-Perceptron Model:
-===============
-Single Biological Neuron ---> Percepron ---> Multi-Layer Perceptron Model ---> Deep learning Neural network
-y = f(x) = x1*w1 + x2*w2 ; but if x1 or x2 =0 then that input will not be having any impact in the output. To fix that we add b.
-y = f(x) = (x1*w1 + b) + (x2*w2 + b)
-
-Neural network:
-==============
-
-1st layer => input layer
-last layer => output layer
-middle layers => hidden layer
+    * Difference between supervised learning and Unsupervised learning stages: Only difference is that we don't split the dataset into Train and Test datasets in Unsupervised learning as the data is unlabeled. 
 
 
-Activation Functions:
-====================
-y = f(x) = x*w + b 
-w = weight 
-b = bias
-if you want to set a boundary to the output 
-z = x*w + b 
-and we pass z in some activation function to limit the value.
-if we are doing a binary classification problem the output will be 0 or 1.
-When we are doing Binary classification problems there are the Activation function functions used: 
-https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844498#overview
+    Perceptron Model:
+    ===============
+    Single Biological Neuron ---> Percepron ---> Multi-Layer Perceptron Model ---> Deep learning Neural network
+    y = f(x) = x1*w1 + x2*w2 ; but if x1 or x2 =0 then that input will not be having any impact in the output. To fix that we add b.
+    y = f(x) = (x1*w1 + b) + (x2*w2 + b)
 
-	 A) Sigmoid function: 
-	 ====================
+    Neural network:
+    ==============
+
+    1st layer => input layer
+    last layer => output layer
+    middle layers => hidden layer
+
+
+    Activation Functions:
+    ====================
+    y = f(x) = x*w + b 
+    w = weight 
+    b = bias
+    if you want to set a boundary to the output 
+    z = x*w + b 
+    and we pass z in some activation function to limit the value.
+    if we are doing a binary classification problem the output will be 0 or 1.
+    When we are doing Binary classification problems there are the Activation function functions used: 
+    https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844498#overview
+
+    	 A) Sigmoid function: 
+    	 ====================
 	 
-	 f(z) = 1/ (1 + e^(-z))
-	 the output value will be 0 to 1
+    	 f(z) = 1/ (1 + e^(-z))
+    	 the output value will be 0 to 1
 	 
-	 B) Hyperbolic Tangent: 
-	 ======================
+    	 B) Hyperbolic Tangent: 
+    	 ======================
 	 
-	 f(z) = tanh(z)
-	 the output value will be -1 to 1
+    	 f(z) = tanh(z)
+    	 the output value will be -1 to 1
 	 
-	 C) Rectified linear unit: (most used Activation funcion)
-	 =========================
-	 f(z) = max(0 , z) , if value is > 0 then 0 else z
+    	 C) Rectified linear unit: (most used Activation funcion)
+    	 =========================
+    	 f(z) = max(0 , z) , if value is > 0 then 0 else z
  
  
-When we are doing Multi-class  classification problems there are the Activation function functions used: 
-https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844504#overview
+    When we are doing Multi-class  classification problems there are the Activation function functions used: 
+    https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844504#overview
 
- ** in multi-class classification problem we are 2 situations
- i) Non-Exclusive classes: A data point can have multiple classes/categories assigned to it.
-   Ex - photos can have multiple tags, beach, family vacations, etc.
+     ** in multi-class classification problem we are 2 situations
+     i) Non-Exclusive classes: A data point can have multiple classes/categories assigned to it.
+       Ex - photos can have multiple tags, beach, family vacations, etc.
    
    
- ii) Mutually Exclusive classes:
-   Ex - Photos in grayscale can be categorized as black n white or full color
+     ii) Mutually Exclusive classes:
+       Ex - Photos in grayscale can be categorized as black n white or full color
    
  
 
- Non Exclusive Multi-class  classification problems Activation function :
-	 A) Sigmoid function: 
-	 ====================
+     Non Exclusive Multi-class  classification problems Activation function :
+    	 A) Sigmoid function: 
+    	 ====================
 	 
-	 f(z) = 1/ (1 + e^(-z))
-	 the output value will be 0 to 1
+    	 f(z) = 1/ (1 + e^(-z))
+    	 the output value will be 0 to 1
 
- Mutually Exclusive classes classification problems Activation function :
-     A) SoftMax activation function:
-	 ==============================
-	 This function will calculate the probability of each target class, over all possible target classes.	
-	 this probability will range between 0 to 1.
-	 this model returns the probabilities of each class and the target class will be chosen will have the highest probability.
+     Mutually Exclusive classes classification problems Activation function :
+         A) SoftMax activation function:
+    	 ==============================
+    	 This function will calculate the probability of each target class, over all possible target classes.	
+    	 this probability will range between 0 to 1.
+    	 this model returns the probabilities of each class and the target class will be chosen will have the highest probability.
 	 
-	 Example :
-	  Red = 0.1
-	  Green = 0.6
-	  Blue = 0.3
+    	 Example :
+    	  Red = 0.1
+    	  Green = 0.6
+    	  Blue = 0.3
 	  
-	  probability sum =1
-	  so in this case we'll choose the target class as green as it has the highest probability
+    	  probability sum =1
+    	  so in this case we'll choose the target class as green as it has the highest probability
 
-Cost Function:
-==============	
-https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844516#overview
-*Cost Function tells you how far you are from the true value based on your prediction.
-*It Compares Our Neural Network with the true Value we use the cost function or loss function or error function.
+    Cost Function:
+    ==============	
+    https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844516#overview
+    *Cost Function tells you how far you are from the true value based on your prediction.
+    *It Compares Our Neural Network with the true Value we use the cost function or loss function or error function.
 
- y = true value 
- a = neural predictions
+     y = true value 
+     a = neural predictions
  
- Commonly used Cost function:
-----------------------------
-	 A) Quadratic Cost Function: Which essentially means root mean square error
-	 The cost function consists of four main things :
-	 W = weight
-	 B = Bias
-	 Sr = input of a single training sample
-	 Er = desired output
+     Commonly used Cost function:
+    ----------------------------
+    	 A) Quadratic Cost Function: Which essentially means root mean square error
+    	 The cost function consists of four main things :
+    	 W = weight
+    	 B = Bias
+    	 Sr = input of a single training sample
+    	 Er = desired output
 
-Cost Function/Loss function:
-  Classification problem:
-    1) binary cross entropy
-    2) categorical cross entropy
-  Regression problem :
-    1) Mean absolute error
-    2) mean square error
-    3) Root mean square error
+    Cost Function/Loss function:
+      Classification problem:
+        1) binary cross entropy
+        2) categorical cross entropy
+      Regression problem :
+        1) Mean absolute error
+        2) mean square error
+        3) Root mean square error
 
-Different Machine Learning Algorithms:
-=====================================
-
-
-	1) Linear Regression:
-	=====================
-	Use for: Regression problems where the relationship between features and target is approximately linear.
-	Strengths: Simplicity, interpretability, good for basic regression tasks.
-	Weaknesses: Assumes a linear relationship, and may not handle complex data well.
+    Different Machine Learning Algorithms:
+    =====================================
 
 
-	2) Logistic Regression:
-	=======================
-
-	Use for: Binary classification problems.
-	Strengths: Interpretable, works well when the relationship between features and target is not too complex.
-	Weaknesses: Assumes linear separation boundaries.
-
-
-	3) Decision Trees:
-	==================
-
-	https://www.youtube.com/watch?v=PHxYNGo8NcI
-
-	Use for: Both classification and regression problems, especially when dealing with non-linear relationships.
-	Strengths: Can handle both categorical and numerical features, interpretable (for simpler trees).
-	Weaknesses: Prone to overfitting, can be sensitive to small changes in data.
+    	1) Linear Regression:
+    	=====================
+    	Use for: Regression problems where the relationship between features and target is approximately linear.
+    	Strengths: Simplicity, interpretability, good for basic regression tasks.
+    	Weaknesses: Assumes a linear relationship, and may not handle complex data well.
 
 
-	4) Random Forests:
-	==================
-	https://www.youtube.com/watch?v=v6VJ2RO66Ag
+    	2) Logistic Regression:
+    	=======================
 
-	Use for: Classification and regression tasks where higher accuracy is desired, and overfitting is a concern.
-	Strengths: Robust, handles non-linearity, overcomes decision tree limitations.
-	Weaknesses: Less interpretable than individual decision trees, more complex.
-
-
-	5) Support Vector Machines (SVM):
-	=================================
-
-	https://www.youtube.com/watch?v=_YPScrckx28
-
-	Use for: Binary classification tasks, especially when data is not linearly separable.
-	Strengths: Effective in high-dimensional spaces, can handle non-linear data with kernel trick.
-	Weaknesses: Computationally expensive for large datasets, may not perform well on noisy data.
-
-	kernel trick:
-	https://www.youtube.com/watch?v=Q7vT0--5VII
+    	Use for: Binary classification problems.
+    	Strengths: Interpretable, works well when the relationship between features and target is not too complex.
+    	Weaknesses: Assumes linear separation boundaries.
 
 
-	6) K-Nearest Neighbors (KNN):
-	=============================
+    	3) Decision Trees:
+    	==================
 
-	Use for: Classification and regression tasks, especially when local patterns are important.
-	Strengths: Simple, non-parametric, can capture complex relationships.
-	Weaknesses: Can be computationally expensive for large datasets, and sensitive to irrelevant features.
+    	https://www.youtube.com/watch?v=PHxYNGo8NcI
 
-	7) Clustering Algorithms (e.g., K-Means, DBSCAN):
-	==================================================
-	Use for: Grouping similar data points together (unsupervised learning).
-	Strengths: Useful for data exploration, finding patterns, and segmenting data.
-	Weaknesses: Need to specify the number of clusters and sensitivity to initialization.
+    	Use for: Both classification and regression problems, especially when dealing with non-linear relationships.
+    	Strengths: Can handle both categorical and numerical features, interpretable (for simpler trees).
+    	Weaknesses: Prone to overfitting, can be sensitive to small changes in data.
 
 
-	8) Neural Networks (Deep Learning):
-	===================================
-	Use for: Complex tasks like image and speech recognition, natural language processing, and large datasets.
-	Strengths: Can capture intricate patterns, high accuracy potential.
-	Weaknesses: Requires large amounts of data, computational resources, and careful tuning.
+    	4) Random Forests:
+    	==================
+    	https://www.youtube.com/watch?v=v6VJ2RO66Ag
+
+    	Use for: Classification and regression tasks where higher accuracy is desired, and overfitting is a concern.
+    	Strengths: Robust, handles non-linearity, overcomes decision tree limitations.
+    	Weaknesses: Less interpretable than individual decision trees, more complex.
 
 
-	9) Naive Bayes:
-	==============
-	Use for: Text classification, spam filtering, and other probabilistic classification tasks.
-	Strengths: Simple, works well with high-dimensional data (e.g., text).
-	Weaknesses: Assumes features are independent, and may not work well with complex data.
+    	5) Support Vector Machines (SVM):
+    	=================================
+
+    	https://www.youtube.com/watch?v=_YPScrckx28
+
+    	Use for: Binary classification tasks, especially when data is not linearly separable.
+    	Strengths: Effective in high-dimensional spaces, can handle non-linear data with kernel trick.
+    	Weaknesses: Computationally expensive for large datasets, may not perform well on noisy data.
+
+    	kernel trick:
+    	https://www.youtube.com/watch?v=Q7vT0--5VII
 
 
+    	6) K-Nearest Neighbors (KNN):
+    	=============================
+
+    	Use for: Classification and regression tasks, especially when local patterns are important.
+    	Strengths: Simple, non-parametric, can capture complex relationships.
+    	Weaknesses: Can be computationally expensive for large datasets, and sensitive to irrelevant features.
+
+    	7) Clustering Algorithms (e.g., K-Means, DBSCAN):
+    	==================================================
+    	Use for: Grouping similar data points together (unsupervised learning).
+    	Strengths: Useful for data exploration, finding patterns, and segmenting data.
+    	Weaknesses: Need to specify the number of clusters and sensitivity to initialization.
+
+
+    	8) Neural Networks (Deep Learning):
+    	===================================
+    	Use for: Complex tasks like image and speech recognition, natural language processing, and large datasets.
+    	Strengths: Can capture intricate patterns, high accuracy potential.
+    	Weaknesses: Requires large amounts of data, computational resources, and careful tuning.
+
+
+    	9) Naive Bayes:
+    	==============
+    	Use for: Text classification, spam filtering, and other probabilistic classification tasks.
+    	Strengths: Simple, works well with high-dimensional data (e.g., text).
+    	Weaknesses: Assumes features are independent, and may not work well with complex data.
 
 
 
-INTERVIEW QUESTIONS:
-====================
-1) what is embedding
-2) How chatGPT supports local languages although there is so low data set to train a model. --> First, ChatGPT uses its language-processing features to identify the language you’ve used in your question/prompt. It uses natural language processing (NLP) techniques to understand the intent and emotion behind the text.
-3) optimization
-4) rule-based algo -- mean square error, root mean square error
-5) pysprak ***
-6) databricks
-7) deploy model
-8) issues faced differently with data , when the data looks good but they are not really that good
-
-https://www.youtube.com/watch?v=E5wVPKJkwCg&list=PLKnIA16_Rmva_ZdY31wpEICG0KHnvIhu2&index=4
 
 
-1) What is the difference between Parametric & Non-Parametric ML Algorithms?
+    INTERVIEW QUESTIONS:
+    ====================
+    1) what is embedding
+    2) How chatGPT supports local languages although there is so low data set to train a model. --> First, ChatGPT uses its language-processing features to identify the language you’ve used in your question/prompt. It uses natural language processing (NLP) techniques to understand the intent and emotion behind the text.
+    3) optimization
+    4) rule-based algo -- mean square error, root mean square error
+    5) pysprak ***
+    6) databricks
+    7) deploy model
+    8) issues faced differently with data , when the data looks good but they are not really that good
 
-Parametric Algorithms:
-======================
-Parametric algorithms make strong assumptions about the functional form of the underlying data distribution (y = f(x)). They assume that the data is generated from a specific mathematical model with a fixed number of parameters. Once these parameters are learned from the training data, the model is fully specified and can make predictions.
-
-Examples of parametric algorithms include linear regression, logistic regression, and Naive Bayes classifiers.
-
-
-Non-Parametric Algorithms:
-==========================
-Non-parametric algorithms, on the other hand, make fewer assumptions about the underlying data distribution. They don't assume a fixed form of the model and instead, attempt to learn the structure of the data directly from the training examples.
-
-Examples of non-parametric algorithms include k-nearest neighbors, decision trees, support vector machines with non-linear kernels, and neural networks.
+    https://www.youtube.com/watch?v=E5wVPKJkwCg&list=PLKnIA16_Rmva_ZdY31wpEICG0KHnvIhu2&index=4
 
 
-2) Difference between convex & non-convex cost function; what happens when the cost function is non-convex?
+    1) What is the difference between Parametric & Non-Parametric ML Algorithms?
 
-Convex Cost Function:
-====================
+    Parametric Algorithms:
+    ======================
+    Parametric algorithms make strong assumptions about the functional form of the underlying data distribution (y = f(x)). They assume that the data is generated from a specific mathematical model with a fixed number of parameters. Once these parameters are learned from the training data, the model is fully specified and can make predictions.
 
-A convex cost function is a function where any line segment connecting two points on the curve lies above the curve itself. In other words, it's a function that has a "bowl" shape, and there are no local minima other than the global minimum. Convex cost functions are desirable in optimization because they guarantee that optimization algorithms will converge to the global minimum, which represents the best set of parameters for the model.
+    Examples of parametric algorithms include linear regression, logistic regression, and Naive Bayes classifiers.
 
-Non-Convex Cost Function:
-=========================
 
-A non-convex cost function is one that has multiple local minima and may have complex shapes, such as peaks, valleys, and plateaus. This means that there are multiple solutions that the optimization algorithm can converge to, and it might not find the global optimum. Non-convex functions are more challenging to optimize because the optimization algorithms can get stuck in a local minimum instead of finding the global minimum.
+    Non-Parametric Algorithms:
+    ==========================
+    Non-parametric algorithms, on the other hand, make fewer assumptions about the underlying data distribution. They don't assume a fixed form of the model and instead, attempt to learn the structure of the data directly from the training examples.
 
-What Happens When Cost Function Is Non-Convex:
+    Examples of non-parametric algorithms include k-nearest neighbors, decision trees, support vector machines with non-linear kernels, and neural networks.
 
-When the cost function is non-convex, the optimization process becomes more challenging and uncertain. The model might fail to reach the best possible performance, and its training could be more sensitive to hyperparameters and initial conditions.
 
-3) Why is 'Naïve' Bayes naïve?
+    2) Difference between convex & non-convex cost function; what happens when the cost function is non-convex?
 
-https://www.youtube.com/watch?v=Ty7knppVo9E
-Naïve Bayes is a machine learning algorithm based on Bayesian probability theory that is used for classification and probabilistic modeling.
+    Convex Cost Function:
+    ====================
 
-Naïve Bayes assumes that features (attributes or variables) are independent of each other, given the class label. This means that the presence or absence of one feature does not affect the presence or absence of another feature
+    A convex cost function is a function where any line segment connecting two points on the curve lies above the curve itself. In other words, it's a function that has a "bowl" shape, and there are no local minima other than the global minimum. Convex cost functions are desirable in optimization because they guarantee that optimization algorithms will converge to the global minimum, which represents the best set of parameters for the model.
 
-4) What do you mean by the unreasonable effectiveness of data?
+    Non-Convex Cost Function:
+    =========================
 
-The phrase “unreasonable effectiveness of data” in machine learning refers to the remarkable ability of large datasets to produce highly accurate models, even when the algorithms used to analyze them are relatively simple.
+    A non-convex cost function is one that has multiple local minima and may have complex shapes, such as peaks, valleys, and plateaus. This means that there are multiple solutions that the optimization algorithm can converge to, and it might not find the global optimum. Non-convex functions are more challenging to optimize because the optimization algorithms can get stuck in a local minimum instead of finding the global minimum.
 
-5) What is Lazy learning
+    What Happens When Cost Function Is Non-Convex:
 
-In lazy learning, the model stores the entire training dataset and uses it directly to make predictions on new, unseen data instances.
+    When the cost function is non-convex, the optimization process becomes more challenging and uncertain. The model might fail to reach the best possible performance, and its training could be more sensitive to hyperparameters and initial conditions.
 
-Example: KNN
+    3) Why is 'Naïve' Bayes naïve?
 
-6) What is Eger learning 
+    https://www.youtube.com/watch?v=Ty7knppVo9E
+    Naïve Bayes is a machine learning algorithm based on Bayesian probability theory that is used for classification and probabilistic modeling.
+
+    Naïve Bayes assumes that features (attributes or variables) are independent of each other, given the class label. This means that the presence or absence of one feature does not affect the presence or absence of another feature
+
+    4) What do you mean by the unreasonable effectiveness of data?
+
+    The phrase “unreasonable effectiveness of data” in machine learning refers to the remarkable ability of large datasets to produce highly accurate models, even when the algorithms used to analyze them are relatively simple.
+
+    5) What is Lazy learning
+
+    In lazy learning, the model stores the entire training dataset and uses it directly to make predictions on new, unseen data instances.
+
+    Example: KNN
+
+    6) What is Eger learning 
 	
-This is in contrast to eager learning (or model-based learning), where a model is trained on the entire dataset before making predictions.
+    This is in contrast to eager learning (or model-based learning), where a model is trained on the entire dataset before making predictions.
 
-Example: Most of the Machine learning model falls under Eger Learning.
-
-
-7) What do you mean by semi-supervised learning?
+    Example: Most of the Machine learning model falls under Eger Learning.
 
 
-Semi-supervised learning involves a small portion of labeled examples and a large number of unlabeled examples from which a model must learn and make predictions on new examples.
+    7) What do you mean by semi-supervised learning?
 
 
-8) What is an OOB(out of the bag) score in random forest model and how is it useful?
-
-https://www.youtube.com/watch?v=fXfs_6o_hOs
-
-9) In what scenario decision tree be preferred over a random forest?
-
-Decision trees are much more interpretable than random forests. A single decision tree can be visualized and understood easily, making it a good choice when you need to explain the logic of the model's decisions to non-technical stakeholders.
-
-Decision tree:
-==============
+    Semi-supervised learning involves a small portion of labeled examples and a large number of unlabeled examples from which a model must learn and make predictions on new examples.
 
 
+    8) What is an OOB(out of the bag) score in random forest model and how is it useful?
 
-It's a tree-like structure that represents a sequence of decisions and their possible outcomes. Each internal node of the tree represents a decision based on a particular feature, while each leaf node represents a prediction or an outcome.
+    https://www.youtube.com/watch?v=fXfs_6o_hOs
 
-Random forest:
-=============
+    9) In what scenario decision tree be preferred over a random forest?
 
-A Random Forest is a powerful ensemble machine-learning algorithm that combines multiple individual decision trees to create a more accurate and robust model. It's designed to overcome some of the limitations of a single decision tree by leveraging the concept of "wisdom of the crowd."
+    Decision trees are much more interpretable than random forests. A single decision tree can be visualized and understood easily, making it a good choice when you need to explain the logic of the model's decisions to non-technical stakeholders.
 
-10) Why Logistic Regression is called regression?
-
-In Logistic regression we do linear regression first we use a Sigmoid Function  to transform the linear combination of features into a value between 0 and 1, representing the probability of the positive class in a binary classification problem.
+    Decision tree:
+    ==============
 
 
 
-10) What is Online Machine Learning?
+    It's a tree-like structure that represents a sequence of decisions and their possible outcomes. Each internal node of the tree represents a decision based on a particular feature, while each leaf node represents a prediction or an outcome.
 
-Online machine learning, also known as incremental or streaming machine learning, refers to a machine learning paradigm in which a model is updated continuously as new data becomes available, as opposed to the traditional batch learning approach where the model is trained on a fixed dataset.
+    Random forest:
+    =============
 
-Example: ChatBots, Personal Recommendations
+    A Random Forest is a powerful ensemble machine-learning algorithm that combines multiple individual decision trees to create a more accurate and robust model. It's designed to overcome some of the limitations of a single decision tree by leveraging the concept of "wisdom of the crowd."
 
-11) What is the No Free Lunch Theorem in Machine Learning?
+    10) Why Logistic Regression is called regression?
 
-Without taking assumptions it's very difficult to choose a machine learning model for a particular problem. 
+    In Logistic regression we do linear regression first we use a Sigmoid Function  to transform the linear combination of features into a value between 0 and 1, representing the probability of the positive class in a binary classification problem.
 
 
-12) Imagine you are working with a laptop of 2GB RAM, how would you process a dataset of 10GB?
 
-	i) Stream the data: Read the data in chunks. this is possible using Pandas/keras.
-	ii) Extract features: Extract the features from the chunk of data.
-	iii) Train model: do partinal fit . model.partial_fit :  model that support partial_fit = > Naive Based
+    10) What is Online Machine Learning?
+
+    Online machine learning, also known as incremental or streaming machine learning, refers to a machine learning paradigm in which a model is updated continuously as new data becomes available, as opposed to the traditional batch learning approach where the model is trained on a fixed dataset.
+
+    Example: ChatBots, Personal Recommendations
+
+    11) What is the No Free Lunch Theorem in Machine Learning?
+
+    Without taking assumptions it's very difficult to choose a machine learning model for a particular problem. 
+
+
+    12) Imagine you are working with a laptop of 2GB RAM, how would you process a dataset of 10GB?
+
+    	i) Stream the data: Read the data in chunks. this is possible using Pandas/keras.
+    	ii) Extract features: Extract the features from the chunk of data.
+    	iii) Train model: do partinal fit . model.partial_fit :  model that support partial_fit = > Naive Based
 		
-13) What are the main points of difference between Bagging and Boosting?
+    13) What are the main points of difference between Bagging and Boosting?
 
 
-14) What is multi-colinearity?
+    14) What is multi-colinearity?
 
-If the feature data itself has a correlation with each other then it is called multi-colinearity. Which is very bad for the Linear regression model.
-To Determine the correlation of feature data we use variance_inflation_factor in the X_train data. if the value is in the range of 1-4 it's good. 
-If the value is greater than 5 then it's bad i.e the feature data have a correlation with each other.
+    If the feature data itself has a correlation with each other then it is called multi-colinearity. Which is very bad for the Linear regression model.
+    To Determine the correlation of feature data we use variance_inflation_factor in the X_train data. if the value is in the range of 1-4 it's good. 
+    If the value is greater than 5 then it's bad i.e the feature data have a correlation with each other.
 
-15) Reducible Vs Irreducible Error in Machine Learning?
-
-
-16) Null Hypothesis and P Value
-https://www.youtube.com/watch?v=zII6KLR4Lb4
-Null Hypothesis: Threat everything as equal
-P value: Probability of null hypothesis to be true
-
-17) k means clustering and Euclidean Distance:
-https://www.youtube.com/watch?v=CLKW6uWJtTc
-
-Elbow method in k means clustering: To determine what should the Ideal number of clusters we use Elbow method
-https://www.youtube.com/watch?v=ivFJZPYl2L0
+    15) Reducible Vs Irreducible Error in Machine Learning?
 
 
-18) Model optimization:
+    16) Null Hypothesis and P Value
+    https://www.youtube.com/watch?v=zII6KLR4Lb4
+    Null Hypothesis: Threat everything as equal
+    P value: Probability of null hypothesis to be true
 
-Model optimization in TensorFlow involves a set of techniques aimed at improving the performance, efficiency, and generalization of your machine learning models. There are various approaches to optimizing TensorFlow models
+    17) k means clustering and Euclidean Distance:
+    https://www.youtube.com/watch?v=CLKW6uWJtTc
 
-1) Data Preprocessing: Ensuring that your input data is appropriately prepared can have a significant impact on model performance. Techniques like
-    i) normalization
-    ii) feature scaling
-    iii) handling missing values are crucial steps to consider.
-
-2) Choosing the Right Architecture: Choosing the right model is important.
-3) Transfer Learning: For certain tasks, using pre-trained models and fine-tuning them on your specific dataset can be more efficient than training from scratch.
-4) Pruning: Pruning involves removing insignificant weights from the model, leading to a more compact model with potential speed-up during inference.
+    Elbow method in k means clustering: To determine what should the Ideal number of clusters we use Elbow method
+    https://www.youtube.com/watch?v=ivFJZPYl2L0
 
 
-19) Issues faced with data when the data looks good but they are not really that good :
+    18) Model optimization:
 
-If your data appears to be of good quality, but your model's performance is not as good as expected, there could be several reasons for this discrepancy. Here are some steps to investigate and improve the situation:
+    Model optimization in TensorFlow involves a set of techniques aimed at improving the performance, efficiency, and generalization of your machine learning models. There are various approaches to optimizing TensorFlow models
 
-	i) Data Exploration and Visualization: Revisit your data exploration process to ensure you haven't missed any important patterns or insights. Visualize the data in different ways to get a better understanding of its characteristics and potential issues.
+    1) Data Preprocessing: Ensuring that your input data is appropriately prepared can have a significant impact on model performance. Techniques like
+        i) normalization
+        ii) feature scaling
+        iii) handling missing values are crucial steps to consider.
 
-	ii) Data Preprocessing: Check if your data preprocessing steps are appropriate. Ensure that you are
-		1) handling missing values, 
-                2) scaling features, and applying any necessary transformations correctly. 
-	Incorrect preprocessing can lead to suboptimal model performance.
-
-	iii) Feature Engineering: Evaluate if you have captured all the relevant features from your data. Sometimes, domain knowledge and creative feature engineering can significantly improve model performance.
-
-
-20) Rule-Based Algorithms in Machine Learning:
+    2) Choosing the Right Architecture: Choosing the right model is important.
+    3) Transfer Learning: For certain tasks, using pre-trained models and fine-tuning them on your specific dataset can be more efficient than training from scratch.
+    4) Pruning: Pruning involves removing insignificant weights from the model, leading to a more compact model with potential speed-up during inference.
 
 
-Rule-based algorithms are a class of machine learning approaches that rely on predefined rules or logical conditions to make predictions or decisions. Unlike traditional machine learning algorithms that learn patterns from data, rule-based algorithms are based on explicit rules set by domain experts or through manual analysis. These rules are often represented in the form of "if-then" statements or logical expressions.
+    19) Issues faced with data when the data looks good but they are not really that good :
+
+    If your data appears to be of good quality, but your model's performance is not as good as expected, there could be several reasons for this discrepancy. Here are some steps to investigate and improve the situation:
+
+    	i) Data Exploration and Visualization: Revisit your data exploration process to ensure you haven't missed any important patterns or insights. Visualize the data in different ways to get a better understanding of its characteristics and potential issues.
+
+    	ii) Data Preprocessing: Check if your data preprocessing steps are appropriate. Ensure that you are
+    		1) handling missing values, 
+                    2) scaling features, and applying any necessary transformations correctly. 
+    	Incorrect preprocessing can lead to suboptimal model performance.
+
+    	iii) Feature Engineering: Evaluate if you have captured all the relevant features from your data. Sometimes, domain knowledge and creative feature engineering can significantly improve model performance.
 
 
-21) Dealing with Missing Data:
+    20) Rule-Based Algorithms in Machine Learning:
 
 
-determine the number of missing data in each column.
-
-	i) 	df.isnull().sum()
-	ii) determine how much percentage of that particular column has missing data
-		100* (df.isnull().sum())/ len(df)
-	iii) drop the columns that have a very less percentage
-	iv) columns that we can't drop, we have to fill data. 
-		two approaches:
-		1) K Nearest Neighbour
-		2) Find out other columns which have the highest correlation with this column and fill out the missing data with those values.
+    Rule-based algorithms are a class of machine learning approaches that rely on predefined rules or logical conditions to make predictions or decisions. Unlike traditional machine learning algorithms that learn patterns from data, rule-based algorithms are based on explicit rules set by domain experts or through manual analysis. These rules are often represented in the form of "if-then" statements or logical expressions.
 
 
+    21) Dealing with Missing Data:
 
-22) What is Databricks:
+
+    determine the number of missing data in each column.
+
+    	i) 	df.isnull().sum()
+    	ii) determine how much percentage of that particular column has missing data
+    		100* (df.isnull().sum())/ len(df)
+    	iii) drop the columns that have a very less percentage
+    	iv) columns that we can't drop, we have to fill data. 
+    		two approaches:
+    		1) K Nearest Neighbour
+    		2) Find out other columns which have the highest correlation with this column and fill out the missing data with those values.
 
 
-The core of data bricks is an open-source distributed computing processing engine called Apache Spark. Microsoft makes the Databricks service available on its Azure cloud platform. These are combined and called Azure Databricks.
 
-Apache Spark is a lighting fast unified analytics engine for big data processing and Machine learning.
+    22) What is Databricks:
 
-23) Boosting Algorithm:
-  1) AdaBoost
-  2) XGBoost 
-  3) Gradient Boosting 
-24) Boosting vs Bagging
 
-Bagging: https://www.youtube.com/watch?v=kW4XSvuBtDw
-========
-Bagging selects a random sample of data from a training set with replacement. This means that data points can be chosen more than once.
-Bagging trains multiple weak models in parallel.
-The final output is generated by combining the outputs of all the different models.
-Ex: Random Forest, Voting Classifier
+    The core of data bricks is an open-source distributed computing processing engine called Apache Spark. Microsoft makes the Databricks service available on its Azure cloud platform. These are combined and called Azure Databricks.
 
-25) In case of categorical data how to convert them into numbers then find the distance for clustering in K mean clustering: To organize data for  Multi-class  classification problems  we use one-hot encoding.
+    Apache Spark is a lighting fast unified analytics engine for big data processing and Machine learning.
 
-26) Standardization vs normalization :
-	Standardization:
-	---------------
-	Standardization (also known as Z-score normalization) transforms the data in such a way that it has a mean of 0 and a standard deviation of 1. The formula for standardization is: standardized_value = (original_value - mean) / standard_deviation
+    23) Boosting Algorithm:
+      1) AdaBoost
+      2) XGBoost 
+      3) Gradient Boosting 
+    24) Boosting vs Bagging
+
+    Bagging: https://www.youtube.com/watch?v=kW4XSvuBtDw
+    ========
+    Bagging selects a random sample of data from a training set with replacement. This means that data points can be chosen more than once.
+    Bagging trains multiple weak models in parallel.
+    The final output is generated by combining the outputs of all the different models.
+    Ex: Random Forest, Voting Classifier
+
+    25) In case of categorical data how to convert them into numbers then find the distance for clustering in K mean clustering: To organize data for  Multi-class  classification problems  we use one-hot encoding.
+
+    26) Standardization vs normalization :
+    	Standardization:
+    	---------------
+    	Standardization (also known as Z-score normalization) transforms the data in such a way that it has a mean of 0 and a standard deviation of 1. The formula for standardization is: standardized_value = (original_value - mean) / standard_deviation
 	
-	Normalization:
-	--------------
-	Normalization scales the data in a way that it falls within a specific range, usually between 0 and 1. It can be especially useful for algorithms that use distance-based metrics, like k-nearest neighbors or support vector machines. The formula for normalization is:
-	normalized_value = (original_value - min) / (max - min)
+    	Normalization:
+    	--------------
+    	Normalization scales the data in a way that it falls within a specific range, usually between 0 and 1. It can be especially useful for algorithms that use distance-based metrics, like k-nearest neighbors or support vector machines. The formula for normalization is:
+    	normalized_value = (original_value - min) / (max - min)
 	
-27) In the case of scaling the data, We will do fit and transform to X_train data and only transform to X_test data, why?
-	Fit and Transform on Training Data (X_train):
-	---------------------------------------------
-	You use the "fit" step to calculate the necessary parameters (such as mean and standard deviation for standardization) based on the training data. These parameters will be used to transform the training data into the desired scale. The "transform" step applies the calculated parameters to the training data, scaling it appropriately.
+    27) In the case of scaling the data, We will do fit and transform to X_train data and only transform to X_test data, why?
+    	Fit and Transform on Training Data (X_train):
+    	---------------------------------------------
+    	You use the "fit" step to calculate the necessary parameters (such as mean and standard deviation for standardization) based on the training data. These parameters will be used to transform the training data into the desired scale. The "transform" step applies the calculated parameters to the training data, scaling it appropriately.
 	
 	
-	Transform on Testing Data (X_test):
-	-----------------------------------
-	You only use the "transform" step on the testing data, using the parameters that were calculated from the training data.
-	This ensures that the testing data is scaled in the same way as the training data, maintaining the consistency of the scaling process.
+    	Transform on Testing Data (X_test):
+    	-----------------------------------
+    	You only use the "transform" step on the testing data, using the parameters that were calculated from the training data.
+    	This ensures that the testing data is scaled in the same way as the training data, maintaining the consistency of the scaling process.
 
-28) what is DBA scan and How it is different from K Mean Clustering 
+    28) what is DBA scan and How it is different from K Mean Clustering 
 
-29) Central limit theorem: https://www.youtube.com/watch?v=JNm3M9cqWyc&t=326s
---------------------------
+    29) Central limit theorem: https://www.youtube.com/watch?v=JNm3M9cqWyc&t=326s
+    --------------------------
 
-if you take sufficiently large samples from a population, the samples' means will be normally distributed, even if the population isn't normally distributed.
+    if you take sufficiently large samples from a population, the samples' means will be normally distributed, even if the population isn't normally distributed.
 
-30) Cross-validation: https://www.youtube.com/watch?v=fSytzGwwBVw
+    30) Cross-validation: https://www.youtube.com/watch?v=fSytzGwwBVw
 
-The process of cross-validation involves partitioning the original training data into subsets, often called folds. 
-The model is trained on some of these folds and tested on the remaining data. 
-This process is repeated multiple times (k times) with different subsets, and 
-the performance measures such as accuracy or mean squared error are averaged across 
-all the runs to give an overall performance metric.
+    The process of cross-validation involves partitioning the original training data into subsets, often called folds. 
+    The model is trained on some of these folds and tested on the remaining data. 
+    This process is repeated multiple times (k times) with different subsets, and 
+    the performance measures such as accuracy or mean squared error are averaged across 
+    all the runs to give an overall performance metric.
 
-The advantage of cross-validation is that it provides a more reliable estimate of a model's performance compared to using a single train-test split.
-It ensures that every data point is used for both training and testing, 
-improving the robustness and reliability of the evaluation. 
-Common types of cross-validation include k-fold cross-validation, stratified k-fold cross-validation
-(which maintains the class distribution of the target variable), and leave-one-out cross-validation (a special case where k equals the number of samples).
-
-
-32) Difference between parameter and hyperparameter in Machine Learning: https://www.youtube.com/watch?v=V4AcLJ2cgmU:
-
-Weights and biases are parameters, but epochs, activation functions, learning rate, number of layers, neurons in each layer, and number of trees in a random forest are the hyperparameters.
-
-31) Hyperparameter optimization: https://www.youtube.com/watch?v=ttE0F7fghfk
-
-Hyperparameter optimization is a crucial step in the machine learning model development process. It involves finding the best set of hyperparameters for your model to maximize its performance on a given task. Hyperparameters are parameters that are not learned from the data but are set prior to training, and they can significantly impact the performance of a machine-learning model. Common hyperparameters include learning rates, the number of hidden layers in a neural network, the number of decision trees in a random forest, and more.
-
-Here are some common techniques and tools for hyperparameter optimization:
-
-Grid Search: Grid search is a basic but effective technique where you specify a range of values for each hyperparameter, and it evaluates the model's performance for all possible combinations. This can be computationally expensive, especially with a large number of hyperparameters.
-
-Random Search: Random search is an alternative to grid search. Instead of evaluating all possible combinations, it randomly samples a predefined number of hyperparameter configurations. This can be more efficient than grid search and often yields similar results.
-
-Bayesian Optimization: Bayesian optimization is a more sophisticated approach that models the relationship between hyperparameters and model performance using a probabilistic model (typically Gaussian Processes) and focuses on exploring the most promising hyperparameter configurations. Popular libraries for Bayesian optimization 
-include scikit-optimize and Hyperopt.
+    The advantage of cross-validation is that it provides a more reliable estimate of a model's performance compared to using a single train-test split.
+    It ensures that every data point is used for both training and testing, 
+    improving the robustness and reliability of the evaluation. 
+    Common types of cross-validation include k-fold cross-validation, stratified k-fold cross-validation
+    (which maintains the class distribution of the target variable), and leave-one-out cross-validation (a special case where k equals the number of samples).
 
 
-33) DBscan vs k means clustering: https://www.youtube.com/watch?v=8EvtpHeUwiw
+    32) Difference between parameter and hyperparameter in Machine Learning: https://www.youtube.com/watch?v=V4AcLJ2cgmU:
 
-DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering algorithm used in machine learning and data analysis. It is particularly effective at identifying clusters of data points that are close to each other in terms of density and separating them from areas with lower data density. Unlike some other clustering methods, DBSCAN doesn't require the user to specify the number of clusters beforehand and can discover clusters of arbitrary shapes.
+    Weights and biases are parameters, but epochs, activation functions, learning rate, number of layers, neurons in each layer, and number of trees in a random forest are the hyperparameters.
 
+    31) Hyperparameter optimization: https://www.youtube.com/watch?v=ttE0F7fghfk
 
-34) sample mean vs population mean:
-Population Mean:
+    Hyperparameter optimization is a crucial step in the machine learning model development process. It involves finding the best set of hyperparameters for your model to maximize its performance on a given task. Hyperparameters are parameters that are not learned from the data but are set prior to training, and they can significantly impact the performance of a machine-learning model. Common hyperparameters include learning rates, the number of hidden layers in a neural network, the number of decision trees in a random forest, and more.
 
-The population mean, often denoted as μ (mu), represents the average value of a variable in an entire population. The population is the entire set of individuals, items, or data points you are interested in studying.
+    Here are some common techniques and tools for hyperparameter optimization:
 
-Sample Mean:
+    Grid Search: Grid search is a basic but effective technique where you specify a range of values for each hyperparameter, and it evaluates the model's performance for all possible combinations. This can be computationally expensive, especially with a large number of hyperparameters.
 
-The sample mean, often denoted as x̄ (x-bar), represents the average value of a variable in a subset of the population, known as a sample. A sample is a smaller, manageable subset of the population that you use to make inferences about the entire population.
+    Random Search: Random search is an alternative to grid search. Instead of evaluating all possible combinations, it randomly samples a predefined number of hyperparameter configurations. This can be more efficient than grid search and often yields similar results.
 
-
-35) standard normal distribution: mean =0 and standard deviation as 1
-36) cumulative density function vs probability 
-37) density function
-36) ordinary least square
-38) Region leso regression 
-39) Regularisation
-40) Soft margin and hard margin in SVM
-41) Hamming distance in categorical data
-****42) Cross-validation: https://www.youtube.com/watch?v=fSytzGwwBVw&t=298s
-
-Cross-validation is a resampling method that uses different portions of the data to test and train a model on different iterations. It is mainly used in settings where the goal is prediction, and one wants to estimate how accurately a predictive model will perform in practice.
-
-Data Splitting: The dataset is randomly divided into k roughly equal-sized subsets, often called folds. For example, if you choose 5-fold cross-validation, the data is split into 5 subsets.
-
-Model Training and Testing: The following steps are repeated k times:
-
-Use k-1 folds for training your model.
-Use the remaining 1 fold for testing (validation).
-Evaluation: Calculate the performance metric (e.g., accuracy, mean squared error) on the validation set for each fold.
-
-Averaging: After all k iterations, average the performance metrics to get an overall estimate of the model's performance.
-
-42) Dimensionality reduction :
-
-Dimensionality reduction is a technique used in machine learning and data analysis to reduce the number of features or variables in a dataset while retaining important information and patterns. It's particularly useful when dealing with high-dimensional data, which can be computationally expensive, lead to overfitting, and make it difficult to visualize and interpret the data.
-
-43) Autoencoder: 
-An autoencoder is a type of artificial neural network used in unsupervised machine learning and dimensionality reduction tasks. It is a neural network architecture that is designed to learn efficient representations of data, typically for the purpose of reducing the dimensionality of the input while preserving important information
-
-Here's how an autoencoder works:
-
-Encoder: The encoder takes the input data and maps it to a lower-dimensional representation, often referred to as the "latent space" or "encoding." This mapping process involves multiple layers of neurons that progressively reduce the dimensionality of the input data.
-
-Latent Space: The latent space is an essential part of the autoencoder, where the encoder has learned to represent the input data in a more compact and informative way. The size of the latent space is a hyperparameter, and it determines the level of compression achieved by the autoencoder.
-
-Decoder: The decoder takes the encoded representation from the latent space and attempts to reconstruct the original input data from this compressed representation. Like the encoder, the decoder consists of multiple layers of neurons.
+    Bayesian Optimization: Bayesian optimization is a more sophisticated approach that models the relationship between hyperparameters and model performance using a probabilistic model (typically Gaussian Processes) and focuses on exploring the most promising hyperparameter configurations. Popular libraries for Bayesian optimization 
+    include scikit-optimize and Hyperopt.
 
 
-44) One hot encoding, creating dummy variable and dummy variable trap 
+    33) DBscan vs k means clustering: https://www.youtube.com/watch?v=8EvtpHeUwiw
 
-45) Imple linear Regression vs. Multiple linear regression vs. Polynomial Linear Regression expression difference.
-	linear Regression : y = b0 +b1x1
-	Polynomial Linear Regression: y = b0 + b1X1 + b2X2^2 + b3X3^3 .....
-	Multiple linear regression: y = b0 + b1x1 + b2x2 + b3x3 + .....
-
-46) why all these Polynomial Linear Regression is Linear although it has x^2? 
-y = b0 + b1X1 + b2X2^2 + b3X3^3 ..... 
-
-when we are talking about Linear or non-Linear we are not talking about X but we are talking about coefficient "b" , when
+    DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering algorithm used in machine learning and data analysis. It is particularly effective at identifying clusters of data points that are close to each other in terms of density and separating them from areas with lower data density. Unlike some other clustering methods, DBSCAN doesn't require the user to specify the number of clusters beforehand and can discover clusters of arbitrary shapes.
 
 
-47) Ensemble Learning:
-Ensemble Learning is when we use multiple algorithms of use one Algorithm multiple time , it is called Ensemble Learning. 
+    34) sample mean vs population mean:
+    Population Mean:
 
-Ex - Random forest uses multiple decision tresses.
+    The population mean, often denoted as μ (mu), represents the average value of a variable in an entire population. The population is the entire set of individuals, items, or data points you are interested in studying.
 
+    Sample Mean:
 
-48) Reinforcement Learning: 
-It is a type of machine learning in which an agent learns to make decisions by interacting with an environment. 
-It is inspired by behavioral psychology and is commonly used in various applications,
-including robotics, game playing, autonomous systems, and more.The agent receives feedback in the form of rewards or punishments
-based on the actions it takes, and its objective is to learn a policy—a strategy for selecting actions in different 
-situations—that maximizes the cumulative expected reward over time.
-
-==================================================================================================================================================================
-
-MLOPS:
-=======
-
-https://www.youtube.com/watch?v=J9T0X9Jxl_w&list=PLnyYRPP3Sl0tNZv17rzc8NA22LxtS-X7E&index=10
-1) what is data drift
-2) what is model drift
-3) what are the constraints in the data?
-4) what is base line job
-5) what is a model performance monitoring job?
-6) what is ground truth and how it is used to  model performance monitoring job?
+    The sample mean, often denoted as x̄ (x-bar), represents the average value of a variable in a subset of the population, known as a sample. A sample is a smaller, manageable subset of the population that you use to make inferences about the entire population.
 
 
-The code to train the model and create the model will be stored in GitLab. but after the model has been created, The model will be stored in s3 but the code will be still in git hub.
+    35) standard normal distribution: mean =0 and standard deviation as 1
+    36) cumulative density function vs probability 
+    37) density function
+    36) ordinary least square
+    38) Region leso regression 
+    39) Regularisation
+    40) Soft margin and hard margin in SVM
+    41) Hamming distance in categorical data
+    ****42) Cross-validation: https://www.youtube.com/watch?v=fSytzGwwBVw&t=298s
 
-The code to train the model and create the model --->  dockerfile can be written and stored in git hub.
-model can be stored in s3.
+    Cross-validation is a resampling method that uses different portions of the data to test and train a model on different iterations. It is mainly used in settings where the goal is prediction, and one wants to estimate how accurately a predictive model will perform in practice.
 
-create a training pipeline that will train the model and save the model's new version in s3. we can use aws code pipeline for that and trigger it via aws event scheduler.
+    Data Splitting: The dataset is randomly divided into k roughly equal-sized subsets, often called folds. For example, if you choose 5-fold cross-validation, the data is split into 5 subsets.
 
-1) Export a model:
-================
-https://www.youtube.com/watch?v=NVY0FucNRU4
-  i) Save the whole model (in HDF5 format)
-     model.save("nn.h5")
+    Model Training and Testing: The following steps are repeated k times:
 
-2) Import a model from the file:
-============================
-https://www.youtube.com/watch?v=NVY0FucNRU4
+    Use k-1 folds for training your model.
+    Use the remaining 1 fold for testing (validation).
+    Evaluation: Calculate the performance metric (e.g., accuracy, mean squared error) on the validation set for each fold.
 
-  i) model = keras.models.load_model("nn.h5")
+    Averaging: After all k iterations, average the performance metrics to get an overall estimate of the model's performance.
+
+    42) Dimensionality reduction :
+
+    Dimensionality reduction is a technique used in machine learning and data analysis to reduce the number of features or variables in a dataset while retaining important information and patterns. It's particularly useful when dealing with high-dimensional data, which can be computationally expensive, lead to overfitting, and make it difficult to visualize and interpret the data.
+
+    43) Autoencoder: 
+    An autoencoder is a type of artificial neural network used in unsupervised machine learning and dimensionality reduction tasks. It is a neural network architecture that is designed to learn efficient representations of data, typically for the purpose of reducing the dimensionality of the input while preserving important information
+
+    Here's how an autoencoder works:
+
+    Encoder: The encoder takes the input data and maps it to a lower-dimensional representation, often referred to as the "latent space" or "encoding." This mapping process involves multiple layers of neurons that progressively reduce the dimensionality of the input data.
+
+    Latent Space: The latent space is an essential part of the autoencoder, where the encoder has learned to represent the input data in a more compact and informative way. The size of the latent space is a hyperparameter, and it determines the level of compression achieved by the autoencoder.
+
+    Decoder: The decoder takes the encoded representation from the latent space and attempts to reconstruct the original input data from this compressed representation. Like the encoder, the decoder consists of multiple layers of neurons.
 
 
-***************************************
-Capturing ground truth reality Example:
-***************************************
+    44) One hot encoding, creating dummy variable and dummy variable trap 
 
-On a social media site suppose one person is making one post and immediately some bots are posting random comments. So I have to deal with this problem to detect if a comment on that post is made by a bot or not. To determine that we can capture some features like 
+    45) Imple linear Regression vs. Multiple linear regression vs. Polynomial Linear Regression expression difference.
+    	linear Regression : y = b0 +b1x1
+    	Polynomial Linear Regression: y = b0 + b1X1 + b2X2^2 + b3X3^3 .....
+    	Multiple linear regression: y = b0 + b1x1 + b2x2 + b3x3 + .....
 
-1) Comment time 
-2) How many times has the same profile commented on the post? 
-3) Does the comment content have any Link or ad in the content? 
+    46) why all these Polynomial Linear Regression is Linear although it has x^2? 
+    y = b0 + b1X1 + b2X2^2 + b3X3^3 ..... 
 
-These things we can train our model On. if our model predicts that a particular comment is made by a bot, then immediately we will show a captcha to verify if the profile is really a bot or not. If the user passes the captcha test, then the profile is not a bot, otherwise, the profile is a bot. So in this way, we can capture the ground truth reality of what the model predicts versus what is the actual result. This way in the production, we can capture the model performance.
+    when we are talking about Linear or non-Linear we are not talking about X but we are talking about coefficient "b" , when
 
+
+    47) Ensemble Learning:
+    Ensemble Learning is when we use multiple algorithms of use one Algorithm multiple time , it is called Ensemble Learning. 
+
+    Ex - Random forest uses multiple decision tresses.
+
+
+    48) Reinforcement Learning: 
+    It is a type of machine learning in which an agent learns to make decisions by interacting with an environment. 
+    It is inspired by behavioral psychology and is commonly used in various applications,
+    including robotics, game playing, autonomous systems, and more.The agent receives feedback in the form of rewards or punishments
+    based on the actions it takes, and its objective is to learn a policy—a strategy for selecting actions in different 
+    situations—that maximizes the cumulative expected reward over time.
+
+    ==================================================================================================================================================================
+
+    MLOPS:
+    =======
+
+    https://www.youtube.com/watch?v=J9T0X9Jxl_w&list=PLnyYRPP3Sl0tNZv17rzc8NA22LxtS-X7E&index=10
+    1) what is data drift
+    2) what is model drift
+    3) what are the constraints in the data?
+    4) what is base line job
+    5) what is a model performance monitoring job?
+    6) what is ground truth and how it is used to  model performance monitoring job?
+
+
+    The code to train the model and create the model will be stored in GitLab. but after the model has been created, The model will be stored in s3 but the code will be still in git hub.
+
+    The code to train the model and create the model --->  dockerfile can be written and stored in git hub.
+    model can be stored in s3.
+
+    create a training pipeline that will train the model and save the model's new version in s3. we can use aws code pipeline for that and trigger it via aws event scheduler.
+
+    1) Export a model:
+    ================
+    https://www.youtube.com/watch?v=NVY0FucNRU4
+      i) Save the whole model (in HDF5 format)
+         model.save("nn.h5")
+
+    2) Import a model from the file:
+    ============================
+    https://www.youtube.com/watch?v=NVY0FucNRU4
+
+      i) model = keras.models.load_model("nn.h5")
+
+
+    ***************************************
+    Capturing ground truth reality Example:
+    ***************************************
+
+    On a social media site suppose one person is making one post and immediately some bots are posting random comments. So I have to deal with this problem to detect if a comment on that post is made by a bot or not. To determine that we can capture some features like 
+
+    1) Comment time 
+    2) How many times has the same profile commented on the post? 
+    3) Does the comment content have any Link or ad in the content? 
+
+    These things we can train our model On. if our model predicts that a particular comment is made by a bot, then immediately we will show a captcha to verify if the profile is really a bot or not. If the user passes the captcha test, then the profile is not a bot, otherwise, the profile is a bot. So in this way, we can capture the ground truth reality of what the model predicts versus what is the actual result. This way in the production, we can capture the model performance.
