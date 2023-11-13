@@ -31,7 +31,9 @@ https://www.youtube.com/watch?v=KlJe9h438_w&list=PLZoTAELRMXVM0zN0cgJrfT6TK2ypCp
 
 17) Optimizer
 https://www.youtube.com/watch?v=JhQqquVeCE0
-  1) Gradient Descent: In deep learning, models are trained using optimization algorithms like gradient descent. During training, gradients are calculated to update the model's parameters like weight and biases and these gradients are propagated backward through the network.
+  1) Gradient Descent: In deep learning, models are trained using optimization algorithms like gradient descent. 
+During training, gradients are calculated to update the model's parameters like weight and biases and these gradients 
+are propagated backward through the network.
   2) SGD
   3) mini-batch SGD
   4) Adam(mometum + Rmsprop)
@@ -44,7 +46,10 @@ Overview:
 * Deep Learning: A Neural Network with more than one hidden layer.
 * Overfitting:
 	https://ibm-learning.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/learn/lecture/16844592#overview
-	when your Model touches every single point of your training data, your error is really low in the training set. but it doesn't create a good prediction model as it doesn't fall under any mathematical equation y = f(x). that's why we get an error large in the validation set or in the test set. this is called Overfitting i.e. fitting too much to the noise data.
+	when your Model touches every single point of your training data, your error is really low in the training set. 
+but it doesn't create a good prediction model as it doesn't fall under any mathematical equation y = f(x). 
+that's why we get an error large in the validation set or in the test set. this is called Overfitting i.e. 
+fitting too much to the noise data.
 
 	Overcome Overfitting:
 	--------------------
@@ -97,7 +102,8 @@ Model Evaluation Matrix:
 Supervised Learning:
 ===================
 
-The supervised learning algorithm learns to identify patterns and relationships in the data, enabling it to make predictions or classifications on new, unseen transactions. In the context of credit card fraud detection, the algorithm is trained to recognize patterns and features that distinguish fraudulent transactions from legitimate ones. These patterns can include transaction amounts, locations, time of day, and various other transaction details.
+The supervised learning algorithm learns to identify patterns and relationships in the data, enabling it to make predictions or classifications on new, 
+unseen transactions. In the context of credit card fraud detection, the algorithm is trained to recognize patterns and features that distinguish fraudulent transactions from legitimate ones. These patterns can include transaction amounts, locations, time of day, and various other transaction details.
 
 Credit card fraud detection is typically approached as a supervised learning problem. In supervised learning, the algorithm is trained on a labeled dataset, which means it is provided with historical data that includes both legitimate and fraudulent transactions, and each transaction is labeled as either "legitimate" or "fraudulent."
 
