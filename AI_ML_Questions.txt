@@ -673,6 +673,40 @@
 	Undersampling: Decrease the number of instances in the majority class by removing samples randomly or based on specific algorithms.
 	SMOTE (Synthetic Minority Over-sampling Technique): Generates synthetic samples for the minority class based on nearest neighbors.
 	
+   50) Two different people took samples for same use case, how to determine which one was true sample?
+	Sample Collection Methodology:
+
+		Understand how each sample was collected. Was it random, systematic, stratified, or convenience sampling?
+		Random sampling tends to produce more representative samples, ensuring each element in the population has an equal chance of being selected.
+		Biases might arise in convenience sampling, where individuals or elements are chosen based on ease of access.
+
+		Sample Size:
+		===========
+		Larger sample sizes tend to be more representative of the population, reducing the effects of random variations.
+		Compare the sizes of the two samples. A larger sample might generally be more reliable if the collection methodology is sound.
+
+		Demographic Representation:
+		==========================
+		Check if the demographics or characteristics of the samples align with the population being studied.
+		If the use case involves diverse groups, ensure both samples represent these groups proportionally.
+
+		Sampling Errors:
+		===============
+		Analyze potential errors in sampling. Are there any biases introduced during the sample collection?
+		Consider any systematic biases or flaws that might affect the accuracy of the samples.
+
+		Consistency and Similarity:
+		==========================
+		Assess the consistency of findings or measurements between the two samples. Are the results vastly different or quite similar?
+		Consistent findings between the samples might indicate a higher level of reliability.
+
+		External Factors:
+		================
+		Consider any external factors that might have influenced the samples differently, such as time of collection, location, or environmental conditions.
+
+		Statistical Analysis:
+		====================
+		Apply statistical tests to compare the distributions, means, or other relevant parameters of the samples. Tests like t-tests or chi-square tests can help determine if differences are significant.
 
     ==================================================================================================================================================================
 
