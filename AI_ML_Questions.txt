@@ -665,6 +665,15 @@
     based on the actions it takes, and its objective is to learn a policy—a strategy for selecting actions in different 
     situations—that maximizes the cumulative expected reward over time.
 
+
+   49) What if you have an imbalanced dataset, what should you do?
+
+	Resampling Techniques:
+	Oversampling: Increase the number of instances in the minority class by duplicating samples or generating synthetic examples.
+	Undersampling: Decrease the number of instances in the majority class by removing samples randomly or based on specific algorithms.
+	SMOTE (Synthetic Minority Over-sampling Technique): Generates synthetic samples for the minority class based on nearest neighbors.
+	
+
     ==================================================================================================================================================================
 
     MLOPS:
@@ -710,3 +719,5 @@
     3) Does the comment content have any Link or ad in the content? 
 
     These things we can train our model On. if our model predicts that a particular comment is made by a bot, then immediately we will show a captcha to verify if the profile is really a bot or not. If the user passes the captcha test, then the profile is not a bot, otherwise, the profile is a bot. So in this way, we can capture the ground truth reality of what the model predicts versus what is the actual result. This way in the production, we can capture the model performance.
+
+
