@@ -33,3 +33,28 @@ over uniformly sampled solutions from the generator. For each test problem we
 select the solution ranked highest by the reward model, automatically grade it
 based on its final answer, and report the fraction that are correct. A reward
 model that is more reliable will select the correct solution more often.
+
+math-relevant tokens, which we call MathMix.
+
+2.3 Generator
+To make parsing individual steps easier, we train the generator to produce
+solutions in a newline delimited step-by-step format. Specifically, we few-shot
+generate solutions to MATH training problems, filter to those that reach the
+correct final answer, and finetune the base model on this dataset for a single
+epoch. This step is not intended to teach the generator new skills; it is intended
+only to teach the generator to produce solutions in the desired format.
+
+2.4 Data Collection
+To collect process supervision data, we present human data-labelers with stepby-step solutions to MATH problems sampled by the large-scale generator.
+Their task is to assign each step in the solution a label of positive, negative,
+or neutral, as shown in Figure 1. A positive label indicates that the step is correct and reasonable. A negative label indicates that the step is either incorrect
+or unreasonable. A neutral label indicates ambiguity. In practice, a step may
+be labelled neutral if it is subtly misleading, or if it is a poor suggestion that
+is technically still valid. We permit neutral labels since this allows us to defer
+the decision about how to handle ambiguity: at test time, we can treat neutral
+labels as either positive or negative
+
+We refer to the entire dataset of step-level labels collected as PRM800K. The PRM800K training
+set contains 800K step-level labels across 75K solutions to 12K problems.
+
+3 --------------
