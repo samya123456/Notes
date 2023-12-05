@@ -4,3 +4,24 @@ Q Value:
 In reinforcement learning, the Q-value (short for quality value or action value) 
 is a measure used to represent the expected cumulative reward an agent can obtain by taking a particular action in a particular state and following a particular policy. 
 It is a crucial concept in Q-learning, a popular model-free reinforcement learning algorithm.
+
+Mathematically, the Q-value is denoted as Q(s,a), where:
+s is the state the agent is in,
+a is the action the agent takes in that state.
+new_q_value = q_value + learning_rate * (reward + discount_factor * max(self.q_values.get((new_state, a), 0.0) for a in ["good_response", "bad_response"]) - q_value)
+
+new_q_value: This is the updated Q-value for the current state-action pair. It represents the agent's new estimate of the expected cumulative reward.
+
+q_value: The current Q-value for the state-action pair. This is the agent's previous estimate of the expected cumulative reward.
+
+learning_rate (α): A hyperparameter that determines the weight given to new information when updating the Q-value. It is a value between 0 and 1. A higher learning rate means the agent gives more importance to recent experiences.
+
+reward (r): The immediate reward obtained after taking the specified action (good_response or bad_response) in the current state.
+
+discount_factor (γ): A discount factor that represents the agent's preference for immediate rewards over delayed rewards. It is a value between 0 and 1. A higher discount factor emphasizes long-term rewards.
+
+max_{a'}: The maximum Q-value over all possible actions (a ) in the next state (new_state). It represents the estimated maximum cumulative reward that can be obtained by following the optimal policy from the next state onward.
+
+self.q_values.get((new_state, a'), 0.0): Retrieves the Q-value for the specified state-action pair in the Q-values dictionary (self.q_values). If the state-action pair is not present, it defaults to 0.0.
+
+q_value - (1 - \alpha) \cdot q_value: A term that scales the current Q-value to reduce its influence in the update. The purpose is to blend the existing estimate with the new information.
