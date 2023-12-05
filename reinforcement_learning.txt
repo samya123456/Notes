@@ -1,0 +1,6 @@
+
+Q Value:
+
+In reinforcement learning, the Q-value (short for quality value or action value) 
+is a measure used to represent the expected cumulative reward an agent can obtain by taking a particular action in a particular state and following a particular policy. 
+It is a crucial concept in Q-learning, a popular model-free reinforcement learning algorithm.
