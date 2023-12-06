@@ -79,6 +79,9 @@ argmax Q(s,a) with probability 1−ε
 }
 
 The value of 
-ε is a crucial parameter in epsilon-greedy strategy, and its tuning affects the exploration-exploitation balance. Choosing too high or too low values for 
+ε is a crucial parameter in the epsilon-greedy strategy, and its tuning affects the exploration-exploitation balance. Choosing too high or too low values for 
 ε can impact the learning performance of the agent. Common values for 
 ε are often in the range of 0.1 to 0.3.
+
+********we will calculate a random number if the random  number is less than ε when we'll choose the random  number  if the random  number is greater than of equal to ε 
+then we'll find the Maximul action.
