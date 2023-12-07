@@ -91,14 +91,5 @@ Decrementing the exploration rate (ϵ):
 Decrementing the exploration rate (ϵ) over time is a common technique in reinforcement learning to encourage more exploration in the early stages of learning and gradually shift towards exploitation as the agent gains experience.
 Linear Decay:
 Linearly decrementing ϵ is a straightforward approach. You start with an initial exploration rate (initial
-ϵ 
-initial
-​
- ) and gradually decrease it linearly over time until it reaches a minimum value (
-�
-final
-ϵ 
-final
-​
- ).
+ϵ initial) and gradually decrease it linearly over time until it reaches a minimum value (final).
 
